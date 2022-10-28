@@ -21,15 +21,17 @@ public class PoemController {
 
     @RequestMapping(path = "/poem/images", method = RequestMethod.GET)
     @ResponseBody
-    public String getImage(Model model, String name) {
+    public Map<String, Integer> getImage(String name) {
         List<Map<String, Integer>> images = poemService.findImagesByPoet(name);
-        for (Map<String, Integer> map : images) {
-            for (String key : map.keySet()) {
-                Integer value = Integer.parseInt(String.valueOf(map.get(key)));
-                model.addAttribute(key, value);
+        Map<String, Integer> map = new HashMap<>();
+        for (Map<String, Integer> image : images) {
+            for (String key : image.keySet()) {
+                Integer value = Integer.parseInt(String.valueOf(image.get(key)));
+                map.put(key, value);
             }
         }
-        return model.toString();
+        return map;
     }
+
 
 }
