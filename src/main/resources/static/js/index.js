@@ -1,38 +1,4 @@
 // 测试数据
-var data = [{
-    name: '花',
-    value: 10000
-}, {
-    name: '风',
-    value: 6181
-}, {
-    name: '山',
-    value: 4386
-}, {
-    name: '月',
-    value: 4055
-}, {
-    name: '梅',
-    value: 2467
-}, {
-    name: '亭台',
-    value: 2244
-}, {
-    name: '楼阁',
-    value: 1898
-}, {
-    name: '寒蝉',
-    value: 1484
-}, {
-    name: '高楼',
-    value: 1112
-}, {
-    name: '草',
-    value: 965
-}, {
-    name: '湖',
-    value: 847
-}, ];
 let color = [
     new echarts.graphic.LinearGradient(0, 0, 1, 1, [{
             offset: 0,
@@ -234,11 +200,14 @@ axios('http://localhost:8080/visualization/poem/images?name='+poetName)
 .then(function (response) {
     //此为返回的数据 仍为字符串型
     console.log(response.data);
-    //需要在main.js中新方法stringtoObj2(response.data);调用后形成有效的data替换掉init函数中第一个参数data。
-    //let obj=stringtoObj2(response.data);
-    //console.log(obj);
-    //请求完毕后在这个回调函数中调用初始化泡泡图的函数，更新数据
-    initBubbleChart(data, ['name', 'value']);
+    let dataTest=[];
+    for (key in response.data){
+        let obj={};
+        obj["name"]=key;
+        obj["value"]=response.data[key];
+        dataTest.push(obj);
+    }
+    initBubbleChart(dataTest, ['name', 'value']);
 }).catch(function (err) {
     console.log(err)
 });
