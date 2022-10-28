@@ -121,7 +121,7 @@ INSERT INTO poem (title, content, author, `time`) VALUES ('卖炭翁','卖炭翁
 一车炭，千余斤，宫使驱将惜不得。
 半匹红纱一丈绫，系向牛头充炭直。','白居易', NULL);
 INSERT INTO poem (title, content, author, `time`) VALUES ('忆江南','江南好，风景旧曾谙。日出江花红胜火，春来江水绿如蓝。能不忆江南？');
-INSERT INTO baijuyi (title, content) VALUES('大林寺桃花','人间四月芳菲尽，山寺桃花始盛开。
+INSERT INTO poem (title, content) VALUES('大林寺桃花','人间四月芳菲尽，山寺桃花始盛开。
 长恨春归无觅处，不知转入此中来。','白居易', NULL);
 INSERT INTO poem (title, content, author, `time`) VALUES ('暮江吟','一道残阳铺水中，半江瑟瑟半江红。
 可怜九月初三夜，露似真珠月似弓。','白居易', NULL);
