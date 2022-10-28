@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <script th:src="@{/js/echarts.min.js}"></script>
+    <script th:src="@{/js/axios.min.js}"></script>
+    <script th:src="@{/js/index.js}"></script>
+</head>
+
+<body>
+    <!-- 标题区域 -->
+    <div class="header"></div>
+    <!-- 可视化大盒子 -->
+    <div class="main">
+        <div class="column">
+            <!-- 时间轴 -->
+            <div class="timeAxisBox">
+                <div class="timeAxis"></div>
+                <button class="globalBtn">全局</button>
+            </div>
+            <!-- 诗人列表 -->
+            <div class="poetsBox">
+                <div class="poetsList">
+                    <!-- 左边，列表区域 -->
+                    <div class="list">
+                        <button class="allPoetsBtn">全选</button>
+                        <div class="poets">
+                            <ul>
+                                <li>李白</li>
+                                <li>杜甫</li>
+                                <li>杜甫</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 右边，滚动框区域 -->
+                    <div class="scroll"></div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <!-- 地图显示区域 -->
+            <div class="mapBox">
+                <!-- 历史事件栏 -->
+                <div class="eventBox"></div>
+            </div>
+            <!-- 意象与情感关键的关联分析 -->
+            <div class="analysisBox"></div>
+        </div>
+        <div class="column">
+            <!-- 情感词云 -->
+            <div class="emotionBox">
+            </div>
+            <!-- 意象词云 -->
+            <div class="imageBox"></div>
+            <!-- 以十年为单位的作品折线图 -->
+            <div class="lineChartBox"></div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
