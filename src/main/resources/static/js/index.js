@@ -169,9 +169,7 @@ function initBubbleChart(data = [], format = []) {
             }
         })
     }
-    console.log("1");
     var emotionChart = echarts.init(document.querySelector('.emotionBox'));
-    console.log("2");
     let bubbleOptions = {
         title: {
             text: '情感词云',
@@ -239,8 +237,7 @@ axios('http://localhost:8080/visualization/poem/images?name='+poetName)
     //需要在main.js中新方法stringtoObj2(response.data);调用后形成有效的data替换掉init函数中第一个参数data。
     //let obj=stringtoObj2(response.data);
     //console.log(obj);
-
-
+    //请求完毕后在这个回调函数中调用初始化泡泡图的函数，更新数据
     initBubbleChart(data, ['name', 'value']);
 }).catch(function (err) {
     console.log(err)
