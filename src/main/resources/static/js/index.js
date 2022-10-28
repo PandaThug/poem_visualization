@@ -169,7 +169,9 @@ function initBubbleChart(data = [], format = []) {
             }
         })
     }
+    console.log("1");
     var emotionChart = echarts.init(document.querySelector('.emotionBox'));
+    console.log("2");
     let bubbleOptions = {
         title: {
             text: '情感词云',
@@ -232,11 +234,17 @@ function initBubbleChart(data = [], format = []) {
 var poetName="白居易";
 axios('http://localhost:8080/visualization/poem/images?name='+poetName)
 .then(function (response) {
-    console.log(response.data)
+    //此为返回的数据 仍为字符串型
+    console.log(response.data);
+    //需要在main.js中新方法stringtoObj2(response.data);调用后形成有效的data替换掉init函数中第一个参数data。
+    //let obj=stringtoObj2(response.data);
+    //console.log(obj);
+
+
+    initBubbleChart(data, ['name', 'value']);
 }).catch(function (err) {
     console.log(err)
 });
 
 
 
-initBubbleChart(data, ['name', 'value']);
