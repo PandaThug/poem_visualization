@@ -17,4 +17,8 @@ public class PoemService {
         return poemMapper.selectImagesByPoet(poetName);
     }
 
+    public List<Map<String, Integer>> findEmoByPoet(String poetName) {
+        return poemMapper.selectEmoByPoet(poetName);
+    }
+
 }

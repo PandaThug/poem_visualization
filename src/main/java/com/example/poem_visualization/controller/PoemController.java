@@ -33,5 +33,18 @@ public class PoemController {
         return map;
     }
 
+    @RequestMapping(path = "/poem/emo", method = RequestMethod.GET)
+    @ResponseBody
+    public Map<String, Integer> getEmo(String name) {
+        List<Map<String, Integer>> emos = poemService.findEmoByPoet(name);
+        Map<String, Integer> map = new HashMap<>();
+        for (Map<String, Integer> emo : emos) {
+            for (String key : emo.keySet()) {
+                Integer value = Integer.parseInt(String.valueOf(emo.get(key)));
+                map.put(key, value);
+            }
+        }
+        return map;
+    }
 
 }

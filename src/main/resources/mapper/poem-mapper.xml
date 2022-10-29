@@ -30,4 +30,27 @@
         from poem
         where author = #{name}
     </select>
+
+    <select id="selectEmoByPoet" resultType="java.util.Map">
+        select
+            sum(content like '%喜%') as '喜',
+            sum(content like '%悲%') as '悲',
+            sum(content like '%叹%') as '叹',
+            sum(content like '%忧%') as '忧',
+            sum(content like '%哀%') as '哀',
+            sum(content like '%伤%') as '伤',
+            sum(content like '%怆然%') as '怆然',
+            sum(content like '%慷慨%') as '慷慨',
+            sum(content like '%愁%') as '愁',
+            sum(content like '%苦%') as '苦',
+            sum(content like '%乱%') as '乱',
+            sum(content like '%闷%') as '闷',
+            sum(content like '%迷%') as '迷',
+            sum(content like '%寂寞%') as '寂寞',
+            sum(content like '%孤%') as '孤',
+            sum(content like '%思%') as '思'
+        from poem
+        where author = #{name}
+    </select>
+
 </mapper>
