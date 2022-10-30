@@ -95,4 +95,40 @@
         sum(content regexp '怒|冲冠|愤') as '愤怒'
         from poem
     </select>
+
+    <select id="selectPoemImagesCountByName" resultType="java.util.Map">
+        select
+        sum(content regexp '喜|欣|乐|得意|悦') as '喜',
+        sum(content regexp '悲|伤|怆然|苦|痛|闷|愁|凄|萧|惆|怅|怨|憔|悴') as '悲',
+        sum(content regexp '忧|伤|愁|哀|破|残|沦|难|恨') as '忧',
+        sum(content regexp '慷慨|叹|嗟|哉|浩|丈夫|志') as '感慨',
+        sum(content regexp '迷|醉|乱|纵') as '迷乱',
+        sum(content regexp '迷|惘|茫') as '迷惘',
+        sum(content regexp '寂寞|孤|潦|独') as '寂寞',
+        sum(content regexp '思|忆|想|乡') as '思乡',
+        sum(content regexp '离|别|送|散') as '不舍',
+        sum(content regexp '闲|自在|悠') as '闲淡',
+        sum(content regexp '怒|冲冠|愤') as '愤怒'
+        from (select content
+        from poem
+        where content like CONCAT(CONCAT('%', #{images}, '%')) and author = #{name}) as temp
+    </select>
+
+    <select id="selectPoemImagesCount" resultType="java.util.Map">
+        select
+        sum(content regexp '喜|欣|乐|得意|悦') as '喜',
+        sum(content regexp '悲|伤|怆然|苦|痛|闷|愁|凄|萧|惆|怅|怨|憔|悴') as '悲',
+        sum(content regexp '忧|伤|愁|哀|破|残|沦|难|恨') as '忧',
+        sum(content regexp '慷慨|叹|嗟|哉|浩|丈夫|志') as '感慨',
+        sum(content regexp '迷|醉|乱|纵') as '迷乱',
+        sum(content regexp '迷|惘|茫') as '迷惘',
+        sum(content regexp '寂寞|孤|潦|独') as '寂寞',
+        sum(content regexp '思|忆|想|乡') as '思乡',
+        sum(content regexp '离|别|送|散') as '不舍',
+        sum(content regexp '闲|自在|悠') as '闲淡',
+        sum(content regexp '怒|冲冠|愤') as '愤怒'
+        from (select content
+        from poem
+        where content like CONCAT(CONCAT('%', #{images}, '%'))) as temp
+    </select>
 </mapper>

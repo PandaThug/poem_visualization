@@ -21,4 +21,10 @@ public interface PoemMapper {
     // 查询全部诗歌中的情感词及出现次数
     List<Map<String, Integer>> selectEmo();
 
+    // 按诗人查询包含某意象词的诗的情感返回诗歌数量
+    List<Map<String, Integer>> selectPoemImagesCountByName(@Param("name") String name, @Param("images") String images);
+
+    // 查询包含某意象词的诗的情感返回诗歌数量
+    List<Map<String, Integer>> selectPoemImagesCount(@Param("images") String images);
+
 }

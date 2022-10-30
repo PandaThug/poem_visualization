@@ -29,4 +29,12 @@ public class PoemService {
         return poemMapper.selectEmo();
     }
 
+    public List<Map<String, Integer>> findPoemImagesCountByName(String poetName, String images) {
+        return poemMapper.selectPoemImagesCountByName(poetName, images);
+    }
+
+    public List<Map<String, Integer>> findPoemImagesCount(String images) {
+        return poemMapper.selectPoemImagesCount(images);
+    }
+
 }

@@ -75,4 +75,32 @@ public class PoemController {
         return map;
     }
 
+    @RequestMapping(path = "/images/poem", method = RequestMethod.GET, params = {"images","name"})
+    @ResponseBody
+    public Map<String, Integer> getPoemImagesCount(String images, String name) {
+        List<Map<String, Integer>> counts = poemService.findPoemImagesCountByName(name, images);
+        Map<String, Integer> map = new HashMap<>();
+        for (Map<String, Integer> count : counts) {
+            for (String key : count.keySet()) {
+                Integer value = Integer.parseInt(String.valueOf(count.get(key)));
+                map.put(key, value);
+            }
+        }
+        return map;
+    }
+
+    @RequestMapping(path = "/images/poem", method = RequestMethod.GET, params = {"images"})
+    @ResponseBody
+    public Map<String, Integer> getPoemImagesCount(String images) {
+        List<Map<String, Integer>> counts = poemService.findPoemImagesCount(images);
+        Map<String, Integer> map = new HashMap<>();
+        for (Map<String, Integer> count : counts) {
+            for (String key : count.keySet()) {
+                Integer value = Integer.parseInt(String.valueOf(count.get(key)));
+                map.put(key, value);
+            }
+        }
+        return map;
+    }
+
 }
