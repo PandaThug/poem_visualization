@@ -9,7 +9,11 @@
     <link rel="stylesheet" th:href="@{/css/style.css}">
     <script th:src="@{/js/axios.min.js}"></script>
     <script th:src="@{/js/echarts.min.js}"></script>
-    <script th:src="@{/js/main.js}"></script>
+
+<!--    <link rel="stylesheet" href="../static/css/style.css">-->
+<!--    <script src="../static/js/axios.min.js"></script>-->
+<!--    <script src="../static/js/echarts.min.js"></script>-->
+<!--    <script src="../static/js/main.js"></script>-->
 </head>
 
 <body>
@@ -20,8 +24,12 @@
         <div class="column">
             <!-- 时间轴 -->
             <div class="timeAxisBox">
-                <div class="timeAxis"></div>
-                <button class="globalBtn">全局</button>
+                <div class="timeAxis">
+<!--                    //为实现滚轮 内嵌一个div-->
+                    <div id="timeAxis">
+                    </div>
+                </div>
+                <button id="globalBtn">全局</button>
             </div>
             <!-- 诗人列表 -->
             <div class="poetsBox">
@@ -31,9 +39,8 @@
                         <button class="allPoetsBtn">全选</button>
                         <div class="poets">
                             <ul>
-                                <li>李白</li>
-                                <li>杜甫</li>
-                                <li>杜甫</li>
+                                <li><button>白居易</button></li>
+                                <li><button>白居易</button></li>
                             </ul>
                         </div>
                     </div>
@@ -53,16 +60,21 @@
         </div>
         <div class="column">
             <!-- 情感词云 -->
-            <div class="emotionBox">
+            <div class="bubbleBox">
+                <div class="changeBtn" @click="changeBubble"></div>
             </div>
-            <!-- 意象词云 -->
-            <div class="imageBox"></div>
             <!-- 以十年为单位的作品折线图 -->
             <div class="lineChartBox"></div>
 
         </div>
     </div>
-    <script th:src="@{/js/index.js}"></script>
+    <script th:src="@{/js/jquery.js}"></script>
+    <script th:src="@{/js/main.js}" ></script>
+    <script th:src="@{/js/map.js}"></script>
+    <script th:src="@{/js/updateMap.js}"></script>
+    <script th:src="@{/js/image_emo.js}"></script>
+    <script th:src="@{/js/timeline.js}"></script>
+    <script th:src="@{/js/leaf.js}"></script>
 </body>
 
 </html>

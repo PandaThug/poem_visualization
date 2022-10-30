@@ -3,138 +3,204 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  height: 100%;
+}
 li {
   list-style: none;
 }
+
 img {
   border: none;
   vertical-align: middle;
 }
+
 button {
   border: none;
   cursor: pointer;
 }
+
 a {
   color: #666;
   text-decoration: none;
 }
+
 a:hover {
   color: #e33333;
 }
+
 body {
-  /* background: url(./images/bg.webp) no-repeat 0 0 / cover; */
+  height: 100%;
+  background: url(/static/images/bg.png) no-repeat 0 0 /cover;
+
+}
+body::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(7px);
+  z-index: -2;
 }
 /***********************/
 .header {
-  height: 5vw;
+  height:10%;
   width: 100%;
+  min-width: 1024px;
+  min-height: 50px;
   background-color: chocolate;
-  z-index: 1;
 }
+
 .main {
   display: flex;
-  height: 60vw;
+  height:90%;
   width: 100%;
-  background-color: blanchedalmond;
+  min-width: 1024px;
+  min-height: 450px;
+// background-color: blanchedalmond;
+
 }
+
 .main .column {
-  height: 60vw;
+  height: 100%;
 }
+
 .main .column:nth-child(1) {
-  width: 10vw;
+  width: 6%;
 }
+
 .main .column:nth-child(2) {
-  width: 63vw;
-  margin: 0 1vw;
+  width: 60%;
+  margin: 0 1%;
 }
+
 .main .column:nth-child(3) {
-  width: 25vw;
+  width: 32%;
 }
+
+
 /* 第一列column开始 */
+
 .timeAxisBox {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 30vw;
+  height:50%;
   background-color: beige;
 }
+
 .timeAxisBox .timeAxis {
-  height: 26vw;
-  width: 4vw;
+  height: 80%;
+  width: 90%;
   background-color: #fff;
+  overflow: auto;
+  transition: all 0.3s;
 }
+
+.timeAxisBox #timeAxis{
+  height: 500%;
+}
+
 .timeAxisBox .globalBtn {
-  width: 4vw;
-  height: 2vw;
+  width: 60%;
+  height: 10%;
   background-color: peachpuff;
-  border-radius: 4vw;
+  border-radius: 20px;
 }
+
 .poetsBox {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vw;
+  height:50%;
   background-color: peachpuff;
 }
+
 .poetsBox .poetsList {
   display: flex;
-  height: 26vw;
-  width: 8vw;
+  height: 80%;
+  width: 80%;
 }
+
 .poetsBox .list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 7vw;
-  height: 26vw;
-  background-color: #d6c9b0;
+  width: 85%;
+  height: 100%;
+  background-color: rgb(214, 201, 176);
 }
+
 .poetsBox .list .allPoetsBtn {
-  height: 3vw;
-  width: 4vw;
+  height: 10%;
+  width: 80%;
   border-bottom: 2px solid #000;
   background-color: transparent;
 }
+
 .poetsBox .list .poets {
   /* overflow: scroll; */
 }
+
 .poetsBox .scroll {
-  width: 1vw;
+  width: 15%;
   background-color: #fff;
-  height: 26vw;
+  height: 100%;
 }
+
+
 /* 第一列column结束*/
+
+
 /* 第二列column开始 */
+
 .mapBox {
   position: relative;
-  height: 40vw;
+  height:65%;
   background-color: burlywood;
 }
+
 .mapBox .eventBox {
   position: absolute;
   top: 1vw;
   left: 1vw;
-  width: 22vw;
-  height: 8vw;
+  width: 30%;
+  height: 30%;
   background-color: peachpuff;
 }
+
 .analysisBox {
-  height: 20vw;
+  height:35%;
   background-color: wheat;
 }
+
+
 /* 第二列column结束*/
+
+
 /* 第三列column开始 */
-.emotionBox {
-  height: 20vw;
-  background-color: peachpuff;
+
+.bubbleBox {
+  height:65%;
+  position: relative;
 }
-.imageBox {
-  height: 20vw;
-  background-color: beige;
+.bubbleBox .changeBtn {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  height: 6%;
+  width: 10%;
+  z-index: 1;
+  background: aquamarine;
 }
 .lineChartBox {
-  height: 20vw;
+  height:35%;
   background-color: darkgoldenrod;
 }
+
+
 /* 第三列column结束*/
