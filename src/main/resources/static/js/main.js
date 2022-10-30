@@ -107,7 +107,6 @@ var convertToLineData = function(data, gps) {
         }
 
     }
-    console.log(res);
     //
     return res;
 };

@@ -1,7 +1,7 @@
 
     var myChartmap=echarts.init(document.querySelector('.mapBox'));
     var uploadedDataURL = "./js/china.json";
-    var mapData=[["上海","北京","死亡"],["西藏"],["南京","天津"]];
+    var mapData=[[]];
     var n=15;
 
     //如果想要修改，请点击上方克隆，然后在自己的版本上修改，不要在lz的版本上改！！
