@@ -21,4 +21,12 @@ public class PoemService {
         return poemMapper.selectEmoByPoet(poetName);
     }
 
+    public List<Map<String, Integer>> findImages() {
+        return poemMapper.selectImages();
+    }
+
+    public List<Map<String, Integer>> findEmo() {
+        return poemMapper.selectEmo();
+    }
+
 }

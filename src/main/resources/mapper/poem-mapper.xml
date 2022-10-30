@@ -51,4 +51,48 @@
         where author = #{name}
     </select>
 
+    <select id="selectImages" resultType="java.util.Map">
+        select
+        sum(content like '%笛%') as '笛',
+        sum(content like '%风%') as '风',
+        sum(content like '%胡%') as '胡',
+        sum(content like '%酒%') as '酒',
+        sum(content like '%菊%') as '菊',
+        sum(content like '%柳%') as '柳',
+        sum(content like '%马%') as '马',
+        sum(content like '%梅%') as '梅',
+        sum(content like '%羌%') as '羌',
+        sum(content like '%日%') as '日',
+        sum(content like '%松%') as '松',
+        sum(content like '%山%') as '山',
+        sum(content like '%亭%') as '亭',
+        sum(content like '%雪%') as '雪',
+        sum(content like '%月%') as '月',
+        sum(content like '%舟%') as '舟',
+        sum(content like '%竹%') as '竹',
+        sum(content like '%沧海%') as '沧海',
+        sum(content like '%杜鹃%') as '杜鹃',
+        sum(content like '%大漠%') as '大漠',
+        sum(content like '%古道%') as '古道',
+        sum(content like '%明月%') as '明月',
+        sum(content like '%落日%') as '落日',
+        sum(content like '%梧桐%') as '梧桐'
+        from poem
+    </select>
+
+    <select id="selectEmo" resultType="java.util.Map">
+        select
+        sum(content regexp '喜|欣|乐|得意|悦') as '喜',
+        sum(content regexp '悲|伤|怆然|苦|痛|闷|愁|凄|萧|惆|怅|怨|憔|悴') as '悲',
+        sum(content regexp '忧|伤|愁|哀|破|残|沦|难|恨') as '忧',
+        sum(content regexp '慷慨|叹|嗟|哉|浩|丈夫|志') as '感慨',
+        sum(content regexp '迷|醉|乱|纵') as '迷乱',
+        sum(content regexp '迷|惘|茫') as '迷惘',
+        sum(content regexp '寂寞|孤|潦|独') as '寂寞',
+        sum(content regexp '思|忆|想|乡') as '思乡',
+        sum(content regexp '离|别|送|散') as '不舍',
+        sum(content regexp '闲|自在|悠') as '闲淡',
+        sum(content regexp '怒|冲冠|愤') as '愤怒'
+        from poem
+    </select>
 </mapper>

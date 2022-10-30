@@ -15,4 +15,10 @@ public interface PoemMapper {
     // 按诗人查询其诗歌中的情感词及出现次数
     List<Map<String, Integer>> selectEmoByPoet(@Param("name") String name);
 
+    // 查询全部诗歌中的意象及出现次数
+    List<Map<String, Integer>> selectImages();
+
+    // 查询全部诗歌中的情感词及出现次数
+    List<Map<String, Integer>> selectEmo();
+
 }
