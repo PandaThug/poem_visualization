@@ -1,5 +1,8 @@
-let bubbleMode=0;//0是情感，1是意象，默认0
-
+//控制气泡图的切换，0是情感，1是意象，默认0
+let bubbleMode=0;
+let bubbleChart = echarts.init(document.querySelector('.bubbleBox'));
+let bubbleOptions
+//气泡的颜色
 let color = [
     new echarts.graphic.RadialGradient(0.5, 0.5, 0.5, [{
         offset: 0, //YELLOW
@@ -71,14 +74,80 @@ let color = [
     ]),
 ];
 
+function updateBubbles(){
+    if(showMode==0){//全局
+        if(bubbleMode == 0){
+            axios('http://localhost:8080/visualization/poem/emo')
+                .then(function (response){
+                    // if(response.data!="")
+                    updateBubbles2(response);
+                }).catch(function (err) {
+                console.log(err)
+            });
+        }
+        else if(bubbleMode == 1){
+            axios('http://localhost:8080/visualization/poem/images')
+                .then(function (response){
+                    // if(response.data!="")
+                    updateBubbles2(response);
+                }).catch(function (err) {
+                // console.log(err)
+            });
+        }
+    }
+    // else if(showMode==1)//未指定诗人，指定时间。
+    // {
+    //     beginTime=convertTimeIndex();
+    //     endTime=beginTime+9;
+    //     axios('http://localhost:8080/visualization/poem/'+'beginTime='+beginTime+'&endTime='+endTime)
+    //         .then(function (response) {
+    //             updateBubbles2(response);
+    //         }).catch(function (err) {
+    //         console.log(err)
+    //     });
+    // }
+    else if(showMode==2)//未指定时间，指定诗人。
+    {
+        if(bubbleMode == 0){
+            axios('http://localhost:8080/visualization/poem/emo/?name='+poetName)
+                .then(function (response){
+                    // if(response.data!="")
+                    updateBubbles2(response);
+                }).catch(function (err) {
+                console.log(err)
+            });
+        }
+        else if(bubbleMode == 1){
+            axios('http://localhost:8080/visualization/poem/images/?name='+poetName)
+                .then(function (response){
+                    // if(response.data!="")
+                    updateBubbles2(response);
+                }).catch(function (err) {
+                console.log(err)
+            });
+        }
+    }
+    // else if(showMode==3)//指定时间，指定诗人。
+    // {
+    //     beginTime=convertTimeIndex();
+    //     endTime=beginTime+9;
+    //     axios('http://localhost:8080/visualization/poem/mode3?name='+poetName+'&beginTime='+beginTime+'&endTime='+endTime)
+    //         .then(function (response) {
+    //             updateBubbles2(response);
+    //         }).catch(function (err) {
+    //         console.log(err)
+    //     });
+    // }
+}
+
+//初始化意象气泡
 function initImageChart(data = [], format = []) {
     let [maxValue, temp] = [0, []]
     data.forEach(item => {
         temp.push(item[format[1]])
-        // console.log(item);
     })
     maxValue = Math.max.apply(null, temp)
-        // 气泡颜色数组
+    // 气泡颜色数组
     let bakeColor = color
     let bubbleData = [] // 气泡数据
     let repulsion = 150 // 气泡间距
@@ -93,13 +162,7 @@ function initImageChart(data = [], format = []) {
         repulsion = 50
     }
     for (let item of data) {
-        // 气泡数据条数少于或等于气泡颜色数组大小时，气泡颜色不重复
-        if (!bakeColor.length) bakeColor = color
-        let colorSet = new Set(bakeColor)
-        let curIndex = Math.round(Math.random() * (colorSet.size - 1))
-        let curColor = bakeColor[curIndex]
-        colorSet.delete(curColor)
-        bakeColor = colorSet
+        let curIndex = Math.round(Math.random() * bakeColor.length)
         let size = (item[format[1]] + Math.round(maxValue * 0.5)) / maxValue * 70 // 气泡大小
 
         bubbleData.push({
@@ -109,7 +172,7 @@ function initImageChart(data = [], format = []) {
             "draggable": true,
             "itemStyle": {
                 "normal": {
-                    "color": curColor,
+                    "color": bakeColor[curIndex],
                 }
             },
             "label": {
@@ -119,8 +182,7 @@ function initImageChart(data = [], format = []) {
             }
         })
     }
-    var imageChart = echarts.init(document.querySelector('.imageBox'));
-    let bubbleOptions = {
+    bubbleOptions = {
         title: {
             text: '意象词云',
             top: '2%',
@@ -165,21 +227,14 @@ function initImageChart(data = [], format = []) {
             emphasis: { // 单词高亮时显示的效果
                 shadowBlur: 10,
                 shadowColor: '#333',
-                // animation:true,
-                // animationEasing:'cubicOut',
-                // animationDuration:200,
                 itemStyle: {
                     color: '#B36D61'
                 }
             },
         }]
     }
-    imageChart.setOption(bubbleOptions)
-    window.addEventListener("resize", function() {
-        imageChart.resize();
-    });
 }
-
+//初始化情感气泡
 function initEmotionChart(data = [], format = []) {
     let [maxValue, temp] = [0, []]
     data.forEach(item => {
@@ -220,7 +275,7 @@ function initEmotionChart(data = [], format = []) {
         })
         curIndex++;
     }
-    let bubbleOptions = {
+    bubbleOptions = {
         title: {
             text: '情感词云',
             top: '2%',
@@ -271,21 +326,8 @@ function initEmotionChart(data = [], format = []) {
             },
         }]
     }
-    var emotionChart = echarts.init(document.querySelector('.bubbleBox'));
-    emotionChart.setOption(bubbleOptions)
-    window.addEventListener("resize", function() {
-        emotionChart.resize();
-    });
 }
-
-
-
-//后面会改成触发按钮时，发出请求更新数据
-poetName1="白居易";
-axios('http://localhost:8080/visualization/poem/images?name='+poetName1)
-.then(function (response) {
-    //此为返回的数据 仍为字符串型
-    console.log(response.data);
+function updateBubbles2(response){
     let dataTest=[];
     for(key in response.data){
         let obj={};
@@ -293,21 +335,17 @@ axios('http://localhost:8080/visualization/poem/images?name='+poetName1)
         obj["value"]=response.data[key];
         dataTest.push(obj);
     }
-    initImageChart(dataTest, ['name', 'value']);
-}).catch(function (err) {
-    console.log(err)
-});
-axios('http://localhost:8080/visualization/poem/emo?name='+poetName1)
-    .then(function (response) {
-        console.log(response.data);
-        let dataTest=[];
-        for(key in response.data){
-            let obj={};
-            obj["name"]=key;
-            obj["value"]=response.data[key];
-            dataTest.push(obj);
-        }
+    if(bubbleMode == 0)
+    {
         initEmotionChart(dataTest, ['name', 'value']);
-    }).catch(function (err) {
-    console.log(err)
-});
+
+    }
+    else if(bubbleMode==1){
+        initImageChart(dataTest, ['name', 'value']);
+    }
+    bubbleChart.clear()
+    bubbleChart.setOption(bubbleOptions)
+    window.addEventListener("resize", function() {
+        bubbleChart.resize();
+    });
+}

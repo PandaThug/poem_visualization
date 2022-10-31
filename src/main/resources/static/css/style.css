@@ -32,7 +32,6 @@ a:hover {
 body {
   height: 100%;
   background: url(/static/images/bg.png) no-repeat 0 0 /cover;
-
 }
 body::after{
   content: "";
@@ -175,7 +174,12 @@ body::after{
 
 .analysisBox {
   height:35%;
+  overflow-y: scroll;
   background-color: wheat;
+}
+.analysisBox .innerLeaf {
+  width: 100%;
+  height: 800%;
 }
 
 
@@ -188,12 +192,12 @@ body::after{
   height:65%;
   position: relative;
 }
-.bubbleBox .changeBtn {
-  position: absolute;
-  bottom: 5%;
-  left: 5%;
+.changeBtn {
+  position: fixed;
+  top: 60%;
+  right: 25%;
   height: 6%;
-  width: 10%;
+  width: 5%;
   z-index: 1;
   background: aquamarine;
 }

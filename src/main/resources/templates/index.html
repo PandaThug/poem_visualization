@@ -21,7 +21,9 @@
 
 <body>
     <!-- 标题区域 -->
-    <div class="header"></div>
+    <div class="header">
+        <button class="changeBtn" id="changeBtn" @click="changeBubble"></button>
+    </div>
     <!-- 可视化大盒子 -->
     <div class="main">
         <div class="column">
@@ -58,12 +60,13 @@
                 <div class="eventBox"></div>
             </div>
             <!-- 意象与情感关键的关联分析 -->
-            <div class="analysisBox"></div>
+            <div class="analysisBox">
+                <div class="innerLeaf"></div>
+            </div>
         </div>
         <div class="column">
             <!-- 情感词云 -->
             <div class="bubbleBox">
-                <div class="changeBtn" @click="changeBubble"></div>
             </div>
             <!-- 以十年为单位的作品折线图 -->
             <div class="lineChartBox"></div>
@@ -92,6 +95,15 @@
                 },
                 clickAll(){
                     updatePoetName("");
+                }
+            }
+        })
+        new Vue({
+            el:"#changeBtn",
+            methods:{
+                changeBubble(){
+                    bubbleMode=(bubbleMode+1)%2
+                    updateBubbles()
                 }
             }
         })

@@ -68,11 +68,12 @@ document.getElementById("globalBtn").onclick = function(){
     timeLine.setOption(timeOption)
     document.querySelector(".timeAxis").scrollTop=0;
     updateMap();
+    updateBubbles();
 };
 timeLine.on('timelineChanged', function (params) {
     // 控制台打印数据的名称
     yearIndex=params.currentIndex;//此为年份索引
     changeTimeIndex(yearIndex);
     updateMap()
-
+    updateBubbles();
 });

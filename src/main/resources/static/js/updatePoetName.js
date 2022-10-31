@@ -2,4 +2,5 @@
 function updatePoetName(name){
     changePoetName(name);
     updateMap();
+    updateBubbles();
 }
