@@ -45,8 +45,6 @@ function changeMode(){
 //将单人路径转化为一个全是字符串的数组
 function footobj(obj){
     let foots=obj['places'].split(",");
-    console.log("单词处理路径");
-    console.log(foots);
     return foots;
 }
 //将多人路径转换为字符串数组的数组
@@ -57,8 +55,6 @@ function footobj_plus(obj){
         let foots=footobj(obj[i]);
         result.push(foots);
     }
-    console.log("多人路径结果");
-    console.log(result);
     return result;
 }
 

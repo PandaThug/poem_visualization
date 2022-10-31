@@ -1,5 +1,5 @@
 var test = [
-    ["梧桐", "月", "蝉", "高楼", "花", "流水"],
+    ["梧桐", "月", "蝉", "高楼", "花", "流水","梧桐", "月", "蝉", "高楼", "花", "流水","梧桐", "月", "蝉"],
     [
         { name: '喜', value: 40 },
         { name: '悲', value: 33 },
@@ -12,7 +12,7 @@ var test = [
         { name: '不舍', value: 15 },
         { name: '闲淡', value: 12 },
         { name: '愤怒', value: 10 },
-    ],
+    ],//1
     [
         { name: '喜', value: 20 },
         { name: '悲', value: 33 },
@@ -64,7 +64,7 @@ var test = [
         { name: '不舍', value: 15 },
         { name: '闲淡', value: 12 },
         { name: '愤怒', value: 10 },
-    ],
+    ],//5
     [
         { name: '喜', value: 40 },
         { name: '悲', value: 33 },
@@ -78,7 +78,44 @@ var test = [
         { name: '闲淡', value: 12 },
         { name: '愤怒', value: 30 },
     ],
+    [
+        { name: '喜', value: 40 },
+        { name: '悲', value: 33 },
+    ],
+    [
+        { name: '喜', value: 40 },
+        { name: '悲', value: 33 },
+    ],
+    [
+        { name: '喜', value: 40 },
+        { name: '悲', value: 33 },
+    ],
+    [
+        { name: '喜', value: 40 },
+        { name: '悲', value: 33 },
+    ],//10
+    [
+        { name: '喜', value: 40 },
+        { name: '悲', value: 33 },
+    ],
+    [
+        { name: '喜', value: 40 },
+        { name: '悲', value: 33 },
+    ],
+    [
+        { name: '喜', value: 40 },
+        { name: '悲', value: 33 },
+    ],
+    [
+        { name: '喜', value: 40 },
+        { name: '悲', value: 33 },
+    ],
+    [
+        { name: '喜', value: 40 },
+        { name: '悲', value: 33 },
+    ],//15
 ]
+//为了初始化样式能够装满 必须要有15个测试用例，在初始化时会将数据覆盖，但图例样式受到保留
 var mySeries = []
 var x, y, gap
 for (var key in test) {

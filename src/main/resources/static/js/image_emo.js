@@ -333,8 +333,11 @@ function updateBubbles2(response){
         let obj={};
         obj["name"]=key;
         obj["value"]=response.data[key];
+
         dataTest.push(obj);
     }
+    dataTest.sort((a,b)=>{ return b.value-a.value});
+    dataTest=dataTest.slice(1,16);//截取1-(n-1)名
     if(bubbleMode == 0)
     {
         initEmotionChart(dataTest, ['name', 'value']);

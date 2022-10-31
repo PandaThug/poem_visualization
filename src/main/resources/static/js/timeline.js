@@ -76,4 +76,5 @@ timeLine.on('timelineChanged', function (params) {
     changeTimeIndex(yearIndex);
     updateMap()
     updateBubbles();
+
 });
