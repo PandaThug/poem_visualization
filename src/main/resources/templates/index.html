@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" th:href="@{/css/style.css}">
+    <script th:src="@{/js/jquery.js}"></script>
+    <script th:src="@{/js/main.js}" ></script>
     <script th:src="@{/js/axios.min.js}"></script>
     <script th:src="@{/js/echarts.min.js}"></script>
+    <script th:src="@{/js/vue.js}"></script>
 
 <!--    <link rel="stylesheet" href="../static/css/style.css">-->
 <!--    <script src="../static/js/axios.min.js"></script>-->
@@ -33,14 +36,13 @@
             </div>
             <!-- 诗人列表 -->
             <div class="poetsBox">
-                <div class="poetsList">
+                <div class="poetsList" id="poetsList">
                     <!-- 左边，列表区域 -->
                     <div class="list">
-                        <button class="allPoetsBtn">全选</button>
+                        <button class="allPoetsBtn" @click="clickAll()">全选</button>
                         <div class="poets">
-                            <ul>
-                                <li><button>白居易</button></li>
-                                <li><button>白居易</button></li>
+                            <ul v-for="poet in poets">
+                                <li><button @click="clickPoetName($event)" :value="poet">{{poet}}</button></li>
                             </ul>
                         </div>
                     </div>
@@ -68,13 +70,32 @@
 
         </div>
     </div>
-    <script th:src="@{/js/jquery.js}"></script>
-    <script th:src="@{/js/main.js}" ></script>
+
     <script th:src="@{/js/map.js}"></script>
     <script th:src="@{/js/updateMap.js}"></script>
     <script th:src="@{/js/image_emo.js}"></script>
     <script th:src="@{/js/timeline.js}"></script>
+    <script th:src="@{/js/updatePoetName.js}"></script>
     <script th:src="@{/js/leaf.js}"></script>
+    <script th:src="@{/js/initAll.js}"></script>
+    <script>
+        new Vue({
+            el:"#poetsList",
+            data(){
+                return{
+                    poets:["李白","白居易","杜甫","杜牧"]
+                }
+            },
+            methods:{
+                clickPoetName(e){
+                    updatePoetName(e.target.value);
+                },
+                clickAll(){
+                    updatePoetName("");
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
