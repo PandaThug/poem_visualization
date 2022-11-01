@@ -4,31 +4,39 @@
         "htttp://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.poem_visualization.dao.FootprintMapper">
 
-    <select id="selectFootprintByNameAndTime" resultType="java.util.Map">
-        select group_concat(place order by (time)) as places
-        from footprint
-        where name = #{name} and (time between #{begin} and #{end})
-        or id = (select id from footprint where time &lt; #{begin} order by id desc limit 1)
-    </select>
-
-    <select id="selectFootprintsByTime" resultType="java.util.Map">
+    <select id="selectFootprints" resultType="java.util.Map">
         select name, group_concat(place order by (time)) as places
         from footprint
-        where (time between #{begin} and #{end}) or id = (select id from footprint where time &lt; #{begin} order by id desc limit 1)
         group by name
+        order by name
     </select>
 
+<!--    <select id="selectFootprintsByTime" resultType="java.util.Map">-->
+<!--        select name, group_concat(place order by (time)) as places-->
+<!--        from footprint-->
+<!--        where (time between #{begin} and #{end})-->
+<!--        or id = (select id from footprint where time &lt; #{begin} order by id desc limit 1)-->
+<!--        group by name-->
+<!--        order by name-->
+<!--    </select>-->
+
     <select id="selectFootprintsByName" resultType="java.util.Map">
-        select group_concat(place order by (time)) as places
+        select name, group_concat(place order by (time)) as places
         from footprint
         where name = #{name}
         order by time
     </select>
 
-    <select id="selectFootprints" resultType="java.util.Map">
+    <select id="selectFootprintByNameAndTime" resultType="java.util.Map">
         select name, group_concat(place order by (time)) as places
         from footprint
-        group by name
+        where name = #{name} and ((time between #{begin} and #{end})
+        or id = (select id from footprint where time &lt; #{begin} and name = #{name} order by id desc limit 1))
     </select>
 
+    <select id="selectPoemNames" resultType="java.lang.String">
+        select distinct name
+        from footprint
+        order by name
+    </select>
 </mapper>

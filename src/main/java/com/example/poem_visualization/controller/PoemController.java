@@ -16,8 +16,12 @@ import java.util.Map;
 @Controller
 public class PoemController {
 
+    // 使用构造器注入
+    private final PoemService poemService;
     @Autowired
-    private PoemService poemService;
+    public PoemController(PoemService poemService) {
+        this.poemService = poemService;
+    }
 
     @RequestMapping(path = "/poem/images", method = RequestMethod.GET, params = {"name"})
     @ResponseBody
@@ -75,9 +79,9 @@ public class PoemController {
         return map;
     }
 
-    @RequestMapping(path = "/images/poem", method = RequestMethod.GET, params = {"images","name"})
+    @RequestMapping(path = "/images/poem", method = RequestMethod.GET, params = {"images","name","num"})
     @ResponseBody
-    public Map<String, Integer> getPoemImagesCount(String images, String name) {
+    public Map<String, Integer> getPoemImagesCount(String images, String name, Integer num) {
         List<Map<String, Integer>> counts = poemService.findPoemImagesCountByName(name, images);
         Map<String, Integer> map = new HashMap<>();
         for (Map<String, Integer> count : counts) {
@@ -86,12 +90,13 @@ public class PoemController {
                 map.put(key, value);
             }
         }
+        map.put("num", num);
         return map;
     }
 
-    @RequestMapping(path = "/images/poem", method = RequestMethod.GET, params = {"images"})
+    @RequestMapping(path = "/images/poem", method = RequestMethod.GET, params = {"images","num"})
     @ResponseBody
-    public Map<String, Integer> getPoemImagesCount(String images) {
+    public Map<String, Integer> getPoemImagesCount(String images, Integer num) {
         List<Map<String, Integer>> counts = poemService.findPoemImagesCount(images);
         Map<String, Integer> map = new HashMap<>();
         for (Map<String, Integer> count : counts) {
@@ -100,6 +105,7 @@ public class PoemController {
                 map.put(key, value);
             }
         }
+        map.put("num", num);
         return map;
     }
 
