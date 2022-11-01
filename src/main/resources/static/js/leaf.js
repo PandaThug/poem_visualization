@@ -118,6 +118,7 @@ var test = [
 //为了初始化样式能够装满 必须要有15个测试用例，在初始化时会将数据覆盖，但图例样式受到保留
 var mySeries = []
 var x, y, gap
+var pieChart = echarts.init(document.querySelector('.innerLeaf'))
 for (var key in test) {
     console.log(test[key]);
     if (key != 0) {
@@ -127,32 +128,56 @@ for (var key in test) {
         else if (key % 3 == 2)
             x = '50%';
         else x = '83.3%';
-        gap = parseInt(100 / (test.length - 1))
+        gap = 100 / (test.length - 1)*3
         y = (parseInt((key - 1) / 3)) * gap + gap * 0.5
-        console.log(test[0][key - 1], x, "y:", y);
-        mySeries.push({
+        // console.log(test[0][key - 1], x, "y:", y);
+        mySeries.push(
+            {
             type: 'pie',
-            name: test[0][key - 1],
-            radius: ['5%', '20%'],
-            roseType: 'radius',
-            center: [x, '' + y + '%'],
-            label: {
+                name: test[0][key - 1],
+                radius: ['5%', '20%'],
+                roseType: 'radius',
+                center: [x, '' + y + '%'],
+                label: {
                 normal: {
                     formatter: "{a}",
-                    position: 'center',
-                    show: true,
-                    textStyle: {
+                        position: 'center',
+                        show: true,
+                        textStyle: {
                         fontSize: '18',
-                        fontWeight: 'bold',
-                        color: '#fff'
+                            fontWeight: 'bold',
+                            color: '#fff'
+                        }
                     }
-                }
-            },
+                },
             data: test[key],
-        })
+            },
+            {
+                type: 'pie',
+                name: test[0][key - 1],
+                radius: ['5%', '20%'],
+                roseType: 'radius',
+                center: [x, '' + y + '%'],
+                label: {
+                    normal: {
+                        show: true,
+                        textStyle: {
+                            color: '#fff'
+                        }
+                    }
+                },
+                labelLine:{
+                    normal:{
+                        length:12,
+                        length2:8
+                    }
+                },
+                data: test[key],
+            }
+        )
     }
 }
-option = {
+let option = {
     title: {
         text: '树叶图',
         subtext: '意象-情感分析',
@@ -162,10 +187,9 @@ option = {
         trigger: 'item',
         formatter: '{a} <br/>{b} : {c} ({d}%)'
     },
+    label:{show:true},
     series: mySeries,
 };
-
-var pieChart = echarts.init(document.querySelector('.innerLeaf'))
 pieChart.setOption(option)
 window.addEventListener("resize", function() {
     pieChart.resize();

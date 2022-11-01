@@ -46,8 +46,6 @@ function updateLeaf()
         //         console.log(err)
         //     });
         // }
-
-
 }
 
 function updateLeaf2(response){
@@ -56,15 +54,13 @@ function updateLeaf2(response){
         let obj={};
         obj["name"]=key;
         obj["value"]=response.data[key];
-
         dataTest.push(obj);
     }
     dataTest.sort((a,b)=>{ return b.value-a.value});
     dataTest=dataTest.slice(1,16);//截取1-(n-1)名
-
     getNum=0;
     getSum=dataTest.length;
-    option = pieChart.getOption();
+    let option = pieChart.getOption();
     if(showMode==0)
     {
         for (let obj of dataTest) {
@@ -72,9 +68,8 @@ function updateLeaf2(response){
             let imageName = obj.name;
             axios('http://localhost:8080/visualization/images/poem?images=' + imageName)
                 .then(function (response) {
-                    // if(response.data!="")
-                    getNum++;
                     updateLeaf3(response, imageName, getNum);
+                    getNum+=2;
                 }).catch(function (err) {
                 console.log(err)
             });
@@ -88,8 +83,8 @@ function updateLeaf2(response){
             axios('http://localhost:8080/visualization/images/poem?images=' + imageName+"&name="+poetName)
                 .then(function (response) {
                     // if(response.data!="")
-                    getNum++;
                     updateLeaf3(response, imageName, getNum);
+                    getNum+=2;
                 }).catch(function (err) {
                 console.log(err)
             });
@@ -98,7 +93,6 @@ function updateLeaf2(response){
 }
 
 function updateLeaf3(response,imageName,getNum){
-
     let dataLeaf=[];
     for(key in response.data){
         let obj={};
@@ -106,12 +100,14 @@ function updateLeaf3(response,imageName,getNum){
         obj["value"]=response.data[key];
         dataLeaf.push(obj);
     }
-    option.series[getNum-1].name=imageName;
-    option.series[getNum-1].data=dataLeaf;
-    console.log("第"+getNum+"个意象");
+    option.series[getNum].name=imageName;
+    option.series[getNum+1].name=imageName;
+    option.series[getNum].data=dataLeaf;
+    option.series[getNum+1].data=dataLeaf;
+    console.log("第"+(getNum+2)/2+"个意象");
     console.log(imageName);
     console.log(dataLeaf);
-    if(getNum==getSum)//获取完毕，push设置
+    if(getNum==getSum*2-2)//获取完毕，push设置
     {
         pieChart.setOption(option);
     }
