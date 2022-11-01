@@ -27,7 +27,7 @@ public class FootprintService {
         List<String> names = footprintMapper.selectPoemNames();
         Map<String, String> map;
         for (String name : names) {
-            map = footprintMapper.selectFootprintByNameAndTime(name, 780, 820);
+            map = footprintMapper.selectFootprintByNameAndTime(name, beginTime, endTime);
             maps.add(map);
         }
 
