@@ -16,8 +16,12 @@ import java.util.Map;
 @Controller
 public class PoemController {
 
+    // 使用构造器注入
+    private final PoemService poemService;
     @Autowired
-    private PoemService poemService;
+    public PoemController(PoemService poemService) {
+        this.poemService = poemService;
+    }
 
     @RequestMapping(path = "/poem/images", method = RequestMethod.GET, params = {"name"})
     @ResponseBody

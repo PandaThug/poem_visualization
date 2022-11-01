@@ -14,8 +14,12 @@ import java.util.Map;
 @Controller
 public class FootprintController {
 
+    // 使用构造器注入
+    private final FootprintService footprintService;
     @Autowired
-    private FootprintService footprintService;
+    public FootprintController(FootprintService footprintService) {
+        this.footprintService = footprintService;
+    }
 
     // 查询诗人的路径——未指定诗人未指定时间——mode0
     @RequestMapping(path = "/footprint/mode0", method = RequestMethod.GET)
