@@ -91,4 +91,4 @@ INSERT INTO footprint (name, time, place) VALUES ('李白', 755, '常州');
 INSERT INTO footprint (name, time, place) VALUES ('李白', 757, '九江');
 INSERT INTO footprint (name, time, place) VALUES ('李白', 758, '武汉');
 INSERT INTO footprint (name, time, place) VALUES ('李白', 761, '南京');
-INSERT INTO footprint (name, time, place) VALUES ('李白', 762, '宣城');
+INSERT INTO footprint (name, time, place) VALUES ('李白', 762, '宣城*');
