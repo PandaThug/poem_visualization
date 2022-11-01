@@ -163,7 +163,7 @@ body::after{
   background-color: burlywood;
   overflow: hidden;
 }
-
+/**/
 .mapBox .eventBox {
   position: absolute;
   top: 1vw;
