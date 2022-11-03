@@ -25,12 +25,15 @@ public class PoemController {
     @RequestMapping(path = "/poem/images", method = RequestMethod.GET, params = {"beginTime","endTime"})
     @ResponseBody
     public Map<String, Integer> getImages(String beginTime, String endTime) {
-        List<Map<String, Integer>> images = poemService.findImagesByTime(Integer.parseInt(beginTime), Integer.parseInt(endTime));
+        List<Map<String, Integer>> images = poemService.findImagesByTime(Integer.parseInt(beginTime),
+                Integer.parseInt(endTime));
         Map<String, Integer> map = new HashMap<>();
-        for (Map<String, Integer> image : images) {
-            for (String key : image.keySet()) {
-                Integer value = Integer.parseInt(String.valueOf(image.get(key)));
-                map.put(key, value);
+        if (images != null) {
+            for (Map<String, Integer> image : images) {
+                for (String key : image.keySet()) {
+                    Integer value = Integer.parseInt(String.valueOf(image.get(key)));
+                    map.put(key, value);
+                }
             }
         }
         return map;
@@ -42,10 +45,12 @@ public class PoemController {
     public Map<String, Integer> getImage(String name) {
         List<Map<String, Integer>> images = poemService.findImagesByPoet(name);
         Map<String, Integer> map = new HashMap<>();
-        for (Map<String, Integer> image : images) {
-            for (String key : image.keySet()) {
-                Integer value = Integer.parseInt(String.valueOf(image.get(key)));
-                map.put(key, value);
+        if (images != null) {
+            for (Map<String, Integer> image : images) {
+                for (String key : image.keySet()) {
+                    Integer value = Integer.parseInt(String.valueOf(image.get(key)));
+                    map.put(key, value);
+                }
             }
         }
         return map;
@@ -55,12 +60,15 @@ public class PoemController {
     @RequestMapping(path = "/poem/images", method = RequestMethod.GET, params = {"name", "beginTime", "endTime"})
     @ResponseBody
     public Map<String, Integer> getImages(String name, String beginTime, String endTime) {
-        List<Map<String, Integer>> images = poemService.findImagesByPoetAndTime(name, Integer.parseInt(beginTime), Integer.parseInt(endTime));
+        List<Map<String, Integer>> images = poemService.findImagesByPoetAndTime(name, Integer.parseInt(beginTime),
+                Integer.parseInt(endTime));
         Map<String, Integer> map = new HashMap<>();
-        for (Map<String, Integer> image : images) {
-            for (String key : image.keySet()) {
-                Integer value = Integer.parseInt(String.valueOf(image.get(key)));
-                map.put(key, value);
+        if (images != null) {
+            for (Map<String, Integer> image : images) {
+                for (String key : image.keySet()) {
+                    Integer value = Integer.parseInt(String.valueOf(image.get(key)));
+                    map.put(key, value);
+                }
             }
         }
         return map;
@@ -72,10 +80,12 @@ public class PoemController {
     public Map<String, Integer> getImages() {
         List<Map<String, Integer>> images = poemService.findImages();
         Map<String, Integer> map = new HashMap<>();
-        for (Map<String, Integer> image : images) {
-            for (String key : image.keySet()) {
-                Integer value = Integer.parseInt(String.valueOf(image.get(key)));
-                map.put(key, value);
+        if (images != null) {
+            for (Map<String, Integer> image : images) {
+                for (String key : image.keySet()) {
+                    Integer value = Integer.parseInt(String.valueOf(image.get(key)));
+                    map.put(key, value);
+                }
             }
         }
         return map;
@@ -85,12 +95,15 @@ public class PoemController {
     @RequestMapping(path = "/poem/emo", method = RequestMethod.GET, params = {"beginTime", "endTime"})
     @ResponseBody
     public Map<String, Integer> getEmo(String beginTime, String endTime) {
-        List<Map<String, Integer>> emos = poemService.findEmoByTime(Integer.parseInt(beginTime), Integer.parseInt(endTime));
+        List<Map<String, Integer>> emos = poemService.findEmoByTime(Integer.parseInt(beginTime),
+                Integer.parseInt(endTime));
         Map<String, Integer> map = new HashMap<>();
-        for (Map<String, Integer> emo : emos) {
-            for (String key : emo.keySet()) {
-                Integer value = Integer.parseInt(String.valueOf(emo.get(key)));
-                map.put(key, value);
+        if (emos != null) {
+            for (Map<String, Integer> emo : emos) {
+                for (String key : emo.keySet()) {
+                    Integer value = Integer.parseInt(String.valueOf(emo.get(key)));
+                    map.put(key, value);
+                }
             }
         }
         return map;
@@ -102,10 +115,12 @@ public class PoemController {
     public Map<String, Integer> getEmo(String name) {
         List<Map<String, Integer>> emos = poemService.findEmoByPoet(name);
         Map<String, Integer> map = new HashMap<>();
-        for (Map<String, Integer> emo : emos) {
-            for (String key : emo.keySet()) {
-                Integer value = Integer.parseInt(String.valueOf(emo.get(key)));
-                map.put(key, value);
+        if (emos != null) {
+            for (Map<String, Integer> emo : emos) {
+                for (String key : emo.keySet()) {
+                    Integer value = Integer.parseInt(String.valueOf(emo.get(key)));
+                    map.put(key, value);
+                }
             }
         }
         return map;
@@ -115,12 +130,15 @@ public class PoemController {
     @RequestMapping(path = "/poem/emo", method = RequestMethod.GET, params = {"name", "beginTime", "endTime"})
     @ResponseBody
     public Map<String, Integer> getEmo(String name, String beginTime, String endTime) {
-        List<Map<String, Integer>> emos = poemService.findEmoByPoetAndTime(name, Integer.parseInt(beginTime), Integer.parseInt(endTime));
+        List<Map<String, Integer>> emos = poemService.findEmoByPoetAndTime(name, Integer.parseInt(beginTime),
+                Integer.parseInt(endTime));
         Map<String, Integer> map = new HashMap<>();
-        for (Map<String, Integer> emo : emos) {
-            for (String key : emo.keySet()) {
-                Integer value = Integer.parseInt(String.valueOf(emo.get(key)));
-                map.put(key, value);
+        if (emos != null) {
+            for (Map<String, Integer> emo : emos) {
+                for (String key : emo.keySet()) {
+                    Integer value = Integer.parseInt(String.valueOf(emo.get(key)));
+                    map.put(key, value);
+                }
             }
         }
         return map;
@@ -132,10 +150,12 @@ public class PoemController {
     public Map<String, Integer> getEmo() {
         List<Map<String, Integer>> emos = poemService.findEmo();
         Map<String, Integer> map = new HashMap<>();
-        for (Map<String, Integer> emo : emos) {
-            for (String key : emo.keySet()) {
-                Integer value = Integer.parseInt(String.valueOf(emo.get(key)));
-                map.put(key, value);
+        if (emos != null) {
+            for (Map<String, Integer> emo : emos) {
+                for (String key : emo.keySet()) {
+                    Integer value = Integer.parseInt(String.valueOf(emo.get(key)));
+                    map.put(key, value);
+                }
             }
         }
         return map;
@@ -144,13 +164,17 @@ public class PoemController {
     // 获取包含指定意象的不同情感的诗歌数量——通过意象词、诗人姓名、时间查询
     @RequestMapping(path = "/images/poem", method = RequestMethod.GET, params = {"images","name","beginTime","endTime","num"})
     @ResponseBody
-    public Map<String, Integer> getPoemImagesCount(String images, String name, String beginTime, String endTime, Integer num) {
-        List<Map<String, Integer>> counts = poemService.findPoemImagesCountByNameAndTime(name,Integer.parseInt(beginTime), Integer.parseInt(endTime), images);
+    public Map<String, Integer> getPoemImagesCount(String images, String name,
+                                                   String beginTime, String endTime, Integer num) {
+        List<Map<String, Integer>> counts = poemService
+                .findPoemImagesCountByNameAndTime(name,Integer.parseInt(beginTime), Integer.parseInt(endTime), images);
         Map<String, Integer> map = new HashMap<>();
-        for (Map<String, Integer> count : counts) {
-            for (String key : count.keySet()) {
-                Integer value = Integer.parseInt(String.valueOf(count.get(key)));
-                map.put(key, value);
+        if (counts != null) {
+            for (Map<String, Integer> count : counts) {
+                for (String key : count.keySet()) {
+                    Integer value = Integer.parseInt(String.valueOf(count.get(key)));
+                    map.put(key, value);
+                }
             }
         }
         map.put("num", num);
@@ -161,12 +185,15 @@ public class PoemController {
     @RequestMapping(path = "/images/poem", method = RequestMethod.GET, params = {"images","beginTime","endTime","num"})
     @ResponseBody
     public Map<String, Integer> getPoemImagesCount(String images, String beginTime, String endTime, Integer num) {
-        List<Map<String, Integer>> counts = poemService.findPoemImagesCountByTime(Integer.parseInt(beginTime), Integer.parseInt(endTime), images);
+        List<Map<String, Integer>> counts = poemService
+                .findPoemImagesCountByTime(Integer.parseInt(beginTime), Integer.parseInt(endTime), images);
         Map<String, Integer> map = new HashMap<>();
-        for (Map<String, Integer> count : counts) {
-            for (String key : count.keySet()) {
-                Integer value = Integer.parseInt(String.valueOf(count.get(key)));
-                map.put(key, value);
+        if (counts != null) {
+            for (Map<String, Integer> count : counts) {
+                for (String key : count.keySet()) {
+                    Integer value = Integer.parseInt(String.valueOf(count.get(key)));
+                    map.put(key, value);
+                }
             }
         }
         map.put("num", num);
@@ -179,10 +206,12 @@ public class PoemController {
     public Map<String, Integer> getPoemImagesCount(String images, String name, Integer num) {
         List<Map<String, Integer>> counts = poemService.findPoemImagesCountByName(name, images);
         Map<String, Integer> map = new HashMap<>();
-        for (Map<String, Integer> count : counts) {
-            for (String key : count.keySet()) {
-                Integer value = Integer.parseInt(String.valueOf(count.get(key)));
-                map.put(key, value);
+        if (counts != null) {
+            for (Map<String, Integer> count : counts) {
+                for (String key : count.keySet()) {
+                    Integer value = Integer.parseInt(String.valueOf(count.get(key)));
+                    map.put(key, value);
+                }
             }
         }
         map.put("num", num);
@@ -195,10 +224,12 @@ public class PoemController {
     public Map<String, Integer> getPoemImagesCount(String images, Integer num) {
         List<Map<String, Integer>> counts = poemService.findPoemImagesCount(images);
         Map<String, Integer> map = new HashMap<>();
-        for (Map<String, Integer> count : counts) {
-            for (String key : count.keySet()) {
-                Integer value = Integer.parseInt(String.valueOf(count.get(key)));
-                map.put(key, value);
+        if (counts != null) {
+            for (Map<String, Integer> count : counts) {
+                for (String key : count.keySet()) {
+                    Integer value = Integer.parseInt(String.valueOf(count.get(key)));
+                    map.put(key, value);
+                }
             }
         }
         map.put("num", num);

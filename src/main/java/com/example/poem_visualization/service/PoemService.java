@@ -20,9 +20,6 @@ public class PoemService {
         // 空值处理
         if (maps.get(0) == null) {
             maps.remove(0);
-            Map<String, Integer> map = new HashMap<>();
-            map.put("msg", 0);
-            maps.add(map);
         }
         return maps;
     }
@@ -33,9 +30,6 @@ public class PoemService {
         // 空值处理
         if (maps.get(0) == null) {
             maps.remove(0);
-            Map<String, Integer> map = new HashMap<>();
-            map.put("msg", 0);
-            maps.add(map);
         }
         return maps;
     }
@@ -46,9 +40,6 @@ public class PoemService {
         // 空值处理
         if (maps.get(0) == null) {
             maps.remove(0);
-            Map<String, Integer> map = new HashMap<>();
-            map.put("msg", 0);
-            maps.add(map);
         }
         return maps;
     }
@@ -60,9 +51,6 @@ public class PoemService {
         // 空值处理
         if (maps.get(0) == null) {
             maps.remove(0);
-            Map<String, Integer> map = new HashMap<>();
-            map.put("msg", 0);
-            maps.add(map);
         }
         return maps;
     }
@@ -73,9 +61,6 @@ public class PoemService {
         // 空值处理
         if (maps.get(0) == null) {
             maps.remove(0);
-            Map<String, Integer> map = new HashMap<>();
-            map.put("msg", 0);
-            maps.add(map);
         }
         return maps;
     }
@@ -86,9 +71,6 @@ public class PoemService {
         // 空值处理
         if (maps.get(0) == null) {
             maps.remove(0);
-            Map<String, Integer> map = new HashMap<>();
-            map.put("msg", 0);
-            maps.add(map);
         }
         return maps;
     }
@@ -99,9 +81,6 @@ public class PoemService {
         // 空值处理
         if (maps.get(0) == null) {
             maps.remove(0);
-            Map<String, Integer> map = new HashMap<>();
-            map.put("msg", 0);
-            maps.add(map);
         }
         return maps;
     }
@@ -113,9 +92,6 @@ public class PoemService {
         // 空值处理
         if (maps.get(0) == null) {
             maps.remove(0);
-            Map<String, Integer> map = new HashMap<>();
-            map.put("msg", 0);
-            maps.add(map);
         }
         return maps;
     }
@@ -128,9 +104,6 @@ public class PoemService {
         // 空值处理
         if (maps.get(0) == null) {
             maps.remove(0);
-            Map<String, Integer> map = new HashMap<>();
-            map.put("msg", 0);
-            maps.add(map);
         }
         return maps;
     }
@@ -141,9 +114,6 @@ public class PoemService {
         List<Map<String, Integer>> maps = poemMapper.selectPoemImagesCountByTime(beginTime, endTime, images);
         if (maps.get(0) == null) {
             maps.remove(0);
-            Map<String, Integer> map = new HashMap<>();
-            map.put("msg", 0);
-            maps.add(map);
         }
         return maps;
     }
@@ -153,9 +123,6 @@ public class PoemService {
         List<Map<String, Integer>> maps = poemMapper.selectPoemImagesCountByName(poetName, images);
         if (maps.get(0) == null) {
             maps.remove(0);
-            Map<String, Integer> map = new HashMap<>();
-            map.put("msg", 0);
-            maps.add(map);
         }
         return maps;
     }
@@ -165,9 +132,6 @@ public class PoemService {
         List<Map<String, Integer>> maps = poemMapper.selectPoemImagesCount(images);
         if (maps.get(0) == null) {
             maps.remove(0);
-            Map<String, Integer> map = new HashMap<>();
-            map.put("msg", 0);
-            maps.add(map);
         }
         return maps;
     }
