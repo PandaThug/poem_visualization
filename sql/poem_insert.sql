@@ -1911,7 +1911,7 @@ INSERT INTO poem (title, content, author, `time`) VALUES('谴疟鬼','屑屑水�
 赠汝以好辞，咄汝去莫违。','韩愈',NULL);
 INSERT INTO poem (title, content, author, `time`) VALUES('芍药（元和中知制诰寓直禁中作）','浩态狂香昔未逢，红灯烁烁绿盘笼。
 觉来独对情惊恐，身在仙宫第几重。','韩愈',NULL);
-
+# 李白录入开始
 INSERT INTO poem (title, content, author, `time`) VALUES('将进酒', '君不见黄河之水天上来，奔流到海不复回。
 君不见高堂明镜悲白发，朝如青丝暮成雪。
 人生得意须尽欢，莫使金樽空对月。
@@ -1923,13 +1923,13 @@ INSERT INTO poem (title, content, author, `time`) VALUES('将进酒', '君不见
 古来圣贤皆寂寞，惟有饮者留其名。(古来 一作：自古；惟 通：唯)
 陈王昔时宴平乐，斗酒十千恣欢谑。
 主人何为言少钱，径须沽取对君酌。
-五花马、千金裘，呼儿将出换美酒，与尔同销万古愁。','李白',NULL);
+五花马、千金裘，呼儿将出换美酒，与尔同销万古愁。','李白',752);
 INSERT INTO poem (title, content, author, `time`) VALUES('行路难·其一','金樽清酒斗十千，玉盘珍羞直万钱。(羞 同：馐；直 同：值)
 停杯投箸不能食，拔剑四顾心茫然。
 欲渡黄河冰塞川，将登太行雪满山。(雪满山 一作：雪暗天)
 闲来垂钓碧溪上，忽复乘舟梦日边。(碧 一作：坐)
 行路难，行路难，多歧路，今安在？
-长风破浪会有时，直挂云帆济沧海。','李白',NULL);
+长风破浪会有时，直挂云帆济沧海。','李白',742);
 INSERT INTO poem (title, content, author, `time`) VALUES('蜀道难','噫吁嚱，危乎高哉！
 蜀道之难，难于上青天！
 蚕丛及鱼凫，开国何茫然！
@@ -1951,43 +1951,43 @@ INSERT INTO poem (title, content, author, `time`) VALUES('蜀道难','噫吁嚱�
 所守或匪亲，化为狼与豺。
 朝避猛虎，夕避长蛇，磨牙吮血，杀人如麻。
 锦城虽云乐，不如早还家。
-蜀道之难，难于上青天，侧身西望长咨嗟！','李白',NULL);
+蜀道之难，难于上青天，侧身西望长咨嗟！','李白',731);
 INSERT INTO poem (title, content, author, `time`) VALUES('三五七言','秋风清，秋月明，
 落叶聚还散，寒鸦栖复惊。
 相思相见知何日？此时此夜难为情！
 入我相思门，知我相思苦，
 长相思兮长相忆，短相思兮无穷极，
-早知如此绊人心，何如当初莫相识。','李白',NULL);
+早知如此绊人心，何如当初莫相识。','李白',756);
 INSERT INTO poem (title, content, author, `time`) VALUES('静夜思','床前明月光，疑是地上霜。
-举头望明月，低头思故乡。','李白',NULL);
+举头望明月，低头思故乡。','李白',726);
 INSERT INTO poem (title, content, author, `time`) VALUES('黄鹤楼送孟浩然之广陵','故人西辞黄鹤楼，烟花三月下扬州。
-孤帆远影碧空尽，唯见长江天际流。','李白',NULL);
+孤帆远影碧空尽，唯见长江天际流。','李白',730);
 INSERT INTO poem (title, content, author, `time`) VALUES('闻王昌龄左迁龙标遥有此寄','杨花落尽子规啼，闻道龙标过五溪。
-我寄愁心与明月，随君直到夜郎西。','李白',NULL);
+我寄愁心与明月，随君直到夜郎西。','李白',753);
 INSERT INTO poem (title, content, author, `time`) VALUES('望庐山瀑布','日照香炉生紫烟，遥看瀑布挂前川。
-飞流直下三千尺，疑是银河落九天。','李白',NULL);
+飞流直下三千尺，疑是银河落九天。','李白',725);
 INSERT INTO poem (title, content, author, `time`) VALUES('月下独酌·其一','花间一壶酒，独酌无相亲。
 举杯邀明月，对影成三人。
 月既不解饮，影徒随我身。
 暂伴月将影，行乐须及春。
 我歌月徘徊，我舞影零乱。
 醒时同交欢，醉后各分散。
-永结无情游，相期邈云汉。','李白',NULL);
+永结无情游，相期邈云汉。','李白',744);
 INSERT INTO poem (title, content, author, `time`) VALUES('宣州谢朓楼饯别校书叔云','弃我去者，昨日之日不可留；
 乱我心者，今日之日多烦忧。
 长风万里送秋雁，对此可以酣高楼。
 蓬莱文章建安骨，中间小谢又清发。
 俱怀逸兴壮思飞，欲上青天揽明月。
 抽刀断水水更流，举杯消愁愁更愁。
-人生在世不称意，明朝散发弄扁舟。','李白',NULL);
+人生在世不称意，明朝散发弄扁舟。','李白',753);
 INSERT INTO poem (title, content, author, `time`) VALUES('送友人','青山横北郭，白水绕东城。
 此地一为别，孤蓬万里征。
 浮云游子意，落日故人情。
-挥手自兹去，萧萧班马鸣。','李白',NULL);
+挥手自兹去，萧萧班马鸣。','李白',738);
 INSERT INTO poem (title, content, author, `time`) VALUES('渡荆门送别','渡远荆门外，来从楚国游。
 山随平野尽，江入大荒流。
 月下飞天镜，云生结海楼。
-仍怜故乡水，万里送行舟。','李白',NULL);
+仍怜故乡水，万里送行舟。','李白',725);
 INSERT INTO poem (title, content, author, `time`) VALUES('梦游天姥吟留别','海客谈瀛洲，烟涛微茫信难求；
 越人语天姥，云霞明灭或可睹。
 天姥连天向天横，势拔五岳掩赤城。
@@ -2009,13 +2009,13 @@ INSERT INTO poem (title, content, author, `time`) VALUES('梦游天姥吟留别'
 惟觉时之枕席，失向来之烟霞。
 世间行乐亦如此，古来万事东流水。
 别君去兮何时还？且放白鹿青崖间，须行即骑访名山。
-安能摧眉折腰事权贵，使我不得开心颜！','李白',NULL);
+安能摧眉折腰事权贵，使我不得开心颜！','李白',745);
 INSERT INTO poem (title, content, author, `time`) VALUES('赠汪伦','李白乘舟将欲行，忽闻岸上踏歌声。
-桃花潭水深千尺，不及汪伦送我情。','李白',NULL);
+桃花潭水深千尺，不及汪伦送我情。','李白',755);
 INSERT INTO poem (title, content, author, `time`) VALUES('望天门山','天门中断楚江开，碧水东流至此回。
-两岸青山相对出，孤帆一片日边来。','李白',NULL);
+两岸青山相对出，孤帆一片日边来。','李白',725);
 INSERT INTO poem (title, content, author, `time`) VALUES('清平调·其一','云想衣裳花想容，春风拂槛露华浓。
-若非群玉山头见，会向瑶台月下逢。','李白',NULL);
+若非群玉山头见，会向瑶台月下逢。','李白',743);
 INSERT INTO poem (title, content, author, `time`) VALUES('侠客行','赵客缦胡缨，吴钩霜雪明。
 银鞍照白马，飒沓如流星。
 十步杀一人，千里不留行。
@@ -2027,9 +2027,9 @@ INSERT INTO poem (title, content, author, `time`) VALUES('侠客行','赵客缦�
 救赵挥金槌，邯郸先震惊。
 千秋二壮士，烜赫大梁城。
 纵死侠骨香，不惭世上英。
-谁能书阁下，白首太玄经。','李白',NULL);
+谁能书阁下，白首太玄经。','李白',744);
 INSERT INTO poem (title, content, author, `time`) VALUES('早发白帝城','朝辞白帝彩云间，千里江陵一日还。
-两岸猿声啼不住，轻舟已过万重山。','李白',NULL);
+两岸猿声啼不住，轻舟已过万重山。','李白',759);
 INSERT INTO poem (title, content, author, `time`) VALUES('古朗月行','小时不识月，呼作白玉盘。
 又疑瑶台镜，飞在青云端。
 仙人垂两足，桂树何团团。
@@ -2037,34 +2037,34 @@ INSERT INTO poem (title, content, author, `time`) VALUES('古朗月行','小时�
 蟾蜍蚀圆影，大明夜已残。
 羿昔落九乌，天人清且安。
 阴精此沦惑，去去不足观。
-忧来其如何？凄怆摧心肝。','李白',NULL);
+忧来其如何？凄怆摧心肝。','李白',755);
 INSERT INTO poem (title, content, author, `time`) VALUES('春夜洛城闻笛','谁家玉笛暗飞声，散入春风满洛城。
-此夜曲中闻折柳，何人不起故园情。','李白',NULL);
+此夜曲中闻折柳，何人不起故园情。','李白',734);
 INSERT INTO poem (title, content, author, `time`) VALUES('峨眉山月歌','峨眉山月半轮秋，影入平羌江水流。
-夜发清溪向三峡，思君不见下渝州。','李白',NULL);
+夜发清溪向三峡，思君不见下渝州。','李白',724);
 INSERT INTO poem (title, content, author, `time`) VALUES('登金陵凤凰台','凤凰台上凤凰游，凤去台空江自流。
 吴宫花草埋幽径，晋代衣冠成古丘。
 三山半落青天外，二水中分白鹭洲。
-总为浮云能蔽日，长安不见使人愁。','李白',NULL);
+总为浮云能蔽日，长安不见使人愁。','李白',747);
 INSERT INTO poem (title, content, author, `time`) VALUES('独坐敬亭山','众鸟高飞尽，孤云独去闲。
-相看两不厌，只有敬亭山。','李白',NULL);
+相看两不厌，只有敬亭山。','李白',753);
 INSERT INTO poem (title, content, author, `time`) VALUES('关山月','明月出天山，苍茫云海间。
 长风几万里，吹度玉门关。
 汉下白登道，胡窥青海湾。
 由来征战地，不见有人还。
 戍客望边邑，思归多苦颜。
-高楼当此夜，叹息未应闲。','李白',NULL);
+高楼当此夜，叹息未应闲。','李白',721);
 INSERT INTO poem (title, content, author, `time`) VALUES('夜宿山寺','危楼高百尺，手可摘星辰。
-不敢高声语，恐惊天上人。','李白',NULL);
+不敢高声语，恐惊天上人。','李白',725);
 INSERT INTO poem (title, content, author, `time`) VALUES('子夜吴歌·秋歌','长安一片月，万户捣衣声。
 秋风吹不尽，总是玉关情。
 何日平胡虏，良人罢远征。','李白',NULL);
 INSERT INTO poem (title, content, author, `time`) VALUES('上李邕','大鹏一日同风起，扶摇直上九万里。
 假令风歇时下来，犹能簸却沧溟水。
 世人见我恒殊调，闻余大言皆冷笑。
-宣父犹能畏后生，丈夫未可轻年少。','李白',NULL);
+宣父犹能畏后生，丈夫未可轻年少。','李白',720);
 INSERT INTO poem (title, content, author, `time`) VALUES('客中作','兰陵美酒郁金香，玉碗盛来琥珀光。
-但使主人能醉客，不知何处是他乡。','李白',NULL);
+但使主人能醉客，不知何处是他乡。','李白',739);
 INSERT INTO poem (title, content, author, `time`) VALUES('把酒问月·故人贾淳令予问之','青天有月来几时？我今停杯一问之。
 人攀明月不可得，月行却与人相随。
 皎如飞镜临丹阙，绿烟灭尽清辉发。
@@ -2072,14 +2072,14 @@ INSERT INTO poem (title, content, author, `time`) VALUES('把酒问月·故人�
 白兔捣药秋复春，嫦娥孤栖与谁邻？
 今人不见古时月，今月曾经照古人。
 古人今人若流水，共看明月皆如此。
-唯愿当歌对酒时，月光长照金樽里。','李白',NULL);
+唯愿当歌对酒时，月光长照金樽里。','李白',744);
 INSERT INTO poem (title, content, author, `time`) VALUES('长相思·其一','长相思，在长安。
 络纬秋啼金井阑，微霜凄凄簟色寒。
 孤灯不明思欲绝，卷帷望月空长叹。
 美人如花隔云端！
 上有青冥之长天，下有渌水之波澜。
 天长路远魂飞苦，梦魂不到关山难。
-长相思，摧心肝！','李白',NULL);
+长相思，摧心肝！','李白',747);
 INSERT INTO poem (title, content, author, `time`) VALUES('行路难三首','金樽清酒斗十千，玉盘珍羞直万钱。
 停杯投箸不能食，拔剑四顾心茫然。
 欲渡黄河冰塞川，将登太行雪满山。
@@ -2103,7 +2103,8 @@ INSERT INTO poem (title, content, author, `time`) VALUES('行路难三首','金�
 陆机雄才岂自保？李斯税驾苦不早。
 华亭鹤唳讵可闻？上蔡苍鹰何足道？
 君不见吴中张翰称达生，秋风忽忆江东行。
-且乐生前一杯酒，何须身后千载名？','李白',NULL);
+且乐生前一杯酒，何须身后千载名？','李白',742);
+#李白录入结束
 INSERT INTO poem (title, content, author, `time`) VALUES('南陵别儿童入京','白酒新熟山中归，黄鸡啄黍秋正肥。
 呼童烹鸡酌白酒，儿女嬉笑牵人衣。
 高歌取醉欲自慰，起舞落日争光辉。

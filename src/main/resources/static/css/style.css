@@ -88,7 +88,7 @@ body::after{
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height:50%;
+  height:40%;
   background-color: beige;
 }
 
@@ -111,11 +111,33 @@ body::after{
   border-radius: 20px;
 }
 
+.timeSettingBox{
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: aquamarine;
+
+}
+
+.timeSettingBox input{
+  width: 40%;
+}
+
+.timeSettingBox .inputBox{
+  padding-left: 3%;
+}
+
+.timeSubmitButton{
+  width: 40%;
+}
+
 .poetsBox {
   display: flex;
   justify-content: center;
   align-items: center;
-  height:50%;
+  height:45%;
   background-color: peachpuff;
 }
 

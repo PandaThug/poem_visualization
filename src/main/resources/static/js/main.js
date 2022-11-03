@@ -1,6 +1,8 @@
 //全局变量的定义和初始化视图
 //控制全局的模式
 let timeIndex=0;//0为”全局“
+let beginTime=618;
+let endTime=907;
 let poetName="";//空字符串为”全选“
 // mode0：全部全局模式。
 // mode1：未指定诗人，指定时间。
@@ -13,11 +15,29 @@ for(i=610;i<907;i+=10)
 {
     timelineYear.push(i+"s");
 }
-console.log(timelineYear)
+timelineYear.push("自定义");
 
 //全局可能会用到的函数
 function changeTimeIndex(index){
     timeIndex=index;
+    beginTime=convertTimeIndex();
+    endTime=beginTime+9;
+    changeMode();
+}
+function timeSetting(){
+    let setBeginTime=document.getElementById("timeBegin").value;
+    let setEndTime=document.getElementById("timeEnd").value;
+    beginTime=Number(setBeginTime);
+    endTime=Number(setEndTime);
+    timeIndex=31;//时间轴跳转到“自定义”
+    timeOption={
+        timeline:{
+            currentIndex:31
+        }
+    }
+    timeLine.setOption(timeOption)
+    let scl=document.querySelector(".timeAxis")
+    scl.scrollTop=scl.scrollHeight;//滑动至底部
     changeMode();
 }
 function changePoetName(name){
@@ -40,6 +60,7 @@ function changeMode(){
         else
             showMode=3;
     }
+    updateAll();
     console.log("模式转变为"+showMode)
 }
 //将单人路径转化为一个全是字符串的数组
@@ -52,8 +73,10 @@ function footobj_plus(obj){
     let result=[];
     for(i=0;i<obj.length;i++)
     {
-        let foots=footobj(obj[i]);
-        result.push(foots);
+        if(obj[i]!=null) {
+            let foots = footobj(obj[i]);
+            result.push(foots);
+        }
     }
     return result;
 }

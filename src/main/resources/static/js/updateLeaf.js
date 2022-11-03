@@ -13,17 +13,16 @@ function updateLeaf()
                     // console.log(err)
                 });
         }
-            // else if(showMode==1)//未指定诗人，指定时间。
-            // {
-            //     beginTime=convertTimeIndex();
-            //     endTime=beginTime+9;
-            //     axios('http://localhost:8080/visualization/poem/'+'beginTime='+beginTime+'&endTime='+endTime)
-            //         .then(function (response) {
-            //             updateBubbles2(response);
-            //         }).catch(function (err) {
-            //         console.log(err)
-            //     });
-        // }
+            else if(showMode==1)//未指定诗人，指定时间。
+            {
+
+                axios('http://localhost:8080/visualization/poem/images/?beginTime='+beginTime+'&endTime='+endTime)
+                    .then(function (response) {
+                        updateLeaf2(response);
+                    }).catch(function (err) {
+                    console.log(err)
+                });
+        }
         else if(showMode==2)//未指定时间，指定诗人。
         {
                 axios('http://localhost:8080/visualization/poem/images/?name='+poetName)
@@ -35,20 +34,20 @@ function updateLeaf()
                 });
 
         }
-        // else if(showMode==3)//指定时间，指定诗人。
-        // {
-        //     beginTime=convertTimeIndex();
-        //     endTime=beginTime+9;
-        //     axios('http://localhost:8080/visualization/poem/mode3?name='+poetName+'&beginTime='+beginTime+'&endTime='+endTime)
-        //         .then(function (response) {
-        //             updateBubbles2(response);
-        //         }).catch(function (err) {
-        //         console.log(err)
-        //     });
-        // }
+        else if(showMode==3)//指定时间，指定诗人。
+        {
+
+            axios('http://localhost:8080/visualization/poem/images/?name='+poetName+'&beginTime='+beginTime+'&endTime='+endTime)
+                .then(function (response) {
+                    updateLeaf2(response);
+                }).catch(function (err) {
+                console.log(err)
+            });
+        }
 }
 
 function updateLeaf2(response){
+    console.log(response.data)
     let dataTest=[];
     for(key in response.data){
         let obj={};
@@ -75,11 +74,41 @@ function updateLeaf2(response){
             getNum+=2;
         }
     }
+    else if(showMode==1)//only指定时间
+    {
+        for (let obj of dataTest) {
+            let imageName = obj.name;
+            axios('http://localhost:8080/visualization/images/poem?images=' + imageName+"&beginTime="+beginTime+"&endTime="+endTime+"&num="+getNum)
+                .then(function (response) {
+                    // if(response.data!="")
+                    updateLeaf3(response, imageName);
+
+                }).catch(function (err) {
+                console.log(err)
+            });
+            getNum+=2;
+        }
+    }
     else if(showMode==2)
     {
         for (let obj of dataTest) {
             let imageName = obj.name;
             axios('http://localhost:8080/visualization/images/poem?images=' + imageName+"&name="+poetName+"&num="+getNum)
+                .then(function (response) {
+                    // if(response.data!="")
+                    updateLeaf3(response, imageName);
+
+                }).catch(function (err) {
+                console.log(err)
+            });
+            getNum+=2;
+        }
+    }
+    else if(showMode==3)//全指定
+    {
+        for (let obj of dataTest) {
+            let imageName = obj.name;
+            axios('http://localhost:8080/visualization/images/poem?images=' + imageName+"&name="+poetName+"&beginTime="+beginTime+"&endTime="+endTime+"&num="+getNum)
                 .then(function (response) {
                     // if(response.data!="")
                     updateLeaf3(response, imageName);

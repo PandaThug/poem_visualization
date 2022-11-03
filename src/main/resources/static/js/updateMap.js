@@ -4,6 +4,9 @@ function updateMap(){
 //           mode1：未指定诗人，指定时间。
 //           mode2：未指定时间，指定诗人。
 //           mode3：指定时间，指定诗人。
+    console.log("地图更新")
+    console.log("beginTime:"+beginTime+"endTime"+endTime)
+
     if(showMode==0)
     {
         axios('http://localhost:8080/visualization/footprint/mode0')
@@ -20,10 +23,9 @@ function updateMap(){
     }
     else if(showMode==1)
     {
-        beginTime=convertTimeIndex();
-        endTime=beginTime+9;
         axios('http://localhost:8080/visualization/footprint/mode1?'+'beginTime='+beginTime+'&endTime='+endTime)
             .then(function (response) {
+                console.log(response.data)
                 if(response.data!="")
                     mapData=footobj_plus(response.data);
                 else
@@ -50,8 +52,7 @@ function updateMap(){
     }
     else if(showMode==3)
     {
-        beginTime=convertTimeIndex();
-        endTime=beginTime+9;
+
         axios('http://localhost:8080/visualization/footprint/mode3?name='+poetName+'&beginTime='+beginTime+'&endTime='+endTime)
             .then(function (response) {
                 mapData=[];

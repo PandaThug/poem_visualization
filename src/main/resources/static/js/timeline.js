@@ -58,7 +58,6 @@ timeLine.setOption(timelineOption)
 
 document.getElementById("globalBtn").onclick = function(){
     //点击后，map隐藏时间轴移动到全局
-    console.log("!");
     changeTimeIndex(0);
     timeOption={
         timeline:{
@@ -67,14 +66,13 @@ document.getElementById("globalBtn").onclick = function(){
     }
     timeLine.setOption(timeOption)
     document.querySelector(".timeAxis").scrollTop=0;
-    updateMap();
-    updateBubbles();
 };
 timeLine.on('timelineChanged', function (params) {
     // 控制台打印数据的名称
     yearIndex=params.currentIndex;//此为年份索引
+    if(yearIndex!=31)
     changeTimeIndex(yearIndex);
-    updateMap()
-    updateBubbles();
+    else
+        timeSetting();
 
 });

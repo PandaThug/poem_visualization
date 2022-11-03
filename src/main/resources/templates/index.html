@@ -36,6 +36,12 @@
                 </div>
                 <button id="globalBtn">全局</button>
             </div>
+            <div class="timeSettingBox" id="timeSetting">
+                <div>自定义时间</div>
+                <div class="inputBox">  <input type="text" class="timeSetting" id="timeBegin" value="618" oninput="value=value.replace(/[^\d]/g,'')" maxlength="3">- <input type="text" class="timeSetting" id="timeEnd" value="907" oninput="value=value.replace(/[^\d]/g,'')" maxlength="3"></div>
+                <button class="timeSubmitButton" type="button" @click="timeSubmit">应用</button>
+
+            </div>
             <!-- 诗人列表 -->
             <div class="poetsBox">
                 <div class="poetsList" id="poetsList">
@@ -105,6 +111,14 @@
                 changeBubble(){
                     bubbleMode=(bubbleMode+1)%2
                     updateBubbles()
+                }
+            }
+        })
+        new Vue({
+            el:"#timeSetting",
+            methods:{
+                timeSubmit(){
+                    timeSetting();
                 }
             }
         })
