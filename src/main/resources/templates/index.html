@@ -22,7 +22,6 @@
 <body>
     <!-- 标题区域 -->
     <div class="header">
-        <button class="changeBtn" id="changeBtn" @click="changeBubble"></button>
     </div>
     <!-- 可视化大盒子 -->
     <div class="main">
@@ -40,7 +39,14 @@
                 <div>自定义时间</div>
                 <div class="inputBox">  <input type="text" class="timeSetting" id="timeBegin" value="618" oninput="value=value.replace(/[^\d]/g,'')" maxlength="3">- <input type="text" class="timeSetting" id="timeEnd" value="907" oninput="value=value.replace(/[^\d]/g,'')" maxlength="3"></div>
                 <button class="timeSubmitButton" type="button" @click="timeSubmit">应用</button>
-
+                <div class="periodBox">
+                    <div class="periodList">
+                        <button @click="timeSwitch(0)">初唐</button>
+                        <button  @click="timeSwitch(1)">盛唐</button>
+                        <button  @click="timeSwitch(2)">中唐</button>
+                        <button  @click="timeSwitch(3)">晚唐</button>
+                    </div>
+                </div>
             </div>
             <!-- 诗人列表 -->
             <div class="poetsBox">
@@ -72,7 +78,10 @@
         </div>
         <div class="column">
             <!-- 情感词云 -->
-            <div class="bubbleBox">
+            <div class="bubbleContainer">
+                <button class="changeBtn" id="changeBtn" @click="changeBubble">切换</button>
+                <div class="bubbleBox">
+                </div>
             </div>
             <!-- 以十年为单位的作品折线图 -->
             <div class="lineChartBox"></div>
@@ -118,6 +127,34 @@
             el:"#timeSetting",
             methods:{
                 timeSubmit(){
+                    timeSetting();
+                },
+                timeSwitch(num)
+                {//四个唐代按钮
+                    if(num==0)//初唐
+                    {
+                       document.getElementById("timeBegin").value=618;
+                       document.getElementById("timeEnd").value=712;
+
+                    }
+                    else if(num==1)//盛唐
+                    {
+                        document.getElementById("timeBegin").value=713;
+                        document.getElementById("timeEnd").value=755;
+
+                    }
+                    else if(num==2)//中唐
+                    {
+                        document.getElementById("timeBegin").value=756;
+                        document.getElementById("timeEnd").value=824;
+
+                    }
+                    else if(num==3)//晚唐
+                    {
+                        document.getElementById("timeBegin").value=825;
+                        document.getElementById("timeEnd").value=907;
+
+                    }
                     timeSetting();
                 }
             }

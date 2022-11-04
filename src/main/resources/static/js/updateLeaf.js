@@ -126,7 +126,7 @@ function updateLeaf3(response,imageName){
     let num=0;
     for(key in response.data){
         let obj={};
-        if(key!="num")
+        if(key!="num" &&response.data[key]!=0)
         {
             obj["name"] = key;
             obj["value"] = response.data[key];
@@ -137,7 +137,6 @@ function updateLeaf3(response,imageName){
             num=response.data["num"];
         }
     }
-    console.log(num);
     option.series[num].name=imageName;
     option.series[num+1].name=imageName;
     option.series[num].data=dataLeaf;
@@ -149,5 +148,4 @@ function updateLeaf3(response,imageName){
     {
         pieChart.setOption(option);
     }
-
 }
