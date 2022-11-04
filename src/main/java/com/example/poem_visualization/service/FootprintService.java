@@ -11,8 +11,11 @@ import java.util.Map;
 @Service
 public class FootprintService {
 
-    @Autowired
-    private FootprintMapper footprintMapper;
+    private final FootprintMapper footprintMapper;
+
+    public FootprintService(FootprintMapper footprintMapper) {
+        this.footprintMapper = footprintMapper;
+    }
 
     // 查询全部诗人全部时间的路线
     public List<Map<String, String >> findFootprints() {

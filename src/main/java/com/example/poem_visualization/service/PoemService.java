@@ -11,8 +11,11 @@ import java.util.Map;
 @Service
 public class PoemService {
 
-    @Autowired
-    private PoemMapper poemMapper;
+    private final PoemMapper poemMapper;
+
+    public PoemService(PoemMapper poemMapper) {
+        this.poemMapper = poemMapper;
+    }
 
     // 根据诗人姓名获取诗歌意象——名称和次数
     public List<Map<String, Integer>> findImagesByPoet(String poetName) {
