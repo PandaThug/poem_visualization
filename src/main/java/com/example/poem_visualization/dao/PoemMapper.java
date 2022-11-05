@@ -45,4 +45,16 @@ public interface PoemMapper {
     // 按诗人+时间查询包含某意象词的诗的情感返回诗歌数量
     List<Map<String, Integer>> selectPoemImagesCountByNameAndTime(@Param("name") String name, @Param("beginTime") int beginTime, @Param("endTime") int endTime, @Param("images") String images);
 
+    // 查询某一年所有诗人创作的诗歌数量
+    int selectPoemCountInOneYear(@Param("time") int time);
+
+    // 查询某时间范围内总共创作的诗歌数量
+    int selectPoemCountByTime(@Param("beginTime") int beginTime, @Param("endTime") int endTime);
+
+    // 按时间查询指定诗人某一年创作的诗歌数量
+    int selectPoemCountInOneYearByName(@Param("time") int time, @Param("name") String name);
+
+    // 查询某时间范围内指定诗人创作的诗歌数量
+    int selectPoemCountByTimeAndName(@Param("beginTime") int beginTime, @Param("endTime") int endTime, @Param("name") String name);
+
 }

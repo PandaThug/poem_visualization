@@ -159,7 +159,7 @@
         sum(content like '%落日%') as '落日',
         sum(content like '%梧桐%') as '梧桐'
         from poem
-        where time &gt; #{beginTime} and time &lt; #{endTime}
+        where time &gt;= #{beginTime} and time &lt;= #{endTime}
     </select>
 
     <select id="selectImagesByPoetAndTime" resultType="java.util.Map">
@@ -189,7 +189,7 @@
         sum(content like '%落日%') as '落日',
         sum(content like '%梧桐%') as '梧桐'
         from poem
-        where (time &lt; #{endTime} and time &gt; #{beginTime})
+        where (time &lt;= #{endTime} and time &gt;= #{beginTime})
         and author = #{name}
     </select>
 
@@ -207,7 +207,7 @@
         sum(content regexp '闲|自在|悠') as '闲淡',
         sum(content regexp '怒|冲冠|愤') as '愤怒'
         from poem
-        where time &lt; #{endTime} and time &gt; #{beginTime}
+        where time &lt;= #{endTime} and time &gt;= #{beginTime}
     </select>
 
     <select id="selectEmoByPoetAndTime" resultType="java.util.Map">
@@ -224,7 +224,7 @@
         sum(content regexp '闲|自在|悠') as '闲淡',
         sum(content regexp '怒|冲冠|愤') as '愤怒'
         from poem
-        where (time &lt; #{endTime} and time &gt; #{beginTime})
+        where (time &lt;= #{endTime} and time &gt;= #{beginTime})
         and author = #{name}
     </select>
 
@@ -243,7 +243,7 @@
         sum(content regexp '怒|冲冠|愤') as '愤怒'
         from (select content
         from poem
-        where content like CONCAT(CONCAT('%', #{images}, '%')) and (time &lt; #{endTime} and time &gt; #{beginTime})) as temp
+        where content like CONCAT(CONCAT('%', #{images}, '%')) and (time &lt;= #{endTime} and time &gt;= #{beginTime})) as temp
     </select>
 
     <select id="selectPoemImagesCountByNameAndTime" resultType="java.util.Map">
@@ -261,6 +261,30 @@
         sum(content regexp '怒|冲冠|愤') as '愤怒'
         from (select content
         from poem
-        where content like CONCAT(CONCAT('%', #{images}, '%')) and author = #{name} and (time &lt; #{endTime} and time &gt; #{beginTime})) as temp
+        where content like CONCAT(CONCAT('%', #{images}, '%')) and author = #{name} and (time &lt;= #{endTime} and time &gt;= #{beginTime})) as temp
+    </select>
+
+    <select id="selectPoemCountInOneYear" resultType="int">
+        select count(time) as `count`
+        from poem
+        where time = #{time}
+    </select>
+
+    <select id="selectPoemCountByTime" resultType="int">
+        select count(time) as `count`
+        from poem
+        where time &gt;= #{beginTime} and time &lt;= #{endTime}
+    </select>
+
+    <select id="selectPoemCountInOneYearByName" resultType="int">
+        select count(time) as `count`
+        from poem
+        where time = #{time} and author = #{name}
+    </select>
+
+    <select id="selectPoemCountByTimeAndName" resultType="int">
+        select count(time) as `count`
+        from poem
+        where (time &gt;= #{beginTime} and time &lt;= #{endTime}) and author = #{name}
     </select>
 </mapper>

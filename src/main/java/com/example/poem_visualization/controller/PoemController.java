@@ -236,4 +236,32 @@ public class PoemController {
         return map;
     }
 
+    // 按时间查询此时间范围内每一年创作的诗歌数量
+    @RequestMapping(path = "/count", method = RequestMethod.GET, params = {"beginTime","endTime"})
+    @ResponseBody
+    public Map<String, Integer> getPoemCountByTime(String beginTime, String endTime) {
+        return poemService.findPoemCountByTime(Integer.parseInt(beginTime), Integer.parseInt(endTime));
+    }
+
+    // 按时间和诗人姓名查询此时间范围内每一年指定诗人创作的诗歌数量
+    @RequestMapping(path = "/count", method = RequestMethod.GET, params = {"name","beginTime","endTime"})
+    @ResponseBody
+    public Map<String, Integer> getPoemCountByTime(String name, String beginTime, String endTime) {
+        return poemService.findPoemCountByTimeAndName(name, Integer.parseInt(beginTime), Integer.parseInt(endTime));
+    }
+
+    // 按诗人查询每十年诗歌创作的数量
+    @RequestMapping(path = "/count", method = RequestMethod.GET, params = {"name"})
+    @ResponseBody
+    public Map<String, Integer> getPoemCountByName(String name) {
+        return poemService.findPoemCountByName(name);
+    }
+
+    // 查询每十年间诗歌创作的数量
+    @RequestMapping(path = "/count", method = RequestMethod.GET)
+    @ResponseBody
+    public Map<String, Integer> getPoemCount() {
+        return poemService.findPoemCount();
+    }
+
 }
