@@ -4,9 +4,6 @@ function updateMap(){
 //           mode1：未指定诗人，指定时间。
 //           mode2：未指定时间，指定诗人。
 //           mode3：指定时间，指定诗人。
-    console.log("地图更新")
-    console.log("beginTime:"+beginTime+"endTime"+endTime)
-
     if(showMode==0)
     {
         axios('http://localhost:8080/visualization/footprint/mode0')

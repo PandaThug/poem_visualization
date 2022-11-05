@@ -248,12 +248,19 @@ body::after{
 .lineChartBox {
   height:35%;
   background-color: darkgoldenrod;
-  overflow: auto;
+padding: 3%;
 }
 
 .lineChartBox>div{
   height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.lineChartBox>div>div{
+  height: 100%;
   width:300%;
+
 }
 
 /* 第三列column结束*/

@@ -1,7 +1,40 @@
-let xLabel = ['3/12', '3/13', '3/14', '3/15', '3/16', '3/17']
-let goToSchool = ["40", "60", "22", "85", "50", "40"]
+let xLabel = []
+let goToSchool = []
+for(i=610;i<910;i+=10)
+{
+    xLabel.push(i+'s');
+    goToSchool.push('0');
+}
 let optionline = {
     backgroundColor: 'white',
+    tooltip: {
+        trigger: "axis",
+        axisPointer: {
+            type: "shadow",
+            shadowStyle: {
+                color: {
+                    type: 'linear',
+                    x: 0,
+                    y: 0,
+                    x2: 0,
+                    y2: 1,
+                    colorStops:[{
+                        offset:0, color: 'rgba(101, 124, 168,0.00)'
+                    },{
+                        offset:1, color: 'rgba(101, 124, 168,0.20)'
+                    }]
+                }
+            }
+        },
+
+        triggerOn: 'click',
+        backgroundColor: 'rgba(255, 255, 255,0.40)',
+        textStyle: {
+            fontSize: 12,
+            color: '#929292',
+            align: 'left'
+        },
+    },
     grid: {
         top: '15%',
         left: '3%',
@@ -44,7 +77,7 @@ let optionline = {
         },
         min: 0,
         splitLine: {
-            show: true,
+            show:false,
             lineStyle: {
                 color: 'rgba(101, 124, 168, 0.4)'
             },
@@ -57,7 +90,7 @@ let optionline = {
 
         },
         axisLabel: {
-            show: true,
+            show: false,
             textStyle: {
                 color: '#000',
                 padding: 16
@@ -96,7 +129,7 @@ let optionline = {
             show: true
         },
         label: {
-            show: false,
+            show: true,
         },
         areaStyle: { //区域填充样式
             normal: {

@@ -120,7 +120,7 @@ var mySeries = []
 var x, y, gap
 var pieChart = echarts.init(document.querySelector('.innerLeaf'))
 for (var key in test) {
-    console.log(test[key]);
+    // console.log(test[key]);
     if (key != 0) {
         // 一排放三个
         if (key % 3 == 1)

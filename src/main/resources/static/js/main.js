@@ -45,6 +45,7 @@ function changePoetName(name){
     changeMode();
 }
 function changeMode(){
+
     //计算模式
     if(timeIndex==0)
     {
