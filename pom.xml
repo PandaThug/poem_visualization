@@ -91,6 +91,25 @@
                 </configuration>
             </plugin>
         </plugins>
+
+        <resources>
+            <resource>
+                <!-- directory：指定资源文件的位置 -->
+                <directory>src/main/java</directory>
+                <includes>
+                    <!-- “**” 表示任意级目录    “*”表示任意任意文件 -->
+                    <!-- mvn resources:resources　：对资源做出处理，先于compile阶段  -->
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <!--  filtering：开启过滤，用指定的参数替换directory下的文件中的参数(eg. ${name}) -->
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+
     </build>
 
 </project>
