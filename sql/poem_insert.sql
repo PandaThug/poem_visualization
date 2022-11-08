@@ -7016,4 +7016,600 @@ INSERT INTO poem (title, content, author, `time`) VALUES('秋景诣琅琊精舍'
 上陟岩殿憩，暮看云壑平。苍茫寒色起，迢递晚钟鸣。
 意有清夜恋，身为符守婴。悟言缁衣子，萧洒中林行。','韦应物',NULL);
 
-# INSERT INTO poem (title, content, author, `time`) VALUES('','','',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('望月怀远','海上生明月，天涯共此时。情人怨遥夜，竟夕起相思。灭烛怜光满，披衣觉露滋。不堪盈手赠，还寝梦佳期。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('春江晚景','江林多秀发，云日复相鲜。征路那逢此，春心益渺然。兴来只自得，佳处莫能传。薄暮津亭下，余花满客船。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('感遇·其一','兰叶春葳蕤，桂华秋皎洁。欣欣此生意，自尔为佳节。谁知林栖者，闻风坐相悦。草木有本心，何求美人折？','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('戏题春意','一作江南守，江林三四春。相鸣不及鸟，相乐喜关人。日守朱丝直，年催华发新。淮阳只有卧，持此度芳辰。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('使至广州','昔年尝不调，兹地亦邅回。本谓双凫少，何知驷马来。人非汉使橐，郡是越王台。去去虽殊事，山川长在哉。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('感遇·其二','江南有丹橘，经冬犹绿林。岂伊地气暖，自有岁寒心。可以荐佳客，奈何阻重深。运命惟所遇，循环不可寻。徒言树桃李，此木岂无阴。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('咏燕','海燕何微眇，乘春亦暂来。岂知泥滓贱？只见玉堂开。绣户时双入，华轩日几回？无心与物竞，鹰隼莫相猜。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('浈阳峡','行舟傍越岑，窈窕越溪深。水暗先秋冷，山晴当昼阴。重林间五色，对壁耸千寻。惜此生遐远，谁知造化心。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('感遇十二首·其四','孤鸿海上来，池潢不敢顾。侧见双翠鸟，巢在三珠树。矫矫珍木巅，得无金丸惧？美服患人指，高明逼神恶。今我游冥冥，弋者何所慕！','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('赋得自君之出矣','自君之出矣，不复理残机。思君如满月，夜夜减清辉。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('幽人归独卧','幽人归独卧，滞虑洗孤清。持此谢高鸟，因之传远情。日夕怀空意，人谁感至精？飞沈理自隔，何所慰吾诚?','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('答陆澧','松叶堪为酒，春来酿几多。不辞山路远，踏雪也相过。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('归燕诗','海燕岁微渺，乘春亦暂来。岂知泥滓贱，只见玉堂开。绣户时双入，华堂日几回。无心与物竞，鹰隼莫相猜。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('秋晚登楼望南江入始兴郡路','潦收沙衍出，霜降天宇晶。
+                                                                           伏槛一长眺，津途多远情。
+                                                                           思来江山外，望尽烟云生。
+                                                                           滔滔不自辨，役役且何成。
+                                                                           我来飒衰鬓，孰云飘华缨。
+                                                                           枥马苦踡跼，笼禽念遐征。
+                                                                           岁阴向晼晚，日夕空屏营。
+                                                                           物生贵得性，身累由近名。
+                                                                           内顾觉今是，追叹何时平。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉和圣制送尚书燕国公赴朔方','宗臣事有征，庙算在休兵。
+                                                                            天与三台座，人当万里城。
+                                                                            朔南方偃革，河右暂扬旌。
+                                                                            宠锡从仙禁，光华出汉京。
+                                                                            山川勤远略，原隰轸皇情。
+                                                                            为奏薰琴唱，仍题宝剑名。
+                                                                            闻风六郡伏，计日五戎平。
+                                                                            山甫归应疾，留侯功复成。
+                                                                            歌钟旋可望，衽席岂难行。
+                                                                            四牡何时入，吾君忆履声。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('湖口望庐山瀑布泉','万丈红泉落，迢迢半紫氛。
+                                                                       奔流下杂树，洒落出重云。
+                                                                       日照虹霓似，天清风雨闻。
+                                                                       灵山多秀色，空水共氤氲。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('西江夜行','遥夜人何在，澄潭月里行。悠悠天宇旷，切切故乡情。外物寂无扰，中流澹自清。念归林叶换，愁坐露华生。犹有汀洲鹤，宵分乍一鸣。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('耒阳溪夜行','乘夕棹归舟，缘源路转幽。月明看岭树，风静听溪流。岚气船间入，霜华衣上浮。猿声虽此夜，不是别家愁。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('秋夕望月','清迥江城月，流光万里同。所思如梦里，相望在庭中。皎洁青苔露，萧条黄叶风。含情不得语，频使桂华同。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('听筝','端居正无绪，那复发秦筝。纤指传新意，繁弦起怨情。 悠扬思欲绝，掩抑态还生。岂是声能感，人心自不平。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('出为豫章郡途次庐山东岩下','兹山镇何所，乃在澄湖阴。下有蛟螭伏，上与虹蜺寻。
+                                                                           灵仙未始旷，窟宅何其深。双阙出云峙，三宫入烟沉。
+                                                                           攀崖犹昔境，种杏非旧林。想像终古迹，惆怅独往心。
+                                                                           纷吾婴世网，数载忝朝簪。孤根自靡托，量力况不任。
+                                                                           多谢周身防，常恐横议侵。岂匪鹓鸿列，惕如泉壑临。
+                                                                           迨兹刺江郡，来此涤尘襟。有趣逢樵客，忘怀狎野禽。
+                                                                           栖闲义未果，用拙欢在今。愿言答休命，归事丘中琴。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('将至岳阳有怀赵二','湘岸多深林，青冥昼结阴。独无谢客赏，况复贾生心。
+                                                                       草色虽云发，天光或未临。江潭非所遇，为尔白头吟。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉和吏部崔尚书雨后大明朝堂望南山','迢递终南顶，朝朝阊阖前。朅来青绮外，高在翠微先。
+                                                                               双凤褰为阙，群龙俨若仙。还知到玄圃，更是谒甘泉。
+                                                                               夜雨尘初灭，秋空月正悬。诡容纷入望，霁色宛成妍。
+                                                                               东极华阴践，西弥嶓冢连。奔峰出岭外，瀑水落云边。
+                                                                               汉帝宫将苑，商君陌与阡。林华铺近甸，烟霭绕晴川。
+                                                                               既庶仁斯及，分忧政已宣。山公启事罢，吉甫颂声传。
+                                                                               济济金门步，洋洋玉树篇。徒歌虽有属，清越岂同年。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('和黄门卢侍御咏竹','清切紫庭垂，葳蕤防露枝。色无玄月变，声有惠风吹。 高节人相重，虚心世所知。凤凰佳可食，一去一来仪。
+','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('和王司马折梅寄京邑昆弟','离别念同嬉，芬荣欲共持。独攀南国树，遥寄北风时。 林惜迎春早，花愁去日迟。还闻折梅处，更有棣华诗。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('送广州周判官','海郡雄蛮落，津亭壮越台。城隅百雉映，水曲万家开。 里树桄榔出，时禽翡翠来。观风犹未尽，早晚使车回。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('初发道中寄远','日夜乡山远，秋风复此时。旧闻胡马思，今听楚猿悲。 念别朝昏苦，怀归岁月迟。壮图空不息，常恐发如丝。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('初发江陵有怀','极望涔阳浦，江天渺不分。扁舟从此去，鸥鸟自为群。 他日怀真赏，中年负俗纷。适来果微尚，倏尔会斯文。 复想金闺籍，何如梦渚云。我行多胜寄，浩思独氛氲。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('和苏侍郎小园夕霁寄诸弟','清风阊阖至，轩盖承明归。云月爱秋景，林堂开夜扉。 何言兼济日，尚与宴私违。兴逐蒹葭变，文因棠棣飞。 人伦用忠孝，帝德已光辉。赠弟今为贵，方知陆氏微。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('故刑部李尚书挽词三首','仙宗出赵北，相业起山东。明德尝为礼，嘉谋屡作忠。
+                                                                         论经白虎殿，献赋甘泉宫。与善今何在，苍生望已空。
+                                                                         宿昔三台践，荣华驷马归。印从青琐拜，翰入紫宸挥。
+                                                                         题剑恩方重，藏舟事已非。龙门不可望，感激涕沾衣。
+                                                                         永叹常山宝，沉埋京兆阡。同盟会五月，华表记千年。
+                                                                         渺漫野中草，微茫空里烟。共悲人事绝，唯对杜陵田。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('咏史','大德始无颇，中智是所是。居然已不一，况乃务相诡。
+                                                                 小道致泥难，巧言因萋毁。穰侯或见迟，苏生得阴揣。
+                                                                 轻既长沙傅，重亦边郡徙。势倾不幸然，迹在胡宁尔。
+                                                                 沧溟所为大，江汉日来委。沣水虽复清，鱼鳖岂游此。
+                                                                 贤哉有小白，仇中有管氏。若人不世生，悠悠多如彼。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('道逢北使题赠京邑亲知','征骖稍靡靡，去国方迟迟。路绕南登岸，情摇北上旗。 故人怜别日，旅雁逐归时。岁晏无芳草，将何寄所思。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('使还湘水','归舟宛何处，正值楚江平。夕逗烟村宿，朝缘浦树行。 于役已弥岁，言旋今惬情。乡郊尚千里，流目夏云生。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('饯济阴梁明府各探一物得荷叶','荷叶生幽渚，芳华信在兹。朝朝空此地，采采欲因谁。 但恐星霜改，还将蒲稗衰。怀君美人别，聊以赠心期。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉和圣制经孔子旧宅','孔门太山下，不见登封时。徒有先王法，今为明主思。
+                                                                        恩加万乘幸，礼致一牢祠。旧宅千年外，光华空在兹。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('巫山高','巫山与天近，烟景长青荧。此中楚王梦，梦得神女灵。 神女去已久，云雨空冥冥。唯有巴猿啸，哀音不可听。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('武司功初有幽庭春暄见贻夏首获见以诗报焉','芳月尽离居，幽怀重起予。虽言春事晚，尚想物华初。 迟日皦方照，高斋澹复虚。笋成林向密，花落树应疏。 赠鲤情无间，求莺思有馀。暄妍不相待，含叹欲焉如。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('和韦尚书答梓州兄南亭宴集','棠棣闻馀兴，乌衣有旧游。门前杜城陌，池上曲江流。 暇日尝繁会，清风咏阻修。始知西峙岳，同气此相求。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉和圣制南郊礼毕酺宴','配天昭圣业，率土庆辉光。春发三条路，酺开百戏场。
+                                                                         流恩均庶品，纵观聚康庄。妙舞来平乐，新声出建章。
+                                                                         分曹日抱戴，赴节凤归昌。幸奏承云乐，同晞湛露阳。
+                                                                         气和皆有感，泽厚自无疆。饱德君臣醉，连歌奉柏梁。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('与生公游石窟山','探秘孰云远，忘怀复尔同。日寻高深意，宛是神仙中。
+                                                                      跻险构灵室，诡制非人功。潜洞黝无底，殊庭忽似梦。
+                                                                      岂如武安凿，自若茅山通。造物良有寄，嬉游乃惬衷。
+                                                                      犹希咽玉液，从此升云空。咄咄共携手，泠然且驭风。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('饯王司马入计同用洲字','元僚行上计，举饯出林丘。忽望题舆远，空思解榻游。 别筵铺柳岸，征棹倚芦洲。独叹湘江水，朝宗向北流。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('高斋闲望言怀','高斋复晴景，延眺属清秋。风物动归思，烟林生远愁。 纷吾自穷海，薄宦此中州。取路无高足，随波适下流。 岁华空冉冉，心曲且悠悠。坐惜芳时歇，胡然久滞留。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('与弟游家园','定省荣君赐，来归是昼游。林乌飞旧里，园果让新秋。 枝长南庭树，池临北涧流。星霜屡尔别，兰麝为谁幽。 善积家方庆，恩深国未酬。栖栖将义动，安得久情留。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('故徐州刺史赠吏部侍郎苏公挽歌词三首','韦玄方继相，荀爽复齐名。在贵兼天爵，能贤出世卿。
+                                                                                学闻金马诏，神见玉人清。藏壑今如此，为山遂不成。
+                                                                                相如只谢病，子敬忽云亡。岂悟瑶台雪，分雕玉树行。
+                                                                                清规留草议，故事在封章。本谓山公启，而今殁始扬。
+                                                                                返葬长安陌，秋风箫鼓悲。奈何相送者，不是平生时。
+                                                                                寒影催年急，哀歌助晚迟。宁知建旟罢，丹旐向京师。
+','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('饯王尚书出边','汉相推人杰，殷宗伐鬼方。还闻出将重，坐见即戎良。
+                                                                     上策应为豫，中权且用光。令申兵气倍，威憺虏魂亡。
+                                                                     树比公孙大，城如道济长。夏云登陇首，秋露泫辽阳。
+                                                                     武德舒宸眷，文思饯乐章。感恩身既许，激节胆犹尝。
+                                                                     祖帐倾朝列，军麾驻道傍。诗人何所咏，尚父欲鹰扬。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('冬中至玉泉山寺属穷阴冰闭崖谷无色及仲春行县…有此作','灵境信幽绝，芳时重暄妍。再来及兹胜，一遇非无缘。
+                                                                                        万木柔可结，千花敷欲然。松间鸣好鸟，竹下流清泉。
+                                                                                        石壁开精舍，金光照法筵。真空本自寂，假有聊相宣。
+                                                                                        复此灰心者，仍追巢顶禅。简书虽有畏，身世亦相捐。
+','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('林亭寓言','林居逢岁晏，遇物使情多。蘅茝不时与，芬荣奈汝何。 更怜篱下菊，无如松上萝。因依自有命，非是隔阳和。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('酬王六霁后书怀见示','云雨俱行罢，江天已洞开。炎氛霁后灭，边绪望中来。 作骥君垂耳，为鱼我曝鳃。更怜湘水赋，还是洛阳才。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('始兴南山下有林泉，尝卜居焉，荆州卧病有怀此地','出处各有在，何者为陆沉。幸无迫贱事，聊可祛迷襟。
+                                                                                     世路少夷坦，孟门未岖嶔。多惭入火术，常惕履冰心。
+                                                                                     一跌不自保，万全焉可寻。行行念归路，眇眇惜光阴。
+                                                                                     浮生如过隙，先达已吾箴。敢忘丘山施，亦云年病侵。
+                                                                                     力衰在所养，时谢良不任。但忆旧栖息，愿言遂窥临。
+                                                                                     云间日孤秀，山下面清深。萝茑自为幄，风泉何必琴。
+                                                                                     归此老吾老，还当日千金。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('晨坐斋中偶而成咏','寒露洁秋空，遥山纷在瞩。
+                                                                       孤顶乍修耸，微云复相续。
+                                                                       人兹赏地偏，鸟亦爱林旭。
+                                                                       结念凭幽远，抚躬曷羁束。
+                                                                       仰霄谢逸翰，临路嗟疲足。
+                                                                       徂岁方暌携，归心亟踯躅。
+                                                                       休闲倘有素，岂负南山曲。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('和吏部李侍郎见示秋夜望月忆诸侍郎之什…因命仆继作','清秋发高兴，凉月复闲宵。光逐露华满，情因水镜摇。
+                                                                                       同时亦所见，异路无相招。美景向空尽，欢言随事销。
+                                                                                       忽听金华作，诚如玉律调。南宫尚为后，东观何其辽。
+                                                                                       名数虽云隔，风期幸未遥。今来重馀论，怀此更终朝。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('酬王六寒朝见诒','贾生流寓日，扬子寂寥时。在物多相背，唯君独见思。 渔为江上曲，雪作郢中词。忽枉兼金讯，长怀伐木诗。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('自豫章南还江上作','归去南江水，磷磷见底清。转逢空阔处，聊洗滞留情。 浦树遥如待，江鸥近若迎。津途别有趣，况乃濯吾缨。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉和圣制过王濬墓','汉王思钜鹿，晋将在弘农。入蜀举长算，平吴成大功。 与浑虽不协，归皓实为雄。孤绩沦千载，流名感圣衷。 万乘度荒陇，一顾凛生风。古节犹不弃，今人争效忠。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉和圣制早发三乡山行','羽卫森森西向秦，山川历历在清晨。晴云稍卷寒岩树， 宿雨能销御路尘。圣德由来合天道，灵符即此应时巡。 遗贤一一皆羁致，犹欲高深访隐沦。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('登郡城南楼','闭阁幸无事，登楼聊永日。云霞千里开，洲渚万形出。
+
+                                                                    澹澹澄江漫，飞飞度鸟疾。邑人半舻舰，津树多枫橘。
+
+                                                                    感别时已屡，凭眺情非一。远怀不我同，孤兴与谁悉。
+
+                                                                    平生本单绪，邂逅承优秩。谬忝为邦寄，多惭理人术。
+
+                                                                    驽铅虽自勉，仓廪素非实。陈力倘无效，谢病从芝术。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('苏侍郎紫薇庭各赋一物得芍药','仙禁生红药，微芳不自持。幸因清切地，还遇艳阳时。 名见桐君箓，香闻郑国诗。孤根若可用，非直爱华滋。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉和圣制初出洛城','东土淹龙驾，西人望翠华。山川只询物，宫观岂为家。 十月回星斗，千官捧日车。洛阳无怨思，巡幸更非赊。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉和圣制途次陕州作','驰道当河陕，陈诗问国风。川原三晋别，襟带两京同。 后殿函关尽，前旌阙塞通。行看洛阳陌，光景丽天中。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('折杨柳','纤纤折杨柳，持此寄情人。一枝何足贵，怜是故园春。 迟景那能久，芳菲不及新。更愁征戍客，容鬓老边尘。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('经江宁览旧迹至玄武湖','南国更数世，北湖方十洲。天清华林苑，日晏景阳楼。
+                                                                         果下回仙骑，津傍驻彩斿。凫鹥喧凤管，荷芰斗龙舟。
+                                                                         七子陪诗赋，千人和棹讴。应言在镐乐，不让横汾秋。
+                                                                         风俗因纾慢，江山成易由。驹王信不武，孙叔是无谋。
+                                                                         佳气日将歇，霸功谁与修。桑田东海变，麋鹿姑苏游。
+                                                                         否运争三国，康时劣九州。山虽幕府在，馆岂豫章留。
+                                                                         水淀还相阅，菱歌亦故遒。雄图不足问，唯想事风流。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('恩赐乐游园宴应制','宝筵延厚命，供帐序群公。形胜宜春接，威仪建礼同。 晞阳人似露，解愠物从风。朝庆千龄始，年华二月中。 辉光遍草木，和气发丝桐。岁岁无为化，宁知乐九功。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉和圣制温泉歌','有时神物待圣人，去后汤还冷，来时树亦春。
+                                                                      今兹十月自东归，羽旆逶迤上翠微。温谷葱葱佳气色，
+                                                                      离宫奕奕叶光辉。临渭川，近天邑，浴日温泉复在兹，
+                                                                      群仙洞府那相及。吾君利物心，玄泽浸苍黔。
+                                                                      渐渍神汤无疾苦，薰歌一曲感人深。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('南郊文武出入舒和之乐','祝史辞正，人神庆叶。福以德昭，享以诚接。 六变云备，百礼斯浃。祀事孔明，祚流万叶。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉和圣制早登太行山率尔言志','孟月摄提贞，乘时我后征。晨严九折度，暮戒六军行。
+                                                                            日御驰中道，风师卷太清。戈鋋林表出，组练雪间明。
+                                                                            动植希皇豫，高深奉睿情。**七圣列，望幸百神迎。
+                                                                            气色烟犹喜，恩光草尚荣。之罘称万岁，今此复同声。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('当涂界寄裴宣州','故人宣城守，亦在江南偏。如何分虎竹，相与间山川。
+                                                                      章绶胡为者，形骸非自然。含情津渡阔，倚望脰空延。
+                                                                      远近闻佳政，平生仰大贤。推心徒有属，会面良无缘。
+                                                                      目夕遵前渚，江村投暮烟。念行祗意默，怀远岂言宣。
+                                                                      委曲风波事，难为尺素传。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('夏日奉使南海在道中作','缅然万里路，赫曦三伏时。飞走逃深林，流烁恐生疵。
+                                                                         行李岂无苦，而我方自怡。肃事诚在公，拜庆遂及私。
+                                                                         展力惭浅效，衔恩感深慈。且欲汤火蹈，况无鬼神欺。
+                                                                         朝发高山阿，夕济长江湄。秋瘴宁我毒，夏水胡不夷。
+                                                                         信知道存者，但问心所之。吕梁有出入，乃觉非虚词。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('临泛东湖','郡庭日休暇，湖曲邀胜践。乐职在中和，灵心挹上善。
+                                                                                                                                                 乘流坐清旷，举目眺悠缅。林与西山重，云因北风卷。
+                                                                                                                                                 晶明画不逮，阴影镜无辨。晚秀复芬敷，秋光更遥衍。
+                                                                                                                                                 万族纷可佳，一游岂能展。羁孤忝邦牧，顾己非时选。
+                                                                                                                                                 梁公世不容，长孺心亦褊。永念出笼絷，常思退疲蹇。
+                                                                                                                                                 岁徂风露严，日恐兰苕剪。佳辰不可得，良会何其鲜。
+                                                                                                                                                 罢兴还江城，闭关聊自遣。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉和圣制烛龙斋祭','上帝临下，鉴亦有光。孰云阴骘，惟圣克彰。六月徂暑，
+                                                                       四郊愆阳。我后其勤，告于坛场。精意允溢，群灵鼓舞。
+                                                                       蔚兮朝云，沛然时雨。雨我原田，亦既有年。烛龙煌煌，
+                                                                       明宗报祀。于以助之，天人帝子。闻诗有训，国风兹始。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('赠澧阳韦明府','君有百炼刃，堪断七重犀。谁开太阿匣，持割武城鸡。 竟与尚书佩，遥应天子提。何时遇操宰，当使玉如泥。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('洪州西山祈雨，是日辄应，因赋诗言事','兹山蕴灵异，走望良有归。丘祷虽已久，甿心难重违。
+                                                                                迟明申藻荐，先夕旅岩扉。独宿云峰下，萧条人吏稀。
+                                                                                我来不外适，幽抱自中微。静入风泉奏，凉生松栝围。
+                                                                                穷年滞远想，寸晷阅清晖。虚美怅无属，素情缄所依。
+                                                                                诡随嫌弱操，羁束谢贞肥。义济亦吾道，诚存为物祈。
+                                                                                灵心倏已应，甘液幸而飞。闭阁且无责，随车安敢希。
+                                                                                多惭德不感，知复是耶非。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('眉州康司马挽歌词','家受专门学，人称入室贤。刘桢徒有气，管辂独无年。 谪去长沙国，魂归京兆阡。从兹匣中剑，埋没罢冲天。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('送窦校书见饯得云中辨江树','江水天连色，无涯净野氛。微明岸傍树，凌乱渚前云。 举棹形徐转，登舻意渐分。渺茫从此去，空复惜离群。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉和圣制幸晋阳宫','隋季失天策，万方罹凶残。皇祖称义旗，三灵皆获安。
+                                                                       圣期将申锡，王业成艰难。盗移未改命，历在终履端。
+                                                                       彼汾惟帝乡，雄都信郁盘。一月朔巡狩，群后陪清銮。
+                                                                       霸迹在沛庭，旧仪睹汉官。唐风思何深，舜典敷更宽。
+                                                                       户蒙枌榆复，邑争牛酒欢。缅惟翦商后，岂独微禹叹。
+                                                                       三后既在天，万年斯不刊。尊祖实我皇，天文皆仰观。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('酬周判官巡至始兴会改秘书少监见贻之作兼呈耿广州','惟昔迁乐土，迨今已重世。阴庆荷先德，素风惭后裔。
+                                                                                      唯益梓桑恭，岂禀山川丽。于时初自勉，揆己无兼济。
+                                                                                      瘠土资劳力，良书启蒙蔽。一探石室文，再擢金门第。
+                                                                                      既起南宫草，复掌西掖制。过举及小人，便蕃在中岁。
+                                                                                      亚司河海秩，转牧江湖澨。勿谓符竹轻，但觉涓尘细。
+                                                                                      一麾尚云忝，十驾宜求税。心息已如灰，迹牵且为赘。
+                                                                                      忽捧天书委，将革海隅弊。朝闻循诚节，夕饮蒙瘴疠。
+                                                                                      义疾耻无勇，盗憎攻亦锐。葵藿是倾心，豺狼何反噬。
+                                                                                      履险甘所受，劳贤恧相曳。揽辔但荒服，循陔便私第。
+                                                                                      嘉庆始获申，恩华复相继。无庸我先举，同事君犹滞。
+                                                                                      当推奉使绩，且结拜亲契。更延怀安旨，曾是虑危际。
+                                                                                      善谋虽若兹，至理焉可替。所仗有神道，况承明主惠。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('园中时蔬尽皆锄理唯秋兰数本委而不顾彼虽一物有足悲者遂赋二章','场藿已成岁，园葵亦向阳。兰时独不偶，露节渐无芳。
+                                                                                            旨异菁为蓄，甘非蔗有浆。人多利一饱，谁复惜馨香。
+                                                                                            幸得不锄去，孤苗守旧根。无心羡旨蓄，岂欲近名园。
+                                                                                            遇赏宁充佩，为生莫碍门。幽林芳意在，非是为人论。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉和圣制次琼岳韵','山祇亦望幸，云雨见灵心。岳馆逢朝霁，关门解宿阴。 咸京天上近，清渭日边临。我武因冬狩，何言是即禽。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉使自蓝田玉山南行','征骖入云壑，始忆步金门。通籍微躯幸，归途明主恩。
+                                                                                                                                                                       匪唯徇行役，兼得慰晨昏。是节暑云炽，纷吾心所尊。
+                                                                                                                                                                       海县且悠缅，山邮日骏奔。徒知恶嚣事，未暇息阴论。
+                                                                                                                                                                       峣武经陈迹，衡湘指故园。水闻南涧险，烟望北林繁。
+                                                                                                                                                                       远霭千岩合，幽声百籁喧。阴泉夏犹冻，阳景昼方暾。
+                                                                                                                                                                       懿此高深极，徒令梦想存。盛明期有报，长往复奚言。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉和圣制早渡蒲津关','魏武中流处，轩皇问道回。长堤春树发，高掌曙云开。
+                                                                        龙负王舟渡，人占仙气来。河津会日月，天仗役风雷。
+                                                                        东顾重关尽，西驰万国陪。还闻股肱郡，元首咏康哉。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('酬宋使君见赠之作','时来不自意，宿昔谬枢衡。翊圣负明主，妨贤愧友生。 罢归犹右职，待罪尚南荆。政有留棠旧，风因继组成。 高轩问疾苦，烝庶荷仁明。衰废时所薄，只言僚故情。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('送使广州','家在湘源住，君今海峤行。经过正中道，相送倍为情。 心逐书邮去，形随世网婴。因声谢远别，缘义不缘名。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉和圣制度潼关口号','嶙嶙故城垒，荒凉空戍楼。在德不在险，方知王道休。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('酬宋使君见诒','陟邻初禀训，献策幸逢时。朝列且云忝，君恩复若兹。 庭闱际海曲，轺传荷天慈。顾己欢乌鸟，闻君泣素丝。 才明应主召，福善岂神欺。但愿白心在，终然涅不淄。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('送姚评事入蜀各赋一物得卜肆','蜀严化已久，沉冥空所思。尝闻卖卜处，犹忆下帘时。 驱传应经此，怀贤倘问之。归来说往事，历历偶心期。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('将发还乡示诸弟','岁阳亦颓止，林意日萧摵。云胡当此时，缅迈复为客。
+                                                                      至爱孰能舍，名义来相迫。负德良不赀，输诚靡所惜。
+                                                                      一木逢厦构，纤尘愿山益。无力主君恩，宁利客卿璧。
+                                                                      去去荣归养，怃然叹行役。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('剪彩','姹女矜容色，为花不让春。既争芳意早，谁待物华真。 叶作参差发，枝从点缀新。自然无限态，长在艳阳晨。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('郡中每晨兴辄见群鹤东飞至暮又行列而返哢唳云路甚和乐焉予愧独处江城常目送此意有所羡遂赋以诗','云间有数鹤，抚翼意无违。晓日东田去，烟霄北渚归。
+
+                                                                                  欢呼良自适，罗列好相依。远集长江静，高翔众鸟稀。
+
+                                                                                  岂烦仙子驭，何畏野人机。却念乘轩者，拘留不得飞。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('南山下旧居闲放','祗役已云久，乘闲返服初。块然屏尘事，幽独坐林闾。
+                                                                      清旷前山远，纷喧此地疏。乔木凌青霭，修篁媚绿渠。
+                                                                      耳和绣翼鸟，目畅锦鳞鱼。寂寞心还间，飘飖体自虚。
+                                                                      兴来命旨酒，临罢阅仙书。但乐多幽意，宁知有毁誉。
+                                                                      尚想争名者，谁云要路居。都忘下流叹，倾夺竟何如。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('南阳道中作','登郢属岁阴，及宛懵所适。复闻东汉主，遗此南都迹。
+                                                                    佳气蔼厥初，霸图纷在昔。兹邦称贵近，与世尝薰赫。
+                                                                    遭遇感风云，变衰空草泽。不识邓公树，犹传阴后石。
+                                                                    驱马历闉闍，荆榛翳阡陌。事去物无象，感来心不怿。
+                                                                    怀古对穷秋，兴言伤远客。眇默遵岐路，辛勤弊行役。
+                                                                    云雁号相呼，林麇走自索。顾忆徇书剑，未尝安枕席。
+                                                                    岂暇墨突黔，空持辽豕白。迷复期非远，归欤赏农隙。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('送杨府李功曹','平生属良友，结绶望光辉。何知人事拙，相与宦情非。 别路穿林尽，征帆际海归。居然已多意，况复两乡违。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('登襄阳岘山','昔年亟攀践，征马复来过。信若山川旧，谁如岁月何。
+                                                                    蜀相吟安在，羊公碣已磨。令图犹寂寞，嘉会亦蹉跎。
+                                                                    宛宛樊城岸，悠悠汉水波。逶迤春日远，感寄客情多。
+                                                                    地本原林秀，朝来烟景和。同心不同赏，留叹此岩阿。
+','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('郢城西北有大古冢数十观其封域多是楚时诸王而年代久远不复可识唯直西有樊妃冢因后人为植松柏故行路尽知之','蘋藻生南涧，蕙兰秀中林。嘉名有所在，芳气无幽深。
+                                                                                                                楚子初逞志，樊妃尝献箴。能令更择士，非直罢从禽。
+                                                                                                                旧国皆湮灭，先王亦莫寻。唯传贤媛陇，犹结后人心。
+                                                                                                                牢落山川意，萧疏松柏阴。破墙时直上，荒径或斜侵。
+                                                                                                                惠问终不绝，风流独至今。千春思窈窕，黄鸟复哀音。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('二弟宰邑南海，见群雁南飞，因成咏以寄','鸿雁自北来，嗷嗷度烟景。常怀稻粱惠，岂惮江山永。 小大每相从，羽毛当自整。双凫侣晨泛，独鹤参宵警。 为我更南飞，因书至梅岭。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('王六履震广州津亭晓望','明发临前渚，寒来净远空。水纹天上碧，日气海边红。 景物纷为异，人情赖此同。乘槎自有适，非欲破长风。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('三月三日登龙山','伊川与灞津，今日祓除人。岂似龙山上，还同湘水滨。 衰颜忧更老，淑景望非春。禊饮岂吾事，聊将偶俗尘。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉和圣制喜雨','艰我稼穑，载育载亭。随物应之，曷圣与灵。谓我何凭，
+                                                                     惟德之馨。谁云天远，以诚必至。太清无云，羲和顿辔。
+                                                                     于斯烝人，瞻彼非觊。阴冥倏忽，沛泽咸洎。何以致之。
+                                                                     我后之感。无皋无隰，黍稷黯黯。无卉无木，敷芬黮黤.
+                                                                     黄龙勿来，鸣鸟不思。人和年丰，皇心则怡。岂与周宣，
+                                                                     云汉徒诗。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('林亭咏','穿筑非求丽，幽闲欲寄情。偶怀因壤石，真意在蓬瀛。 苔益山文古，池添竹气清。从兹果萧散，无事亦无营。','张九龄',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('送杨道士往天台','鬼谷还成道，天台去学仙。行应松子化，留与世人传。 此地烟波远，何时羽驾旋。当须一把袂，城郭共依然。','张九龄',NULL);
+
+
+
+
+# INSERT INTO poem (title, content, author, `time`) VALUES('登蓟丘楼送贾兵曹入都','东山宿昔意，北征非我心。
+                                                                         　　孤负平生愿，感涕下沾襟。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('登幽州台歌','　前不见古人，后不见来者。
+                                                                    　　念天地之悠悠，独怆然而涕下。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('白帝城怀古','　日落沧江晚，停桡问土风。
+                                                                    　　城临巴子国，台没汉王宫。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('彩树歌','嘉锦筵珍树兮，错众彩之氛氲。
+                                                                  　　状瑶台之微月，点巫山之朝云。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('酬晖上人秋夜山亭有赠','皎皎白林秋，微微翠山静。
+                                                                         　　禅居感物变，独坐开轩屏。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('酬田逸人游岩见寻不遇题隐居里壁','游人献书去，薄暮返灵台。
+                                                                              　　传道寻仙友，青囊卖卜来。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('初入峡苦风寄故乡亲友','故乡今日友，欢会坐应同。
+                                                                         　　宁知巴峡路，辛苦石尤风。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('春晦饯陶七于江南同用风字','黄鹤烟云去，青江琴酒同。
+                                                                           　　离帆方楚越，沟水复西东。
+                                                                           　　芙蓉生夏浦，杨柳送春风。
+                                                                           　　明日相思处，应对菊花丛。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('春夜别友人','银烛吐清烟，金尊对绮筵。
+                                                                    　　离堂思琴瑟，别路绕山川。
+                                                                    　　明月悬高树，长河没晓天。
+                                                                    　　悠悠洛阳去，此会在何年。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('答洛阳主人','平生白云志，早爱赤松游。
+                                                                    　　事亲恨未立，从宦此中州。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('度荆门望楚','　遥遥去巫峡，望望下章台。
+                                                                    　　巴国山川尽，荆门烟雾开。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('夏日游晖上人房','山水开精舍，琴歌列梵筵。
+                                                                      　　人疑白楼赏，地似竹林禅。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('岘山怀古','秣马临荒甸，登高览旧都。
+                                                                   　　犹悲坠泪碣，尚想卧龙图。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('宴胡楚真禁所','人生固有命，天道信无言。
+                                                                     　　青绳一相点，白璧遂成冤。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('燕昭王','南登碣石馆，遥望黄金台。
+                                                                  　　丘陵尽乔木，昭王安在哉？
+                                                                  　　霸图今已矣，驱马复归来。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('咏主人壁上画鹤寄乔主簿崔着作','古壁仙人画，丹青尚有文。
+                                                                             　　独舞纷如雪，孤飞暖似雪。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('月夜有怀','　美人挟赵瑟，微月在西轩。
+                                                                   　　寂寞夜何久，殷勤玉指繁。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('落第西还别刘祭酒高明府','别馆分周国。归骖入汉京。
+                                                                          　　地连函谷塞。川接广阳城。','陈子昂',NULL);
+
+--                                                                           ////////
+# INSERT INTO poem (title, content, author, `time`) VALUES('晚次乐乡县','故乡杳无际，日暮且孤征。川原迷旧国，道路入边城。野戍荒烟断，深山古木平。如何此时恨，噭噭夜猿鸣。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('修竹篇','龙种生南岳，孤翠郁亭亭。
+
+                                                                  峰岭上崇崒，烟雨下微冥。
+
+                                                                  夜间鼯鼠叫，昼聒泉壑声。
+
+                                                                  春风正淡荡，白露已清泠。
+
+                                                                  哀响激金奏，密色滋玉英。
+
+                                                                  岁寒霜雪苦，含彩独青青。
+
+                                                                  岂不厌凝冽？羞比春木荣。
+
+                                                                  春木有荣歇，此节无凋零。
+
+                                                                  始愿与金石，终古保坚贞。
+
+                                                                  不意伶伦子，吹之学凤鸣。
+
+                                                                  遂偶云和瑟，张乐奏天庭。
+
+                                                                  妙曲方千变，《箫韶》亦九成。
+
+                                                                  信蒙雕斲美，常愿事仙灵。
+
+                                                                  驱驰翠虬驾，伊郁紫鸾笙。
+
+                                                                  结交嬴台女，吟弄《升天行》。
+
+                                                                  携手登白日，远游戏赤城。
+
+                                                                  低昂玄鹤舞，断续彩云生。
+
+                                                                  永随众仙去，三山游玉京。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('送魏大从军','匈奴犹未灭，魏绛复从戎。
+
+                                                                    怅别三河道，言追六郡雄。
+
+                                                                    雁山横代北，狐塞接云中。
+
+                                                                    勿使燕然上，惟留汉将功。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('送别崔著作东征','金天方肃杀，白露始专征。王师非乐战，之子慎佳兵。海气侵南部，边风扫北平。莫卖卢龙塞，归邀麟阁名。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('送著作佐郎崔融等从梁王东征','金天方肃杀，白露始专征。王师非乐战，之子慎佳兵。海气侵南部，边风扫北平。莫卖卢龙塞，归邀麟阁名。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('与东方左史虬修竹篇','龙种生南岳，孤翠郁亭亭。
+                                                                        峰岭上崇崒，烟雨下微冥。
+                                                                        夜闻鼯鼠叫，昼聒泉壑声。
+                                                                        春风正淡荡，白露已清泠。
+                                                                        哀响激金奏，密色滋玉英。
+                                                                        岁寒霜雪苦，含彩独青青。
+                                                                        岂不厌凝冽，羞比春木荣。
+                                                                        春木有荣歇，此节无凋零。
+                                                                        始愿与金石，终古保坚贞。
+                                                                        不意伶伦子，吹之学凤鸣。
+                                                                        遂偶云和瑟，张乐奏天庭。
+                                                                        妙曲方千变，箫韶亦九成。
+                                                                        信蒙雕斫美，常愿事仙灵。
+                                                                        驱驰翠虬驾，伊郁紫鸾笙。
+                                                                        结交嬴台女，吟弄升天行。
+                                                                        携手登白日，远游戏赤城。
+                                                                        低昂玄鹤舞，断续彩云生。
+                                                                        永随众仙去，三山游玉京。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('感遇诗三十八首·其十九','圣人不利己，忧济在元元。
+                                                                          黄屋非尧意，瑶台安可论？
+                                                                          吾闻西方化，清净道弥敦。
+                                                                          奈何穷金玉，雕刻以为尊？
+                                                                          云构山林尽，瑶图珠翠烦。
+                                                                          鬼工尚未可，人力安能存？
+                                                                          夸愚适增累，矜智道逾昏。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('和陆明府赠将军重出塞','忽闻天上将，关塞重横行。始返楼兰国，还向朔方城。黄金装战马，白羽集神兵。星月开天阵，山川列地营。晚风吹画角，春色耀飞旌。宁知班定远，犹是一书生。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('燕昭王','南登碣石馆，遥望黄金台。丘陵尽乔木，昭王安在哉？霸图今已矣，驱马复归来。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('题祀山烽树赠乔十二侍御','汉庭荣巧宦，云阁薄边功。可怜骢马使，白首为谁雄。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('咏主人壁上画鹤寄乔主簿崔著作','古壁仙人画，丹青尚有文。独舞纷如雪，孤飞暧似云。自矜彩色重，宁忆故池群。江海联翩翼，长鸣谁复闻。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('度峡口山赠乔补阙知之王二无竞','峡口大漠南，横绝界中国。
+                                                                             丛石何纷纠，赤山复翕赩。
+                                                                             远望多众容，逼之无异色。
+                                                                             崔崒乍孤断，逶迤屡回直。
+                                                                             信关胡马冲，亦距汉边塞。
+                                                                             岂依河山险，将顺休明德。
+                                                                             物壮诚有衰，势雄良易极。
+                                                                             逦迤忽而尽，泱漭平不息。
+                                                                             之子黄金躯，如何此荒域。
+                                                                             云台盛多士，待君丹墀侧。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('春夜别友人二首·其二','紫塞白云断，青春明月初。对此芳樽夜，离忧怅有馀。清冷花露满，滴沥檐宇虚。怀君欲何赠，愿上大臣书。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('酬晖上人秋夜山亭有赠','皎皎白林秋，微微翠山静。禅居感物变，独坐开轩屏。风泉夜声杂，月露宵光冷。多谢忘机人，尘忧未能整。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('入东阳峡与李明府舟前后不相及','东岩初解缆，南浦遂离群。出没同洲岛，沿洄异渚濆。
+                                                                             风烟犹可望，歌笑浩难闻。路转青山合，峰回白日曛。
+                                                                             奔涛上漫漫，积水下沄沄.倏忽犹疑及，差池复两分。
+                                                                             离离间远树，蔼蔼没遥氛。地上巴陵道，星连牛斗文。
+                                                                             孤狖啼寒月，哀鸿叫断云。仙舟不可见，摇思坐氛氲。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('晦日宴高氏林亭','寻春游上路，追宴入山家。主第簪缨满，皇州景望华。 玉池初吐溜，珠树始开花。欢娱方未极，林阁散馀霞。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('江上暂别萧四刘三旋欣接遇','昨夜沧江别，言乖天汉游。宁期此相遇，尚接武陵洲。 结绶还逢育，衔杯且对刘。波潭一瀰瀰，临望几悠悠。 山水丹青杂，烟云紫翠浮。终愧神仙友，来接野人舟。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('春日登金华观','白玉仙台古，丹丘别望遥。山川乱云日，楼榭入烟霄。 鹤舞千年树，虹飞百尺桥。还疑赤松子，天路坐相邀。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('西还至散关答乔补阙知之','葳蕤苍梧凤，嘹唳白露蝉。羽翰本非匹，结交何独全。
+                                                                          昔君事胡马，余得奉戎旃。携手向沙塞，关河缅幽燕。
+                                                                          芳岁几阳止，白日屡徂迁。功业云台薄，平生玉佩捐。
+                                                                          叹此南归日，犹闻北戍边。代水不可涉，巴江亦潺湲。
+                                                                          揽衣度函谷，衔涕望秦川。蜀门自兹始，云山方浩然。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('庆云章','昆崙元气，实生庆云。大人作矣，五色氤氲。
+
+                                                                  昔在帝妫，南风既薰。丛芳烂熳，郁郁纷纷。旷矣千祀，庆云来止。
+
+                                                                  玉叶金柯，祚我天子。非我天子，庆云谁昌。非我圣母，庆云谁光。
+
+                                                                  庆云光矣，周道昌矣。九万八千，天授皇年。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('酬晖上人夏日林泉','闻道白云居，窈窕青莲宇。
+
+                                                                       岩泉万丈流，树石千年古。
+
+                                                                       林卧对轩窗，山阴满庭户。
+
+                                                                       方释尘事劳，从君袭兰杜','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('送客','故人洞庭去，杨柳春风生。相送河洲晚，苍茫别思盈。 白蘋已堪把，绿芷复含荣。江南多桂树，归客赠生平。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('赠别冀侍御崔司议','有道君匡国，无闷余在林。白云峨眉上，岁晚来相寻。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('蓟丘览古赠卢居士藏用七首','王道已沦昧，战国竞贪兵。乐生何感激，仗义下齐城。 雄图竟中夭，遗叹寄阿衡。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('宿襄河驿浦','沿流辞北渚，结缆宿南洲。合岸昏初夕，回塘暗不流。 卧闻塞鸿断，坐听峡猿愁。沙浦明如月，汀葭晦若秋。 不及能鸣雁，徒思海上鸥。天河殊未晓，沧海信悠悠。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('入峭峡安居溪伐木溪源幽邃林岭相映有奇致焉','肃徒歌伐木，骛楫漾轻舟。靡迤随回水，潺湲溯浅流。
+                                                                                   烟沙分两岸，露岛夹双洲。古树连云密，交峰入浪浮。
+                                                                                   岩潭相映媚，溪谷屡环周。路迥光逾逼，山深兴转幽。
+                                                                                   麇鼯寒思晚，猿鸟暮声秋。誓息兰台策，将从桂树游。
+                                                                                   因书谢亲爱，千岁觅蓬丘。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('居延海树闻莺同作','边地无芳树，莺声忽听新。间关如有意，愁绝若怀人。 明妃失汉宠，蔡女没胡尘。坐闻应落泪，况忆故园春。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('登蓟丘楼送贾兵曹入都','东山宿昔意，北征非我心。孤负平生愿，感涕下沾襟。
+                                                                         暮登蓟楼上，永望燕山岑。辽海方漫漫，胡沙飞且深。
+                                                                         峨眉杳如梦，仙子曷由寻。击剑起叹息，白日忽西沉。
+                                                                         闻君洛阳使，因子寄南音。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('初入峡苦风寄故乡亲友','故乡今日友，欢会坐应同。宁知巴峡路，辛苦石尤风。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('居延海树闻莺同作','边池无芳树。莺声忽听新。间关如有意。愁绝若怀人。明妃失汉宠。蔡女没胡尘。坐闻应落泪。况忆故园春。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('还至张掖古城，闻东军告捷，赠韦五虚己','孟秋首归路，仲月旅边亭。闻道兰山战，相邀在井陉。
+                                                                                 屡斗关月满，三捷虏云平。汉军追北地，胡骑走南庭。
+                                                                                 君为幕中士，畴昔好言兵。白虎锋应出，青龙阵几成。
+                                                                                 披图见丞相，按节入咸京。宁知玉门道，翻作陇西行。
+                                                                                 北海朱旄落，东归白露生。纵横未得意，寂寞寡相迎。
+                                                                                 负剑空叹息，苍茫登古城。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('魏氏园林人赋一物得秋亭萱草','昔时幽径里，荣耀杂春丛。今来玉墀上，销歇畏秋风。 细叶犹含绿，鲜花未吐红。忘忧谁见赏，空此北堂中。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('洛城观酺应制','圣人信恭己，天命允昭回。苍极神功被，青云秘箓开。
+                                                                     垂衣受金册，张乐宴瑶台。云凤休征满，鱼龙杂戏来。
+                                                                     崇恩逾五日，惠泽畅三才。玉帛群臣醉，徽章缛礼该。
+                                                                     方睹升中禅，言观拜洛回。微臣固多幸，敢上万年杯。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('答韩使同在边','汉家失中策，胡马屡南驱。闻诏安边使，曾是故人谟。
+                                                                     废书怅怀古，负剑许良图。出关岁方晏，乘障日多虞。
+                                                                     虏入白登道，烽交紫塞途。连兵屯北地，清野备东胡。
+                                                                     边城方晏闭，斥堠始昭苏。复闻韩长孺，辛苦事匈奴。
+                                                                     雨雪颜容改，纵横才位孤。空怀老臣策，未获赵军租。
+                                                                     但蒙魏侯重，不受谤书诬。当取金人祭，还歌凯入都。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('夏日游晖上人房','山水开精舍，琴歌列梵筵。人疑白楼赏，地似竹林禅。 对户池光乱，交轩岩翠连。色空今已寂，乘月弄澄泉。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('赠严仓曹乞推命录','少学纵横术，游楚复游燕。栖遑长委命，富贵未知天。 闻道沉冥客，青囊有秘篇。九宫探万象，三算极重玄。 愿奉唐生诀，将知跃马年。非同墨翟问，空滞杀龙川。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('万州晓发放舟乘涨，还寄蜀中亲朋','空濛岩雨霁，烂熳晓云归。啸旅乘明发，奔桡骛断矶。
+                                                                              苍茫林岫转，络绎涨涛飞。远岸孤烟出，遥峰曙日微。
+                                                                              前瞻未能眴，坐望已相依。曲直多今古，经过失是非。
+                                                                              还期方浩浩，征思日騑騑.寄谢千金子，江海事多违。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('同宋参军之问梦赵六赠卢陈二子之作','晓霁望嵩丘，白云半岩足。氛氲涵翠微，宛如嬴台曲。
+                                                                               故人昔所尚，幽琴歌断续。变化竟无常，人琴遂两亡。
+                                                                               白云失处所，梦想暧容光。畴昔疑缘业，儒道两相妨。
+                                                                               前期许幽报，迨此尚茫茫。晤言既已失，感叹情何一。
+                                                                               始忆携手期，云台与峨眉。达兼济天下，穷独善其时。
+                                                                               诸君推管乐，之子慕巢夷。奈何苍生望，卒为黄绶欺。
+                                                                               铭鼎功未立，山林事亦微。抚孤一流恸，怀旧日暌违。
+                                                                               卢子尚高节，终南卧松雪。宋侯逢圣君，骖驭游青云。
+                                                                               而我独蹭蹬，语默道犹屯。征戍在辽阳，蹉跎草再黄。
+                                                                               丹丘恨不及，白露已苍苍。远闻山阳赋，感涕下沾裳。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('山水粉图','山图之白云兮，若巫山之高丘。纷群翠之鸿溶， 又似蓬瀛海水之周流。信夫人之好道，爱云山以幽求。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('月夜有怀','美人挟赵瑟，微月在西轩。寂寞夜何久，殷勤玉指繁。 清光委衾枕，遥思属湘沅。空帘隔星汉，犹梦感精魂','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('赠赵六贞固二首','回中烽火入，塞上追兵起。此时边朔寒，登陇思君子。
+                                                                      东顾望汉京，南山云雾里。
+                                                                      赤螭媚其彩，婉娈苍梧泉。昔者琅琊子，躬耕亦慨然。
+                                                                      美人岂遐旷，之子乃前贤。良辰在何许，白日屡颓迁。
+                                                                      道心固微密，神用无留连。舒可弥宇宙，揽之不盈拳。
+                                                                      蓬莱久芜没，金石徒精坚。良宝委短褐，闲琴独婵娟。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('登泽州城北楼宴','平生倦游者，观化久无穷。复来登此国，临望与君同。 坐见秦兵垒，遥闻赵将雄。武安君何在，长平事已空。 且歌玄云曲，御酒舞薰风。勿使青衿子，嗟尔白头翁。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('蓟丘览古赠卢居士藏用七首·燕昭王','南登碣石坂，遥望黄金台。丘陵尽乔木，昭王安在哉。
+                                                                               霸图怅已矣，驱马复归来。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('送别出塞','平生闻高义，书剑百夫雄。言登青云去，非此白头翁。 胡兵屯塞下，汉骑属云中。君为白马将，腰佩騂角弓。 单于不敢射，天子伫深功。蜀山余方隐，良会何时同。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('鸳鸯篇','飞飞鸳鸯鸟，举翼相蔽亏。俱来绿潭里，共向白云涯。
+                                                                  音容相眷恋，羽翮两逶迤。蘋萍戏春渚，霜霰绕寒池。
+                                                                  浦沙连岸净，汀树拂潭垂。年年此游玩，岁岁来追随。
+                                                                  凤凰起丹穴，独向梧桐枝。鸿雁来紫塞，空忆稻粱肥。
+                                                                  乌啼倦依托，鹤鸣伤别离。岂若此双禽，飞翻不异林。
+                                                                  刷尾青江浦，交颈紫山岑。文章负奇色，和鸣多好音。
+                                                                  闻有鸳鸯绮，复有鸳鸯衾。持为美人赠，勖此故交心。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('秋园卧病呈晖上人','幽寂旷日遥，林园转清密。疲疴澹无豫，独坐泛瑶瑟。
+                                                                       怀挟万古情，忧虞百年疾。绵绵多滞念，忽忽每如失。
+                                                                       缅想赤松游，高寻白云逸。荣吝始都丧，幽人遂贞吉。
+                                                                       图书纷满床，山水蔼盈室。宿昔心所尚，平生自兹毕。
+                                                                       愿言谁见知，梵筵有同术。八月高秋晚，凉风正萧瑟。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('奉和皇帝上礼抚事述怀应制','大君忘自我，应运居紫宸。揖让期明辟，讴歌且顺人。
+                                                                           轩宫帝图盛，皇极礼容申。南面朝万国，东堂会百神。
+                                                                           云陛旂常满，天庭玉帛陈。钟石和睿思，雷雨被深仁。
+                                                                           承平信娱乐，王业本艰辛。愿罢瑶池宴，来观农扈春。
+                                                                           卑宫昭夏德，尊老睦尧亲。微臣敢拜手，歌舞颂维新。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('晦日重宴高氏林亭','公子好追随，爱客不知疲。象筵开玉馔，翠羽饰金卮。 此时高宴所，讵减习家池。循涯倦短翮，何处俪长离。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('酬李参军崇嗣旅馆见赠','昨夜银河畔，星文犯遥汉。今朝紫气新，物色果逢真。
+                                                                         言从天上落，乃是地仙人。白璧疑冤楚，乌裘似入秦。
+                                                                         摧藏多古意，历览备艰辛。乐广云虽睹，夷吾风未春。
+                                                                         凤歌空有问，龙性讵能驯。宝剑终应出，骊珠会见珍。
+                                                                         未及冯公老，何惊孺子贫。青云傥可致，北海忆孙宾。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('赠赵六贞固','回中峰火入。
+                                                                    塞上追兵起。
+                                                                    此时边朔寒。
+                                                                    登陇思君子。
+                                                                    东顾望汉京。
+                                                                    南山云雾里。
+
+                                                                    赤螭媚其彩。
+                                                                    婉娈苍梧泉。
+                                                                    昔者琅琊子。
+                                                                    躬耕亦慨然。
+                                                                    美人岂遐旷。
+                                                                    之子乃前贤。
+                                                                    良辰在何许。
+                                                                    白日屡颓迁。
+                                                                    道心固微密。
+                                                                    神用无留连。
+                                                                    舒可弥宇宙。
+                                                                    揽之不盈拳。
+                                                                    蓬莱久芜没。
+                                                                    金石徒精坚。
+                                                                    良宝委短褐。
+                                                                    闲琴独蝉娟。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('秋日遇荆州府崔兵曹使宴','輶轩凤凰使，林薮鹖鸡冠。江湖一相许，云雾坐交欢。 兴尽崔亭伯，言忘释道安。林光稍欲暮，岁物已将阑。 古树苍烟断，虚亭白露寒。瑶琴山水曲，今日为君弹。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('蓟丘览古赠卢居士藏用七首。燕太子','秦王日无道，太子怨亦深。一闻田光义，匕首赠千金。 其事虽不立，千载为伤心。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('送魏兵曹使巂州得登字','阳山淫雾雨，之子慎攀登。羌笮多珍宝，人言有爱憎。 欲酬明主惠，当尽使臣能。勿以王阳道，迢递畏崚嶒。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('宿空舲峡青树村浦','的的明月水，啾啾寒夜猿。客思浩方乱，洲浦寂无喧。 忆作千金子，宁知九逝魂。虚闻事朱阙，结绶骛华轩。 委别高堂爱，窥觎明主恩。今成转蓬去，叹息复何言。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('上元夜效小庾体','三五月华新，遨游逐上春。相邀洛城曲，追宴小平津。楼上看珠妓，车中见玉人。芳宵殊未极，随意守灯轮。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('题田洗马游岩桔槔','望苑长为客，商山遂不归。谁怜北陵井，未息汉阴机。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('庆云章','昆仑元气，实生庆云。大人作矣，五色氤氲。昔在帝妫，
+                                                                  南风既薰。丛芳烂熳，郁郁纷纷。旷矣千祀，庆云来止，
+                                                                  玉叶金柯，祚我天子。非我天子，庆云谁昌。非我圣母，
+                                                                  庆云谁光。庆云光矣，周道昌矣。九万八千，天授皇年','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('送东莱王学士无竞','宝剑千金买，平生未许人。怀君万里别，持赠结交亲。 孤松宜晚岁，众木爱芳春。已矣将何道，无令白首新。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('观荆玉篇','鸱夷双白玉，此玉有缁磷。悬之千金价，举世莫知真。 丹青非异色，轻重有殊伦。勿信玉工言，徒悲荆国人。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('宴胡楚真禁所','人生固有命，天道信无言。青蝇一相点，白璧遂成冤。 请室闲逾邃，幽庭春未暄。寄谢韩安国，何惊狱吏尊。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('春台引','感阳春兮生碧草之油油。怀宇宙以伤远，登高台而写忧。
+                                                                  迟美人兮不见，恐青岁之遂遒。从毕公以酣饮，
+                                                                  寄林塘而一留。采芳荪于北渚，忆桂树于南州。
+                                                                  何云木之美丽，而池馆之崇幽。星台秀士，月旦诸子。
+                                                                  嘉青鸟之辰，迎火龙之始。挟宝书与瑶瑟，
+                                                                  芳蕙华而兰靡。乃掩白蘋，藉绿芷。酒既醉，乐未已。
+                                                                  击青钟，歌渌水。怨青春之萎绝，赠瑶台之旖旎。
+                                                                  愿一见而道意，结众芳之绸缪。曷余情之荡漾，
+                                                                  瞩青云以增愁。怅三山之飞鹤，忆海上之白鸥。重曰：
+                                                                  群仙去兮青春颓，岁华歇兮黄鸟哀。富贵荣乐几时兮，
+                                                                  朱宫碧堂生青苔，白云兮归来。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('同旻上人伤寿安傅少府','生涯良浩浩，天命固谆谆。闻道神仙尉，怀德遂为邻。
+                                                                         畴昔逢尧日，衣冠仕汉辰。交游纷若凤，词翰宛如麟。
+                                                                         太息劳黄绶，长思谒紫宸。金兰徒有契，玉树已埋尘。
+                                                                         把臂虽无托，平生固亦亲。援琴一流涕，旧馆几沾巾。
+                                                                         杳杳泉中夜，悠悠世上春。幽明长隔此，歌哭为何人。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('座右铭','事父尽孝敬，事君贵端贞。
+                                                                  兄弟敦和睦，朋友笃信诚。
+                                                                  从关重公慎，立身贵廉明。
+                                                                  待干慕谦让，莅民尚宽平。
+                                                                  理讼惟正直，察狱必审情。
+                                                                  谤议不足怨，宠辱讵须惊。
+                                                                  处满常惮溢，居高本虑倾。
+                                                                  诗礼固可学，郑卫不足听。
+                                                                  幸能修实操，何俟钓虚声。
+                                                                  白珪玷可灭，黄金诺不轻。
+                                                                  秦穆饮盗马，楚客报绝缨。
+                                                                  言行既无择，存殁自扬名。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('同王员外雨后登开元寺南楼因酬晖上人独坐山亭有赠','钟梵经行罢，香林坐入禅。岩庭交杂树，石濑泻鸣泉。 水月心方寂，云霞思独玄。宁知人世里，疲病得攀缘。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('题田洗马游岩桔槔','望苑（一作远）长为客。商山遂不归。谁怜北陵井（一作客）。未息汉阴机。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('于长史山池三日曲水宴','摘兰藉芳月，祓宴坐回汀。泛滟清流满，葳蕤白芷生。 金弦挥赵瑟，玉指弄秦筝。岩榭风光媚，郊园春树平。 烟花飞御道，罗绮照昆明。日落红尘合，车马乱纵横。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('夏日晖上人房别李参军崇嗣','四十九变化，一十三死生。翕忽玄黄里，驱驰风雨情。
+                                                                                                                                                       是非纷妄作，宠辱坐相惊。至人独幽鉴，窈窕随昏明。
+                                                                                                                                                       咫尺山河道，轩窗日月庭。别离焉足问，悲乐固能并。
+                                                                                                                                                       我辈何为尔，栖皇犹未平。金台可攀陟，宝界绝将迎。
+                                                                                                                                                       户牖观天地，阶基上杳冥。自超三界乐，安知万里征。
+                                                                                                                                                       中国要荒内，人寰宇宙荣。弦望如朝夕，宁嗟蜀道行','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('题居延古城赠乔十二知之','闻君东山意，宿昔紫芝荣。沧洲今何在，华发旅边城。 还汉功既薄，逐胡策未行。徒嗟白日暮，坐对黄云生。 桂枝芳欲晚，薏苡谤谁明。无为空自老，含叹负生平。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('落第西还别刘祭酒高明府','别馆分周国，归骖入汉京。地连函谷塞，川接广阳城。 望迥楼台出，途遥烟雾生。莫言长落羽，贫贱一交情。','陈子昂',NULL);
+# INSERT INTO poem (title, content, author, `time`) VALUES('感遇诗三十八首·其八','吾观昆崙化，日月沦洞冥。精魄相交会，天壤以罗生。仲尼推太极，老聃贵窈冥。西方金仙子，崇义乃无明。空色皆寂灭，缘业定何成。名教信纷藉，死生俱未停。','陈子昂',NULL);
