@@ -7589,3 +7589,945 @@ INSERT INTO poem (title, content, author, `time`) VALUES('同王员外雨后登�
 INSERT INTO poem (title, content, author, `time`) VALUES('题居延古城赠乔十二知之','闻君东山意，宿昔紫芝荣。沧洲今何在，华发旅边城。 还汉功既薄，逐胡策未行。徒嗟白日暮，坐对黄云生。 桂枝芳欲晚，薏苡谤谁明。无为空自老，含叹负生平。','陈子昂',NULL);
 INSERT INTO poem (title, content, author, `time`) VALUES('落第西还别刘祭酒高明府','别馆分周国，归骖入汉京。地连函谷塞，川接广阳城。 望迥楼台出，途遥烟雾生。莫言长落羽，贫贱一交情。','陈子昂',NULL);
 INSERT INTO poem (title, content, author, `time`) VALUES('感遇诗三十八首·其八','吾观昆崙化，日月沦洞冥。精魄相交会，天壤以罗生。仲尼推太极，老聃贵窈冥。西方金仙子，崇义乃无明。空色皆寂灭，缘业定何成。名教信纷藉，死生俱未停。','陈子昂',NULL);
+
+
+INSERT INTO poem (title, content, author, `time`) VALUES('白雪歌送武判官归京','北风卷地白草折，胡天八月即飞雪。
+忽如一夜春风来，千树万树梨花开。
+散入珠帘湿罗幕，狐裘不暖锦衾薄。
+将军角弓不得控，都护铁衣冷难着。
+瀚海阑干百丈冰，愁云惨淡万里凝。
+中军置酒饮归客，胡琴琵琶与羌笛。
+纷纷暮雪下辕门，风掣红旗冻不翻。
+轮台东门送君去，去时雪满天山路。
+山回路转不见君，雪上空留马行处。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('逢入京使','故园东望路漫漫，双袖龙钟泪不干。
+马上相逢无纸笔，凭君传语报平安。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('走马川行奉送封大夫出师西征','君不见走马川行雪海边，平沙莽莽黄入天。
+轮台九月风夜吼，一川碎石大如斗，随风满地石乱走。
+匈奴草黄马正肥，金山西见烟尘飞，汉家大将西出师。
+将军金甲夜不脱，半夜军行戈相拨，风头如刀面如割。
+马毛带雪汗气蒸，五花连钱旋作冰，幕中草檄砚水凝。
+虏骑闻之应胆慑，料知短兵不敢接，车师西门伫献捷。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('行军九日思长安故园','强欲登高去，无人送酒来。
+遥怜故园菊，应傍战场开。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('戏问花门酒家翁','老人七十仍沽酒，千壶百瓮花门口。
+道傍榆荚巧似钱，摘来沽酒君肯否。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('碛中作','走马西来欲到天，辞家见月两回圆。
+今夜不知何处宿，平沙万里绝人烟。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('山房春事二首','风恬日暖荡春光，戏蝶游蜂乱入房。
+数枝门柳低衣桁，一片山花落笔床。
+梁园日暮乱飞鸦，极目萧条三两家。
+庭树不知人去尽，春来还发旧时花。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('凉州馆中与诸判官夜集','弯弯月出挂城头，城头月出照凉州。
+凉州七里十万家，胡人半解弹琵琶。
+琵琶一曲肠堪断，风萧萧兮夜漫漫。
+河西幕中多故人，故人别来三五春。
+花门楼前见秋草，岂能贫贱相看老。
+一生大笑能几回，斗酒相逢须醉倒。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('武威送刘判官赴碛西行军','火山五月行人少，看君马去疾如鸟。
+都护行营太白西，角声一动胡天晓。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送李副使赴碛西官军','火山六月应更热，赤亭道口行人绝。
+知君惯度祁连城，岂能愁见轮台月。
+脱鞍暂入酒家垆，送君万里西击胡。
+功名祗向马上取，真是英雄一丈夫。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送人赴安西','上马带吴钩，翩翩度陇头。
+小来思报国，不是爱封侯。
+万里乡为梦，三边月作愁。
+早须清黠虏，无事莫经秋。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('胡歌','黑姓蕃王貂鼠裘，葡萄宫锦醉缠头。
+关西老将能苦战，七十行兵仍未休。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('暮秋山行','疲马卧长坂，夕阳下通津。
+山风吹空林，飒飒如有人。
+苍旻霁凉雨，石路无飞尘。
+千念集暮节，万籁悲萧辰。
+鶗鴂昨夜鸣，蕙草色已陈。
+况在远行客，自然多苦辛。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('寄左省杜拾遗','联步趋丹陛，分曹限紫微。
+晓随天仗入，暮惹御香归。
+白发悲花落，青云羡鸟飞。
+圣朝无阙事，自觉谏书稀。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('轮台歌奉送封大夫出师西征','轮台城头夜吹角，轮台城北旄头落。
+羽书昨夜过渠黎，单于已在金山西。
+戍楼西望烟尘黑，汉军屯在轮台北。
+上将拥旄西出征，平明吹笛大军行。
+四边伐鼓雪海涌，三军大呼阴山动。
+虏塞兵气连云屯，战场白骨缠草根。
+剑河风急雪片阔，沙口石冻马蹄脱。
+亚相勤王甘苦辛，誓将报主静边尘。
+古来青史谁不见，今见功名胜古人。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('发临洮将赴北庭留别','闻说轮台路，连年见雪飞。
+春风曾不到，汉使亦应稀。
+白草通疏勒，青山过武威。
+勤王敢道远，私向梦中归。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('春梦','洞房昨夜春风起，故人尚隔湘江水。
+枕上片时春梦中，行尽江南数千里。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('碛西头送李判官入京','一身从远使，万里向安西。
+汉月垂乡泪，胡沙费马蹄。
+寻河愁地尽，过碛觉天低。
+送子军中饮，家书醉里题。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('奉和中书舍人贾至早朝大明宫','鸡鸣紫陌曙光寒，莺啭皇州春色阑。
+金阙晓钟开万户，玉阶仙仗拥千官。
+花迎剑珮星初落，柳拂旌旗露未干。
+独有凤凰池上客，阳春一曲和皆难。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('与高适薛据同登慈恩寺浮图','塔势如涌出，孤高耸天宫。
+登临出世界，磴道盘虚空。
+突兀压神州，峥嵘如鬼工。
+四角碍白日，七层摩苍穹。
+下窥指高鸟，俯听闻惊风。
+连山若波涛，奔凑似朝东。
+青槐夹驰道，宫馆何玲珑。
+秋色从西来，苍然满关中。
+五陵北原上，万古青濛濛。
+净理了可悟，胜因夙所宗。
+誓将挂冠去，觉道资无穷。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('初过陇山途中呈宇文判官','一驿过一驿，驿骑如星流。
+平明发咸阳，暮及陇山头。
+陇水不可听，呜咽令人愁。
+沙尘扑马汗，雾露凝貂裘。
+西来谁家子，自道新封侯。
+前月发安西，路上无停留。
+都护犹未到，来时在西州。
+十日过沙碛，终朝风不休。
+马走碎石中，四蹄皆血流。
+万里奉王事，一身无所求。
+也知塞垣苦，岂为妻子谋。
+山口月欲出，先照关城楼。
+溪流与松风，静夜相飕飗。
+别家赖归梦，山塞多离忧。
+与子且携手，不愁前路修。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('武威春暮闻宇文判官西使还已到晋昌','岸雨过城头，黄鹂上戍楼。
+塞花飘客泪，边柳挂乡愁。
+白发悲明镜，青春换敝裘。
+君从万里使，闻已到瓜州。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送崔子还京','匹马西从天外归，扬鞭只共鸟争飞。
+送君九月交河北，雪里题诗泪满衣。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('冬夕','浩汗霜风刮天地，温泉火井无生意。
+泽国龙蛇冻不伸，南山瘦柏消残翠。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('奉陪封大夫九日登高','九日黄花酒，登高会昔闻。
+霜威逐亚相，杀气傍中军。
+横笛惊征雁，娇歌落塞云。
+边头幸无事，醉舞荷吾君。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('过碛','黄沙碛里客行迷，四望云天直下低。
+为言地尽天还尽，行到安西更向西。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('秋思','那知芳岁晚，坐见寒叶堕。
+吾不如腐草，翻飞作萤火。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('热海行送崔侍御还京','侧闻阴山胡儿语，西头热海水如煮。
+海上众鸟不敢飞，中有鲤鱼长且肥。
+岸旁青草长不歇，空中白雪遥旋灭。
+蒸沙烁石燃虏云，沸浪炎波煎汉月。
+阴火潜烧天地炉，何事偏烘西一隅？
+势吞月窟侵太白，气连赤坂通单于。
+送君一醉天山郭，正见夕阳海边落。
+柏台霜威寒逼人，热海炎气为之薄。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('题平阳郡汾桥边柳树','此地曾居住，今来宛似归。
+可怜汾上柳，相见也依依。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('初授官题高冠草堂','三十始一命，宦情多欲阑。
+自怜无旧业，不敢耻微官。
+涧水吞樵路，山花醉药栏。
+只缘五斗米，辜负一渔竿。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('经火山','火山今始见，突兀蒲昌东。
+赤焰烧虏云，炎氛蒸塞空。
+不知阴阳炭，何独烧此中？
+我来严冬时，山下多炎风。
+人马尽汗流，孰知造化工！','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('田使君美人舞如莲花北鋋歌','美人舞如莲花旋，世人有眼应未见。
+高堂满地红氍毹，试舞一曲天下无。
+此曲胡人传入汉，诸客见之惊且叹。
+慢脸娇娥纤复秾，轻罗金缕花葱茏。
+回裾转袖若飞雪，左鋋右鋋生旋风。
+琵琶横笛和未匝，花门山头黄云合。
+忽作出塞入塞声，白草胡沙寒飒飒。
+翻身入破如有神，前见后见回回新。
+始知诸曲不可比，采莲落梅徒聒耳。
+世人学舞只是舞，恣态岂能得如此。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('胡笳歌送颜真卿使赴河陇','君不闻胡笳声最悲？紫髯绿眼胡人吹。
+吹之一曲犹未了，愁杀楼兰征戍儿。
+凉秋八月萧关道，北风吹断天山草。
+昆仑山南月欲斜，胡人向月吹胡笳。
+胡笳怨兮将送君，秦山遥望陇山云。
+边城夜夜多愁梦，向月胡笳谁喜闻？','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('至大梁却寄匡城主人','一从弃鱼钓，十载干明王。
+无由谒天阶，却欲归沧浪。
+仲秋至东郡，遂见天雨霜。
+昨夜梦故山，蕙草色已黄。
+平明辞铁丘，薄暮游大梁。
+仲秋萧条景，拔剌飞鹅鶬。
+四郊阴气闭，万里无晶光。
+长风吹白茅，野火烧枯桑。
+故人南燕吏，籍籍名更香。
+聊以玉壶赠，置之君子堂。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('赵将军歌','九月天山风似刀，城南猎马缩寒毛。
+将军纵博场场胜，赌得单于貂鼠袍。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('西过渭州见渭水思秦川','渭水东流去，何时到雍州？
+凭添两行泪，寄向故园流。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('玉门关盖将军歌','盖将军，真丈夫。
+行年三十执金吾，身长七尺颇有须。
+玉门关城迥且孤，黄沙万里白草枯。
+南邻犬戎北接胡，将军到来备不虞。
+五千甲兵胆力粗，军中无事但欢娱。
+暖屋绣帘红地炉，织成壁衣花氍毹。
+灯前侍婢泻玉壶，金铛乱点野酡酥。
+紫绂金章左右趋，问著只是苍头奴。
+美人一双闲且都，朱唇翠眉映明矑。
+清歌一曲世所无，今日喜闻凤将雏。
+可怜绝胜秦罗敷，使君五马谩踟蹰。
+野草绣窠紫罗襦，红牙缕马对樗蒱。
+玉盘纤手撒作卢，众中夸道不曾输。
+枥上昂昂皆骏驹，桃花叱拨价最殊。
+骑将猎向城南隅，腊日射杀千年狐。
+我来塞外按边储，为君取醉酒剩沽。
+醉争酒盏相喧呼，忽忆咸阳旧酒徒。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('巩北秋兴寄崔明允','白露披梧桐，玄蝉昼夜号。
+秋风万里动，日暮黄云高。
+君子佐休明，小人事蓬蒿。
+所适在鱼鸟，焉能徇锥刀。
+孤舟向广武，一鸟归成皋。
+胜概日相与，思君心郁陶。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('天山雪歌送萧治归京','天山雪云常不开，千峰万岭雪崔嵬。
+北风夜卷赤亭口，一夜天山雪更厚。
+能兼汉月照银山，复逐胡风过铁关。
+交河城边鸟飞绝，轮台路上马蹄滑。
+晻霭寒氛万里凝，阑干阴崖千丈冰。
+将军狐裘卧不暖，都护宝刀冻欲断。
+正是天山雪下时，送君走马归京师。
+雪中何以赠君别，惟有青青松树枝。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('北庭西郊候封大夫受降回军献上','胡地苜蓿美，轮台征马肥。
+大夫讨匈奴，前月西出师。
+甲兵未得战，降虏来如归。
+橐驼何连连，穹帐亦累累。
+阴山烽火灭，剑水羽书稀。
+却笑霍嫖姚，区区徒尔为。
+西郊候中军，平沙悬落晖。
+驿马从西来，双节夹路驰。
+喜鹊捧金印，蛟龙盘画旗。
+如公未四十，富贵能及时。
+直上排青云，傍看疾若飞。
+前年斩楼兰，去岁平月支。
+天子日殊宠，朝廷方见推。
+何幸一书生，忽蒙国士知。
+侧身佐戎幕，敛衽事边陲。
+自逐定远侯，亦著短后衣。
+近来能走马，不弱并州儿。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('感遇','北山有芳杜，靡靡花正发。
+未及得采之，秋风忽吹杀。
+君不见拂云百丈青松柯，纵使秋风无奈何。
+四时常作青黛色，可怜杜花不相识。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('登古邺城','下马登邺城，城空复何见。
+东风吹野火，暮入飞云殿。
+城隅南对望陵台，漳水东流不复回。
+武帝宫中人去尽，年年春色为谁来。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('北庭贻宗学士道别','万事不可料，叹君在军中。
+读书破万卷，何事来从戎。
+曾逐李轻车，西征出太蒙。
+荷戈月窟外，擐甲昆仑东。
+两度皆破胡，朝廷轻战功。
+十年只一命，万里如飘蓬。
+容鬓老胡尘，衣裘脆边风。
+忽来轮台下，相见披心胸。
+饮酒对春草，弹棋闻夜钟。
+今且还龟兹，臂上悬角弓。
+平沙向旅馆，匹马随飞鸿。
+孤城倚大碛，海气迎边空。
+四月犹自寒，天山雪濛濛。
+君有贤主将，何谓泣途穷。
+时来整六翮，一举凌苍穹。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('酒泉太守席上醉后作','酒泉太守能剑舞，高堂置酒夜击鼓。
+胡笳一曲断人肠，座上相看泪如雨。
+琵琶长笛曲相和，羌儿胡雏齐唱歌。
+浑炙犁牛烹野驼，交河美酒归叵罗。
+三更醉后军中寝，无奈秦山归梦何。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('六月三十日水亭送华阴王少府还县（得潭字）','亭晚人将别，池凉酒未酣。
+关门劳夕梦，仙掌引归骖。
+荷叶藏鱼艇，藤花罥客簪。
+残云收夏暑，新雨带秋岚。
+失路情无适，离怀思不堪。
+赖兹庭户里，别有小江潭。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送杨子','斗酒渭城边，垆头耐醉眠。
+梨花千树雪，杨叶万条烟。
+惜别添壶酒，临岐赠马鞭。
+看君颍上去，新月到家圆。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('林卧','偶得鱼鸟趣，复兹水木凉。
+远峰带雨色，落日摇川光。
+臼中西山药，袖里淮南方。
+唯爱隐几时，独游无何乡。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送王大昌龄赴江宁','对酒寂不语，怅然悲送君。
+明时未得用，白首徒攻文。
+泽国从一官，沧波几千里。
+群公满天阙，独去过淮水。
+旧家富春渚，尝忆卧江楼。
+自闻君欲行，频望南徐州。
+穷巷独闭门，寒灯静深屋。
+北风吹微雪，抱被肯同宿。
+君行到京口，正是桃花时。
+舟中饶孤兴，湖上多新诗。
+潜虬且深蟠，黄鹄举未晚。
+惜君青云器，努力加餐饭。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('过燕支寄杜位','燕支山西酒泉道，北风吹沙卷白草。
+长安遥在日光边，忆君不见令人老。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('登总持阁','高阁逼诸天，登临近日边。
+晴开万井树，愁看五陵烟。
+槛外低秦岭，窗中小渭川。
+早知清净理，常愿奉金仙。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('蜀葵花歌','昨日一花开，今日一花开。
+今日花正好，昨日花已老。
+始知人老不如花，可惜落花君莫扫。
+人生不得长少年，莫惜床头沽酒钱。
+请君有钱向酒家，君不见，蜀葵花。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('早秋与诸子登虢州西亭观眺','亭高出鸟外，客到与云齐。
+树点千家小，天围万岭低。
+残虹挂陕北，急雨过关西。
+酒榼缘青壁，瓜田傍绿溪。
+微官何足道，爱客且相携。
+唯有乡园处，依依望不迷。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('题金城临河驿楼','古戍依重险，高楼见五凉。
+山根盘驿道，河水浸城墙。
+庭树巢鹦鹉，园花隐麝香。
+忽如江浦上，忆作捕鱼郎。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('登凉州尹台寺','胡地三月半，梨花今始开。
+因从老僧饭，更上夫人台。
+清唱云不去，弹弦风飒来。
+应须一倒载，还似山公回。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送崔全被放归都觐省','夫子不自衍，世人知者稀，来倾阮氏酒，去著老莱衣。
+渭北草新出，关东花欲飞，楚王犹自惑，片玉且将归。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('敬酬李判官使院即事见呈','公府日无事，吾徒只是闲。
+草根侵柱础，苔色上门关。
+饮砚时见鸟，卷帘晴对山。
+新诗吟未足，昨夜梦东还。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('宿铁关西馆','马汗踏成泥，朝驰几万蹄。
+雪中行地角，火处宿天倪。
+塞迥心常怯，乡遥梦亦迷。
+那知故园月，也到铁关西。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('火山云歌送别','火山突兀赤亭口，火山五月火云厚。
+火云满山凝未开，飞鸟千里不敢来。
+平明乍逐胡风断，薄暮浑随塞雨回。
+缭绕斜吞铁关树，氛氲半掩交河戍。
+迢迢征路火山东，山上孤云随马去。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('登北庭北楼，呈幕中诸公','尝读西域传，汉家得轮台。
+古塞千年空，阴山独崔嵬。
+二庭近西海，六月秋风来。
+日暮上北楼，杀气凝不开。
+大荒无鸟飞，但见白龙塠。
+旧国眇天末，归心日悠哉。
+上将新破胡，西郊绝烟埃。
+边城寂无事，抚剑空徘徊。
+幸得趋幕中，托身厕群才。
+早知安边计，未尽平生怀。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('赴北庭度陇思家','西向轮台万里馀，也知乡信日应疏。
+陇山鹦鹉能言语，为报家人数寄书。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('春兴戏题赠李侯','黄雀始欲衔花来，君家种桃花未开。
+长安二月眼看尽，寄报春风早为催。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('题三会寺苍颉造字台','野寺荒台晚，寒天古木悲。
+空阶有鸟迹，犹似造书时。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('还高冠潭口留别舍弟','昨日山有信，只今耕种时。
+遥传杜陵叟，怪我还山迟。
+独向潭上酌，无人林下期。
+东谿忆汝处，闲卧对鸬鹚。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('寄宇文判官','西行殊未已，东望何时还。
+终日风与雪，连天沙复山。
+二年领公事，两度过阳关。
+相忆不可见，别来头已斑。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('首秋轮台','异域阴山外，孤城雪海边。
+秋来唯有雁，夏尽不闻蝉。
+雨拂毡墙湿，风摇毳幕羶。
+轮台万里地，无事历三年。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('早发焉耆，怀终南别业','晓笛别乡泪，秋冰鸣马蹄。
+一身虏云外，万里胡天西。
+终日见征战，连年闻鼓鼙。
+故山在何处，昨日梦清溪。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('过酒泉，忆杜陵别业','昨夜宿祁连，今朝过酒泉。
+黄沙西际海，白草北连天。
+愁里难消日，归期尚隔年。
+阳关万里梦，知处杜陵田。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('高冠谷口招郑鄠','谷口来相访，空斋不见君。
+涧花然暮雨，潭树暖春云。
+门径稀人迹，檐峰下鹿群。
+衣裳与枕席，山霭碧氛氲。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('晚过盘石寺礼郑和尚','暂诣高僧话，来寻野寺孤。
+岸花藏水碓，溪竹映风炉。
+顶上巢新鹊，衣中得旧珠。
+谈禅未得去，辍棹且踟蹰。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('虢州送天平何丞入京市马','关树晚苍苍，长安近夕阳。
+回风醒别酒，细雨湿行装。
+习战边尘黑，防秋塞草黄。
+知君市骏马，不是学燕王。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('长门怨','君王嫌妾妒，闭妾在长门。
+舞袖垂新宠，愁眉结旧恩。
+绿钱侵履迹，红粉湿啼痕。
+羞被夭桃笑，看春独不言。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('邯郸客舍歌','客从长安来，驱马邯郸道。
+伤心丛台下，一带生蔓草。
+客舍门临漳水边，垂杨下系钓鱼船。
+邯郸女儿夜沽酒，对客挑灯夸数钱。
+酩酊醉时日正午，一曲狂歌垆上眠。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('渔父','扁舟沧浪叟，心与沧浪清。
+不自道乡里，无人知姓名。
+朝从滩上饭，暮向芦中宿。
+歌竟还复歌，手持一竿竹。
+竿头钓丝长丈馀，鼓枻乘流无定居。
+世人那得识深意，此翁取适非取鱼。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('函谷关歌，送刘评事使关西','君不见函谷关，崩城毁壁至今在。
+树根草蔓遮古道，空谷千年长不改。
+寂寞无人空旧山，圣朝无外不须关。
+白马公孙何处去，青牛老人更不还。
+苍苔白骨空满地，月与古时长相似。
+野花不省见行人，山鸟何曾识关吏。
+故人方乘使者车，吾知郭丹却不如。
+请君时忆关外客，行到关西多致书。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('司马相如琴台','相如琴台古，人去台亦空。
+台上寒萧条，至今多悲风。
+荒台汉时月，色与旧时同。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('醉戏窦子美人','朱唇一点桃花殷，宿妆娇羞偏髻鬟。
+细看只似阳台女，醉著莫许归巫山。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('题观楼','荒楼荒井闭空山，关令乘云去不还。
+羽盖霓旌何处在，空留药臼向人间。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('玉关寄长安李主簿','东去长安万里馀，故人何惜一行书。
+玉关西望堪肠断，况复明朝是岁除。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('灭胡曲','都护新灭胡，士马气亦粗。
+萧条虏尘净，突兀天山孤。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('首春渭西郊行，呈蓝田张二主簿','回风度雨渭城西，细草新花踏作泥。
+秦女峰头雪未尽，胡公陂上日初低。
+愁窥白发羞微禄，悔别青山忆旧谿.
+闻道辋川多胜事，玉壶春酒正堪携。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('九日使君席奉饯卫中丞赴长水','节使横行西出师，鸣弓擐甲羽林儿。
+台上霜风凌草木，军中杀气傍旌旗。
+预知汉将宣威日，正是胡尘欲灭时。
+为报使君多泛菊，更将弦管醉东篱。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('初至犍为作','山色轩槛内，滩声枕席间。
+草生公府静，花落讼庭闲。
+云雨连三峡，风尘接百蛮。
+到来能几日，不觉鬓毛斑。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送韦侍御先归京（得宽字）','闻欲朝龙阙，应须拂豸冠。
+风霜随马去，炎暑为君寒。
+客泪题书落，乡愁对酒宽。
+先凭报亲友，后月到长安。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('宿关西客舍寄东山严许二山人时天宝初七月初三日在内学见有高道举徵','云送关西雨，风传渭北秋。
+孤灯然客梦，寒杵捣乡愁。
+滩上思严子，山中忆许由。
+苍生今有望，飞诏下林丘。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送杨录事充潼关判官（得江字·一作充使）','夫子方寸里，秋天澄霁江。
+关西望第一，郡内政无双。
+狭室下珠箔，连宵倾玉缸。
+平明犹未醉，斜月隐书窗。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('赠酒泉韩太守','太守有能政，遥闻如古人。
+俸钱尽供客，家计常清贫。
+酒泉西望玉关道，千山万碛皆白草。
+辞君走马归长安，忆君倏忽令人老。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('范公丛竹歌','世人见竹不解爱，知君种竹府城内。
+此君托根幸得地，种来几时闻已大。
+盛暑翛翛丛色寒，闲宵槭槭叶声干。
+能清案牍帘下见，宜对琴书窗外看。
+为君成阴将蔽日，迸笋穿阶踏还出。
+守节偏凌御史霜，虚心愿比郎官笔。
+君莫爱南山松树枝，竹色四时也不移。
+寒天草木黄落尽，犹自青青君始知。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('上嘉州青衣山中峰，题惠净上人幽居，寄兵部杨郎中','青衣谁开凿，独在水中央。
+浮舟一跻攀，侧径缘穹苍。
+绝顶诣老僧，豁然登上方。
+诸岭一何小，三江奔茫茫。
+兰若向西开，峨眉正相当。
+猿鸟乐钟磬，松萝泛天香。
+江云入袈裟，山月吐绳床。
+早知清净理，久乃机心忘。
+尚以名宦拘，聿来夷獠乡。
+吾友不可见，郁为尚书郎。
+早岁爱丹经，留心向青囊。
+渺渺云智远，幽幽海怀长。
+胜赏欲与俱，引领遥相望。
+为政愧无术，分忧幸时康。
+君子满天朝，老夫忆沧浪。
+况值庐山远，抽簪归法王。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('题苜蓿峰寄家人','苜蓿峰边逢立春，胡芦河上泪沾巾。
+闺中只是空相忆，不见沙场愁杀人','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('醉里送裴子赴镇西','醉后未能别，待醒方送君。
+看君走马去，直上天山云。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送郭仆射节制剑南','铁马擐红缨，幡旗出禁城。
+明王亲授钺，丞相欲专征。
+玉馔天厨送，金杯御酒倾。
+剑门乘嶮过，阁道踏空行。
+山鸟惊吹笛，江猿看洗兵。
+晓云随去阵，夜月逐行营。
+南仲今时往，西戎计日平。
+将心感知己，万里寄悬旌。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送严黄门拜御史大夫再镇蜀川兼觐省','授钺辞金殿，承恩恋玉墀。
+登坛汉主用，讲德蜀人思。
+副相韩安国，黄门向子期。
+刀州重入梦，剑阁再题词。
+春草连青绶，晴花间赤旗。
+山莺朝送酒，江月夜供诗。
+许国分忧日，荣亲色养时。
+苍生望已久，来去不应迟。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送薛播擢第归河东','归去新战胜，盛名人共闻。
+乡连渭川树，家近条山云。
+夫子能好学，圣朝全用文。
+弟兄负世誉，词赋超人群。
+雨气醒别酒，城阴低暮曛。
+遥知出关后，更有一终军。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('西掖省即事','西掖重云开曙晖，北山疏雨点朝衣。
+千门柳色连青琐，三殿花香入紫微。
+平明端笏陪鹓列，薄暮垂鞭信马归。
+官拙自悲头白尽，不如岩下偃荆扉。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('江上春叹','腊月江上暖，南桥新柳枝。
+春风触处到，忆得故园时。
+终日不如意，出门何所之。
+从人觅颜色，自笑弱男儿。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('晚发五渡','客厌巴南地，乡邻剑北天。
+江村片雨外，野寺夕阳边。
+芋叶藏山径，芦花杂渚田。
+舟行未可住，乘月且须牵。','岑参',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('咏鹅','鹅，鹅，鹅，曲项向天歌。
+白毛浮绿水，红掌拨清波。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('于易水送人','此地别燕丹，壮士发冲冠。
+昔时人已没，今日水犹寒。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('在狱咏蝉','西陆蝉声唱，南冠客思深。
+不堪玄鬓影，来对白头吟。
+露重飞难进，风多响易沉。
+无人信高洁，谁为表予心？','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('帝京篇','山河千里国，城阙九重门。
+不睹皇居壮，安知天子尊。
+皇居帝里崤函谷，鹑野龙山侯甸服。
+五纬连影集星躔，八水分流横地轴。
+秦塞重关一百二，汉家离宫三十六。
+桂殿嶔岑对玉楼，椒房窈窕连金屋。
+三条九陌丽城隈，万户千门平旦开。
+复道斜通鳷鹊观，交衢直指凤凰台。
+剑履南宫入，簪缨北阙来。
+声名冠寰宇，文物象昭回。
+钩陈肃兰戺，璧沼浮槐市。
+铜羽应风回，金茎承露起。
+校文天禄阁，习战昆明水。
+朱邸抗平台，黄扉通戚里。
+平台戚里带崇墉，炊金馔玉待鸣钟。
+小堂绮帐三千户，大道青楼十二重。
+宝盖雕鞍金络马，兰窗绣柱玉盘龙。
+绣柱璇题粉壁映，锵金鸣玉王侯盛。
+王侯贵人多近臣，朝游北里暮南邻。
+陆贾分金将宴喜，陈遵投辖正留宾。
+赵李经过密，萧朱交结亲。
+丹凤朱城白日暮，青牛绀幰红尘度。
+侠客珠弹垂杨道，倡妇银钩采桑路。
+倡家桃李自芳菲，京华游侠盛轻肥。
+延年女弟双凤入，罗敷使君千骑归。
+同心结缕带，连理织成衣。
+春朝桂尊尊百味，秋夜兰灯灯九微。
+翠幌珠帘不独映，清歌宝瑟自相依。
+且论三万六千是，宁知四十九年非。
+古来荣利若浮云，人生倚伏信难分。
+始见田窦相移夺，俄闻卫霍有功勋。
+未厌金陵气，先开石椁文。
+朱门无复张公子，灞亭谁畏李将军。
+相顾百龄皆有待，居然万化咸应改。
+桂枝芳气已销亡，柏梁高宴今何在。
+春去春来苦自驰，争名争利徒尔为。
+久留郎署终难遇，空扫相门谁见知。
+当时一旦擅豪华，自言千载长骄奢。
+倏忽抟风生羽翼，须臾失浪委泥沙。
+黄雀徒巢桂，青门遂种瓜。
+黄金销铄素丝变，一贵一贱交情见。
+红颜宿昔白头新，脱粟布衣轻故人。
+故人有湮沦，新知无意气。
+灰死韩安国，罗伤翟廷尉。
+已矣哉，归去来。
+马卿辞蜀多文藻，扬雄仕汉乏良媒。
+三冬自矜诚足用，十年不调几邅回。
+汲黯薪逾积，孙弘阁未开。
+谁惜长沙傅，独负洛阳才。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送郑少府入辽共赋侠客远从戎','边烽警榆塞，侠客度桑干。
+柳叶开银镝，桃花照玉鞍。
+满月临弓影，连星入剑端。
+不学燕丹客，空歌易水寒。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('在军登城楼','城上风威冷，江中水气寒。
+戎衣何日定，歌舞入长安。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('北眺舂陵','揽辔疲宵迈，驱马倦晨兴。
+既出封泥谷，还过避雨陵。
+山行明照上，溪宿密云蒸。
+登高徒欲赋，词殚独抚膺。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('夏日游目聊作','暂屏嚣尘累，言寻物外情。
+致逸心逾默，神幽体自轻。
+浦夏荷香满，田秋麦气清。
+讵假沧浪上，将濯楚臣缨。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('同崔驸马晓初登楼思京','丽谯通四望，繁忧起万端。
+绮疏低晚魄，镂槛肃初寒。
+白云乡思远，黄图归路难。
+唯馀西向笑，暂似当长安。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('月夜有怀简诸同病','闲庭落景尽，疏帘夜月通。
+山灵响似应，水净望如空。
+栖枝犹绕鹊，遵渚未来鸿。
+可叹高楼妇，悲思杳难终。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('春夜韦明府宅宴得春字','酌桂陶芳夜，披薜啸幽人。
+雅琴驯鲁雉，清歌落范尘。
+宿云低迥盖，残月上虚轮。
+幸此承恩洽，聊当故乡春。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送别','寒更承夜永，凉夕向秋澄。
+离心何以赠，自有玉壶冰。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('秋日送尹大赴京','挂瓢余隐舜，负鼎尔干汤。
+竹叶离樽满，桃花别路长。
+低河耿秋色，落月抱寒光。
+素书如可嗣，幽谷伫宾行。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('春日离长安客中言怀','年华开早律，霁色荡芳晨。
+城阙千门晓，山河四望春。
+御沟通太液，戚里对平津。
+宝瑟调中妇，金罍引上宾。
+剧谈推曼倩，惊坐揖陈遵。
+意气一言合，风期万里亲。
+自惟安直道，守拙忌因人。
+谈器非先木，图荣异后薪。
+揶揄惭路鬼，憔悴切波臣。
+玄草终疲汉，乌裘几滞秦。
+生涯无岁月，岐路有风尘。
+还嗟太行道，处处白头新。
+分类：','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('和王记室从赵王春日游陀山寺','鸟旟陪访道，鹫岭狎栖真。
+四禅明静业，三空广胜因。
+祥河疏叠涧，慧日皎重轮。
+叶暗龙宫密，花明鹿苑春。
+雕谈筌奥旨，妙辩漱玄津。
+雅曲终难和，徒自奏巴人。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('相和歌辞·王昭君','敛容辞豹尾，缄怨度龙鳞。
+金钿明汉月，玉箸染胡尘。
+妆镜菱花暗，愁眉柳叶嚬。
+惟有清笳曲，时闻芳树春。
+','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('至分陕','陕西开胜壤，召南分沃畴。
+列树巢维鹊，平渚下睢鸠。
+憩棠疑勿剪，曳葛似攀樛。
+至今王化美，非独在隆周。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送王明府参选赋得鹤','振衣游紫府，飞盖背青田。
+虚心恒警露，孤影尚凌烟。
+离歌凄妙曲，别操绕繁弦。
+在阴如可和，清响会闻天。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('初秋登王司马楼宴得同字','展骥端居暇，登龙喜宴同。
+缔赏三清满，承欢六义通。
+野晦寒阴积，潭虚夕照空。
+顾惭非梦鸟，滥此厕雕虫。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('早发淮口望盱眙','养蒙分四渎，习坎奠三荆。
+徙帝留馀地，封王表旧城。
+岸昏涵蜃气，潮满应鸡声。
+洲迥连沙静，川虚积溜明。
+一朝从捧檄，千里倦悬旌。
+背流桐柏远，逗浦木兰轻。
+小山迷隐路，大块切劳生。
+唯有贞心在，独映寒潭清。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('伤祝阿王明府','洛川真气上，重泉惠政融。
+含章光后烈，继武嗣前雄。
+与善良难验，生涯忽易穷。
+翔凫犹化履，狎雉尚驯童。
+钱满荒阶绿，尘浮虚帐红。
+夏馀将宿草，秋近未惊蓬。
+烟晦泉门闭，日尽夜台空。
+谁堪孤陇外，独听白杨风。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('四月八日题七级','化城分鸟堞，香阁俯龙川。
+复栋侵黄道，重檐架紫烟。
+铭书非晋代，壁画是梁年。
+霸略今何在，王宫尚岿然。
+二帝曾游圣，三卿是偶贤。
+因兹游胜侣，超彼托良缘。
+我出有为界，君登非想天。
+悠悠青旷里，荡荡白云前。
+今日经行处，曲音号盖烟。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('相和歌辞·从军行','平生一顾念，意气溢三军。
+野日分戈影，天星合剑文。
+弓弦抱汉月，马足践胡尘。
+不求生入塞，唯当死报君。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('相和歌辞·棹歌行','写月图黄罢，凌波拾翠通。
+镜花摇芰日，衣麝入荷风。
+叶密舟难荡，莲疏浦易空。
+凤媒羞自托，鸳翼恨难穷。
+秋帐灯花翠，倡楼粉色红。
+相思无别曲，并在棹歌中。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('晚憩田家','转蓬劳远役，披薜下田家。
+山形类九折，水势急三巴。
+悬梁接断岸，涩路拥崩查。
+雾岩沦晓魄，风溆涨寒沙。
+心迹一朝舛，关山万里赊。
+龙章徒表越，闽俗本殊华。
+旅行悲泛梗，离赠折疏麻。
+唯有寒潭菊，独似故园花。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('出石门','层岩远接天，绝岭上栖烟。
+松低轻盖偃，藤细弱丝悬。
+石明如挂镜，苔分似列钱。
+暂策为龙杖，何处得神仙。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('寓居洛滨对雪忆谢二','旅思眇难裁，冲飙恨易哀。
+旷望洛川晚，飘飖瑞雪来。
+积彩明书幌，流韵绕琴台。
+色夺迎仙羽，花避犯霜梅。
+谢庭赏方逸，袁扉掩未开。
+高人傥有访，兴尽讵须回。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('北眺舂陵','揽辔疲宵迈，驱马倦晨兴。
+既出封泥谷，还过避雨陵。
+山行明照上，谿宿密云蒸。
+登高徒欲赋，词殚独抚膺。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('同崔驸马晓初登楼思京','丽谯通四望，繁忧起万端。
+绮疏低晚魄，镂槛肃初寒。
+白云乡思远，黄图归路难。
+唯馀西向笑，暂似当长安。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('月夜有怀简诸同病','闲庭落景尽，疏帘夜月通。
+山灵响似应，水净望如空。
+栖枝犹绕鹊，遵渚未来鸿。
+可叹高楼妇，悲思杳难终。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('叙寄员半千','薄宦三河道，自负十馀年。
+不应惊若厉，只为直如弦。
+坐历山川险，吁嗟陵谷迁。
+长吟空抱膝，短翮讵冲天。
+魂归沧海上，望断白云前。
+钓名劳拾紫，隐迹自谈玄。
+不学多能圣，徒思鸿宝仙。
+斯志良难已，此道岂徒然。
+嗟为刀笔吏，耻从绳墨牵。
+岐路情虽狎，人伦地本偏。
+长揖谢时事，独往访林泉。
+寄言二三子，生死不来旋。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('咏怀古意上裴侍郎','三十二馀罢，鬓是潘安仁。
+四十九仍入，年非朱买臣。
+纵横愁系越，坎壈倦游秦。
+出笼穷短翮，委辙涸枯鳞。
+穷经不沾用，弹铗欲谁申。
+天子未驱策，岁月几沉沦。
+轻生长慷慨，效死独殷勤。
+徒歌易水客，空老渭川人。
+一得视边塞，万里何苦辛。
+剑匣胡霜影，弓开汉月轮。
+金刀动秋色，铁骑想风尘。
+为国坚诚款，捐躯忘贱贫。
+勒功思比宪，决略暗欺陈。
+若不犯霜雪，虚掷玉京春。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('过张平子墓','西鄂该通理，南阳擅德音。
+玉卮浮藻丽，铜浑积思深。
+忽怀今日昔，非复昔时今。
+日落丰碑暗，风来古木吟。
+惟叹穷泉下，终郁羡鱼心。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('于紫云观赠道士','碧落澄秋景，玄门启曙关。
+人疑列御至，客似令威还。
+羽盖徒欣仰，云车未可攀。
+只应倾玉醴，时许寄颓颜。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('渡瓜步江','捧檄辞幽径，鸣榔下贵洲。
+惊涛疑跃马，积气似连牛。
+月迥寒沙净，风急夜江秋。
+不学浮云影，他乡空滞留。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('途中有怀','眷然怀楚奏，怅矣背秦关。
+涸鳞惊照辙，坠羽怯虚弯。
+素服三川化，乌裘十上还。
+莫言无皓齿，时俗薄朱颜。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('至分水戍','行役忽离忧，复此怆分流。
+溅石回湍咽，萦丛曲涧幽。
+阴岩常结晦，宿莽竞含秋。
+况乃霜晨早，寒风入戍楼。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('望乡夕泛','归怀剩不安，促榜犯风澜。
+落宿含楼近，浮月带江寒。
+喜逐行前至，忧从望里宽。
+今夜南枝鹊，应无绕树难。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('久客临海有怀','天涯非日观，地屺望星楼。
+练光摇乱马，剑气上连牛。
+草湿姑苏夕，叶下洞庭秋。
+欲知凄断意，江上涉安流。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('游兖部逢孔君自卫来，欣然相遇若旧','游人自卫返，背客隔淮来。
+倾盖金兰合，忘筌玉叶开。
+繁花明日柳，疏蕊落风梅。
+将期重交态，时慰不然灰。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('西京守岁','闲居寡言宴，独坐惨风尘。
+忽见严冬尽，方知列宿春。
+夜将寒色去，年共晓光新。
+耿耿他乡夕，无由展旧亲。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('秋日饯陆道士陈文林','青牛游华岳，赤马走吴宫。
+玉柱离鸿怨，金罍浮蚁空。
+日霁崤陵雨，尘起洛阳风。
+唯当玄度月，千里与君同','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送费六还蜀','星楼望蜀道，月峡指吴门。
+万行流别泪，九折切惊魂。
+雪影含花落，云阴带叶昏。
+还愁三径晚，独对一清尊。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('秋日送侯四得弹字','我留安豹隐，君去学鹏抟。
+岐路分襟易，风云促膝难。
+夕涨流波急，秋山落日寒。
+惟有思归引，凄断为君弹。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('秋日送别','寂寥心事晚，摇落岁时秋。
+共此伤年发，相看惜去留。
+当歌应破涕，哀命返穷愁。
+别后能相忆，东陵有故侯。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('别李峤得胜字','芳尊徒自满，别恨转难胜。
+客似游江岸，人疑上灞陵。
+寒更承夜永，凉景向秋澄。
+离心何以赠，自有玉壶冰。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('在兖州饯宋五之问','淮沂泗水地，梁甫汶阳东。
+别路青骊远，离尊绿蚁空。
+柳寒凋密翠，棠晚落疏红。
+别后相思曲，凄断入琴风。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('游灵公观','灵峰标胜境，神府枕通川。
+玉殿斜连汉，金堂迥架烟。
+断风疏晚竹，流水切危弦。
+别有青门外，空怀玄圃仙。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('夏日游山家同夏少府','返照下层岑，物外狎招寻。
+兰径薰幽珮，槐庭落暗金。
+谷静风声彻，山空月色深。
+一遣樊笼累，唯馀松桂心。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('初秋于窦六郎宅宴','千里风云契，一朝心赏同。
+意尽深交合，神灵俗累空。
+草带销寒翠，花枝发夜红。
+唯将澹若水，长揖古人风。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('冬日宴','二三物外友，一百杖头钱。
+赏洽袁公地，情披乐令天。
+促席鸾觞满，当炉兽炭然。
+何须攀桂树，逢此自留连。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('镂鸡子','幸遇清明节，欣逢旧练人。
+刻花争脸态，写月竞眉新。
+晕罢空馀月，诗成并道春。
+谁知怀玉者，含响未吟晨。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('咏美人在天津桥','美女出东邻，容与上天津。
+整衣香满路，移步袜生尘。
+水下看妆影，眉头画月新。
+寄言曹子建，个是洛川神。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送宋五之问得凉字','愿言游泗水，支离去二漳。
+道术君所笃，筌蹄余自忘。
+雪威侵竹冷，秋爽带池凉。
+欲验离襟切，岐路在他乡。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('宪台出絷寒夜有怀','独坐怀明发，长谣苦未安。
+自应迷北叟，谁肯问南冠。
+生死交情异，殷忧岁序阑。
+空馀朝夕鸟，相伴夜啼寒。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送郭少府探得忧字','开筵枕德水，辍棹舣仙舟。
+贝阙桃花浪，龙门竹箭流。
+当歌凄别曲，对酒泣离忧。
+还望青门外，空见白云浮。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('冬日过故人任处士书斋','神交尚投漆，虚室罢游兰。
+网积窗文乱，苔深履迹残。
+雪明书帐冷，水静墨池寒。
+独此琴台夜，流水为谁弹。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('送刘少府游越州','一丘余枕石，三越尔怀铅。
+离亭分鹤盖，别岸指龙川。
+露下蝉声断，寒来雁影连。
+如何沟水上，凄断听离弦。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('赋得白云抱幽石','重岩抱危石，幽涧曳轻云。
+绕镇仙衣动，飘蓬羽盖分。
+锦色连花静，苔光带叶熏。
+讵知吴会影，长抱穀城文。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('赋得春云处处生','千里年光静，四望春云生。
+椠日祥光举，疏云瑞叶轻。
+盖阴笼迥树，阵影抱危城。
+非将吴会远，飘荡帝乡情。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('咏水','列名通地纪，疏派合天津。
+波随月色净，态逐桃花春。
+照霞如隐石，映柳似沉鳞。
+终当挹上善，属意澹交人。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('同张二咏雁','唼藻沧江远，衔芦紫塞长。
+雾深迷晓景，风急断秋行。
+阵照通宵月，书封几夜霜。
+无复能鸣分，空知愧稻粱。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('咏雪','龙云玉叶上，鹤雪瑞花新。
+影乱铜乌吹，光销玉马津。
+含辉明素篆，隐迹表祥轮。
+幽兰不可俪，徒自绕阳春。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('咏云酒','朔空曾纪历，带地旧疏泉。
+色泛临砀瑞，香流赴蜀仙。
+款交欣散玉，洽友悦沉钱。
+无复中山赏，空吟吴会篇。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('尘灰','洛川流雅韵，秦道擅苛威。
+听歌梁上动，应律管中飞。
+光飘神女袜，影落羽人衣。
+愿言心未翳，终冀效轻微。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('秋晨同淄川毛司马秋九咏·秋风','紫陌炎氛歇，青蘋晚吹浮。
+乱竹摇疏影，萦池织细流。
+飘香曳舞袖，带粉泛妆楼。
+不分君恩绝，纨扇曲中秋。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('称心寺','征帆恣远寻，逶迤过称心。
+凝滞蘅vK岸，沿洄楂柚林。
+穿溆不厌曲，舣潭惟爱深。
+为乐凡几许，听取舟中琴。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('棹歌行','写月涂黄罢，凌波拾翠通。
+镜花摇芰日，衣麝入荷风。
+叶密舟难荡，莲疏浦易空。
+凤媒羞自托，鸳翼恨难穷。
+秋帐灯华翠，倡楼粉色红。
+相思无别曲，并在棹歌中。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('海曲书情','薄游倦千里，劳生负百年。
+未能槎上汉，讵肯剑游燕。
+白云照春海，青山横曙天。
+江涛让双璧，渭水掷三钱。
+坐惜风光晚，长歌独块然。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('蓬莱镇','旅客春心断，边城夜望高。
+野楼疑海气，白鹭似江涛。
+结绶疲三入，承冠泣二毛。
+将飞怜弱羽，欲济乏轻舠.
+赖有阳春曲，穷愁且代劳。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('冬日野望','故人无与晤，安步陟山椒。
+野静连云卷，川明断雾销。
+灵岩闻晓籁，洞浦涨秋潮。
+三江归望断，千里故乡遥。
+劳歌徒自奏，客魂谁为招。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('晚渡黄河','千里寻归路，一苇乱平源。
+通波连马颊，迸水急龙门。
+照日荣光净，惊风瑞浪翻。
+棹唱临风断，樵讴入听喧。
+岸迥秋霞落，潭深夕雾繁。
+谁堪逝川上，日暮不归魂。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('宿山庄','金陵一超忽，玉烛几还周。
+露积吴台草，风入郢门楸。
+林虚宿断雾，磴险挂悬流。
+拾青非汉策，化缁类秦裘。
+牵迹犹多蹇，劳生未寡尤。
+独此他乡梦，空山明月秋。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('晚度天山有怀京邑','忽上天山路，依然想物华。
+云疑上苑叶，雪似御沟花。
+行叹戎麾远，坐怜衣带赊。
+交河浮绝塞，弱水浸流沙。
+旅思徒漂梗，归期未及瓜。
+宁知心断绝，夜夜泣胡笳。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('远使海曲春夜多怀','长啸三春晚，端居百虑盈。
+未安胡蝶梦，遽切鲁禽情。
+别岛连寰海，离魂断戍城。
+流星疑伴使，低月似依营。
+怀禄宁期达，牵时匪徇名。
+艰虞行已远，时迹自相惊。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('早发诸暨','征夫怀远路，夙驾上危峦。
+薄烟横绝巘，轻冻涩回湍。
+野雾连空暗，山风入曙寒。
+帝城临灞涘，禹穴枕江干。
+橘性行应化，蓬心去不安。
+独掩穷途泪，长歌行路难。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('望月有所思','九秋凉风肃，千里月华开。
+圆光随露湛，碎影逐波来。
+似霜明玉砌，如镜写珠胎。
+晚色依关近，边声杂吹哀。
+离居分照耀，怨绪共裴徊。
+自绕南飞羽，空忝北堂才。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('夏日夜忆张二','伏枕忧思深，拥膝独长吟。
+烹鲤无尺素，筌鱼劳寸心。
+疏麻空有折，芳桂湛无斟。
+广庭含夕气，闲宇澹虚阴。
+织虫垂夜砌，惊鸟栖暝林。
+欢娱百年促，羁病一生侵。
+讵堪孤月夜，流水入鸣琴。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('秋日山行简梁大官','乘马陟层阜，回首睇山川。
+攒峰衔宿雾，叠巘架寒烟。
+百重含翠色，一道落飞泉。
+香吹分岩桂，鲜云抱石莲。
+地偏心易远，致默体逾玄。
+得性虚游刃，忘言已弃筌。
+弹冠劳巧拙，结绶倦牵缠。
+不如从四皓，丘中鸣一弦。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('晚泊江镇','四运移阴律，三翼泛阳侯。
+荷香销晚夏，菊气入新秋。
+夜乌喧粉堞，宿雁下芦洲。
+海雾笼边徼，江风绕戍楼。
+转蓬惊别渚，徙橘怆离忧。
+魂飞灞陵岸，泪尽洞庭流。
+振影希鸿陆，逃名谢蚁丘。
+还嗟帝乡远，空望白云浮。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('边城落日','边城落日','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('宿温城望军营','虏地寒胶折，边城夜柝闻。
+兵符关帝阙，天策动将军。
+塞静胡笳彻，沙明楚练分。
+风旗翻翼影，霜剑转龙文。
+白羽摇如月，青山断若云。
+烟疏疑卷幔，尘灭似销氛。
+投笔怀班业，临戎想顾勋。
+还应雪汉耻，持此报明君。','骆宾王',NULL);
+INSERT INTO poem (title, content, author, `time`) VALUES('咏怀','少年识事浅，不知交道难。
+一言芬若桂，四海臭如兰。
+宝剑思存楚，金锤许报韩。
+虚心徒有托，循迹谅无端。
+太息关山险，吁嗟岁月阑。
+忘机殊会俗，守拙异怀安。
+阮籍空长啸，刘琨独未欢。
+十步庭芳敛，三秋陇月团。
+槐疏非尽意，松晚夜凌寒。
+悲调弦中急，穷愁醉里宽。
+莫将流水引，空向俗人弹。','骆宾王',NULL);
