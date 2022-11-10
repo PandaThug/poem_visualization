@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "htttp://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.poem_visualization.dao.PoetLifeMapper">
+
+    <select id="selectBirthYearByName" resultType="int">
+        select min(time) as birth
+        from footprint
+        where name = #{name}
+    </select>
+
+    <select id="selectDeathYearByName" resultType="int">
+        select max(time) as death
+        from footprint
+        where name = #{name}
+    </select>
+</mapper>
