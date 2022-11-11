@@ -8,4 +8,3 @@ function updateAll()
     updateLineChart();
 }
 
-updateAll();

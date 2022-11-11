@@ -3,80 +3,25 @@ var test = [
     [
         { name: '喜', value: 40 },
         { name: '悲', value: 33 },
-        { name: '忧', value: 28 },
-        { name: '感慨', value: 22 },
-        { name: '迷乱', value: 20 },
-        { name: '迷惘', value: 15 },
-        { name: '寂寞', value: 12 },
-        { name: '思乡', value: 10 },
-        { name: '不舍', value: 15 },
-        { name: '闲淡', value: 12 },
-        { name: '愤怒', value: 10 },
     ],//1
     [
         { name: '喜', value: 20 },
         { name: '悲', value: 33 },
-        { name: '忧', value: 28 },
-        { name: '感慨', value: 22 },
-        { name: '迷乱', value: 20 },
-        { name: '迷惘', value: 15 },
-        { name: '寂寞', value: 12 },
-        { name: '思乡', value: 10 },
-        { name: '不舍', value: 15 },
-        { name: '闲淡', value: 12 },
-        { name: '愤怒', value: 10 },
+    ],
+    [
+        { name: '喜', value: 40 },
     ],
     [
         { name: '喜', value: 40 },
         { name: '悲', value: 33 },
-        { name: '忧', value: 28 },
-        { name: '感慨', value: 22 },
-        { name: '迷乱', value: 20 },
-        { name: '迷惘', value: 15 },
-        { name: '寂寞', value: 12 },
-        { name: '思乡', value: 10 },
-        { name: '不舍', value: 15 },
-        { name: '闲淡', value: 12 },
-        { name: '愤怒', value: 10 },
-    ],
-    [
-        { name: '喜', value: 40 },
-        { name: '悲', value: 33 },
-        { name: '忧', value: 28 },
-        { name: '感慨', value: 22 },
-        { name: '迷乱', value: 20 },
-        { name: '迷惘', value: 15 },
-        { name: '寂寞', value: 12 },
-        { name: '思乡', value: 10 },
-        { name: '不舍', value: 15 },
-        { name: '闲淡', value: 12 },
-        { name: '愤怒', value: 10 },
     ],
     [
         { name: '喜', value: 20 },
         { name: '悲', value: 33 },
-        { name: '忧', value: 28 },
-        { name: '感慨', value: 22 },
-        { name: '迷乱', value: 20 },
-        { name: '迷惘', value: 15 },
-        { name: '寂寞', value: 12 },
-        { name: '思乡', value: 10 },
-        { name: '不舍', value: 15 },
-        { name: '闲淡', value: 12 },
-        { name: '愤怒', value: 10 },
     ],//5
     [
         { name: '喜', value: 40 },
         { name: '悲', value: 33 },
-        { name: '忧', value: 28 },
-        { name: '感慨', value: 22 },
-        { name: '迷乱', value: 20 },
-        { name: '迷惘', value: 15 },
-        { name: '寂寞', value: 12 },
-        { name: '思乡', value: 10 },
-        { name: '不舍', value: 15 },
-        { name: '闲淡', value: 12 },
-        { name: '愤怒', value: 30 },
     ],
     [
         { name: '喜', value: 40 },
@@ -120,7 +65,8 @@ var mySeries = []
 var x, y, gap
 var pieChart = echarts.init(document.querySelector('.innerLeaf'))
 for (var key in test) {
-    // console.log(test[key]);
+
+    //console.log("初始化",test[key]);
     if (key != 0) {
         // 一排放三个
         if (key % 3 == 1)

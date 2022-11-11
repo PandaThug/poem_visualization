@@ -141,9 +141,9 @@ function updateLeaf3(response,imageName){
     option.series[num+1].name=imageName;
     option.series[num].data=dataLeaf;
     option.series[num+1].data=dataLeaf;
-    // console.log("第"+(num+2)/2+"个意象");
-    // console.log(imageName);
-    // console.log(dataLeaf);
+    console.log("第"+(num+2)/2+"个意象");
+    console.log(imageName);
+    console.log(dataLeaf);
     if(getNum==num*2-2)//获取完毕，push设置
     {
         pieChart.setOption(option);

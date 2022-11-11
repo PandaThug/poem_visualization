@@ -40,10 +40,7 @@ function timeSetting(){
     scl.scrollTop=scl.scrollHeight;//滑动至底部
     changeMode();
 }
-function changePoetName(name){
-    poetName=name;
-    changeMode();
-}
+
 function changeMode(){
 
     //计算模式
