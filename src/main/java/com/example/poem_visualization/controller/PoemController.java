@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -27,7 +28,7 @@ public class PoemController {
     public Map<String, Integer> getImages(String beginTime, String endTime) {
         List<Map<String, Integer>> images = poemService.findImagesByTime(Integer.parseInt(beginTime),
                 Integer.parseInt(endTime));
-        Map<String, Integer> map = new HashMap<>();
+        Map<String, Integer> map = new LinkedHashMap<>();
         if (images != null) {
             for (Map<String, Integer> image : images) {
                 for (String key : image.keySet()) {
@@ -62,7 +63,7 @@ public class PoemController {
     public Map<String, Integer> getImages(String name, String beginTime, String endTime) {
         List<Map<String, Integer>> images = poemService.findImagesByPoetAndTime(name, Integer.parseInt(beginTime),
                 Integer.parseInt(endTime));
-        Map<String, Integer> map = new HashMap<>();
+        Map<String, Integer> map = new LinkedHashMap<>();
         if (images != null) {
             for (Map<String, Integer> image : images) {
                 for (String key : image.keySet()) {
@@ -97,7 +98,7 @@ public class PoemController {
     public Map<String, Integer> getEmo(String beginTime, String endTime) {
         List<Map<String, Integer>> emos = poemService.findEmoByTime(Integer.parseInt(beginTime),
                 Integer.parseInt(endTime));
-        Map<String, Integer> map = new HashMap<>();
+        Map<String, Integer> map = new LinkedHashMap<>();
         if (emos != null) {
             for (Map<String, Integer> emo : emos) {
                 for (String key : emo.keySet()) {
@@ -132,7 +133,7 @@ public class PoemController {
     public Map<String, Integer> getEmo(String name, String beginTime, String endTime) {
         List<Map<String, Integer>> emos = poemService.findEmoByPoetAndTime(name, Integer.parseInt(beginTime),
                 Integer.parseInt(endTime));
-        Map<String, Integer> map = new HashMap<>();
+        Map<String, Integer> map = new LinkedHashMap<>();
         if (emos != null) {
             for (Map<String, Integer> emo : emos) {
                 for (String key : emo.keySet()) {

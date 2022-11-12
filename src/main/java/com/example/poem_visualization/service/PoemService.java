@@ -31,6 +31,12 @@ public class PoemService {
         // 空值处理
         if (maps.get(0) == null) {
             maps.remove(0);
+            Map<String, Integer> map;
+            for (int i = 0; i < 15; i++) {
+                map = new LinkedHashMap<>();
+                map.put("不存在的意象" + i, 0);
+                maps.add(i, map);
+            }
         }
         return maps;
     }
@@ -52,6 +58,12 @@ public class PoemService {
         // 空值处理
         if (maps.get(0) == null) {
             maps.remove(0);
+            Map<String, Integer> map;
+            for (int i = 0; i < 15; i++) {
+                map = new LinkedHashMap<>();
+                map.put("不存在的意象" + i, 0);
+                maps.add(i, map);
+            }
         }
         return maps;
     }
@@ -72,6 +84,12 @@ public class PoemService {
         // 空值处理
         if (maps.get(0) == null) {
             maps.remove(0);
+            Map<String, Integer> map;
+            for (int i = 0; i < 15; i++) {
+                map = new LinkedHashMap<>();
+                map.put("不存在的情感" + i, 0);
+                maps.add(i, map);
+            }
         }
         return maps;
     }
@@ -93,6 +111,12 @@ public class PoemService {
         // 空值处理
         if (maps.get(0) == null) {
             maps.remove(0);
+            Map<String, Integer> map;
+            for (int i = 0; i < 15; i++) {
+                map = new LinkedHashMap<>();
+                map.put("不存在的情感" + i, 0);
+                maps.add(i, map);
+            }
         }
         return maps;
     }
