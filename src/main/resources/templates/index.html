@@ -21,7 +21,8 @@
 
 <body>
     <!-- 标题区域 -->
-    <div class="header">
+    <div class="header" style="font-size: 25px;font-weight: bolder;align-content: center;color:white;">
+        当代著名诗人路径与部分诗作特征可视化
     </div>
     <!-- 可视化大盒子 -->
     <div class="main" th:style="'background:url('+@{/images/background.jpg}+');'">
@@ -33,7 +34,7 @@
                     <div id="timeAxis">
                     </div>
                 </div>
-                <button id="globalBtn">全局</button>
+                <button id="globalBtn" >全局</button>
             </div>
             <div class="timeSettingBox" id="timeSetting" @mouseenter="mouseenter">
                 <div>自定义时间</div>
@@ -64,14 +65,13 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- 右边，滚动框区域 -->
-                    <div class="scroll"></div>
+
                 </div>
             </div>
         </div>
         <div class="column">
             <!-- 地图显示区域 -->
-            <div class="mapBox">
+            <div class="mapBox" th:style="'border-image-source:url('+@{/images/border1.png}+');border-image-slice: 67 67 67 67; border-image-width: 50px;border-image-outset: 5px;'">
                 <!-- 历史事件栏 -->
                 <div class="eventBox"></div>
             </div>

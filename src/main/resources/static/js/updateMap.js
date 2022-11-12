@@ -70,5 +70,12 @@ function updateMap2(){
     var option = myChartmap.getOption();
     option.series[0].data = convertData(mapData);
     option.series[3].data = convertToLineData(mapData);
+    if(showMode!=0)//非全局模式时加粗线条图标
+    {
+        option.series[3].effect.symbolSize = 4;
+    }
+    else {
+        option.series[3].effect.symbolSize = 2;
+    }
     myChartmap.setOption(option);
 }

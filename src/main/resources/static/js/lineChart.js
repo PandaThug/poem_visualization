@@ -19,9 +19,9 @@ let optionline = {
                     x2: 0,
                     y2: 1,
                     colorStops:[{
-                        offset:0, color: 'rgba(101, 124, 168,0.00)'
+                        offset:0, color: 'rgba(147,193,215,0.0)'
                     },{
-                        offset:1, color: 'rgba(101, 124, 168,0.20)'
+                        offset:1, color: 'rgba(147,193,215,0.20)'
                     }]
                 }
             }
@@ -115,7 +115,7 @@ let optionline = {
         lineStyle: {
             normal: {
                 width: 3,
-                color: "#3DE0F3", // 线条颜色
+                color: "#80d7bf", // 线条颜色
             },
             type: 'solid',
             // borderColor: 'rgba(0,0,0,.4)',
@@ -123,7 +123,7 @@ let optionline = {
         itemStyle: {
             color: '#fff',
             borderWidth: 2,
-            borderColor: '#3DE0F3',
+            borderColor: '#80d7bf',
         },
         tooltip: {
             show: true
@@ -136,16 +136,16 @@ let optionline = {
                 //线性渐变，前4个参数分别是x0,y0,x2,y2(范围0~1);相当于图形包围盒中的百分比。如果最后一个参数是‘true’，则该四个值是绝对像素位置。
                 color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                     offset: 0,
-                    color: "rgba(61, 224, 243,.8)"
+                    color: "rgba(172,217,205,.8)"
 
 
                 },
                     {
                         offset: 1,
-                        color: "rgba(61, 224, 243, 0.1)"
+                        color: "rgba(172,217,205,.1)"
                     }
                 ], false),
-                shadowColor: 'rgba(25,163,223, 0.5)', //阴影颜色
+                shadowColor: 'rgba(172,217,205,.5)', //阴影颜色
                 shadowBlur: 20 //shadowBlur设图形阴影的模糊大小。配合shadowColor,shadowOffsetX/Y, 设置图形的阴影效果。
             }
         },

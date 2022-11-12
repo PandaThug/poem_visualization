@@ -46,7 +46,7 @@ body::after{
 }
 /***********************/
 .header {
-  height:10%;
+  height:6%;
   width: 100%;
   min-width: 1024px;
   min-height: 50px;
@@ -54,7 +54,7 @@ body::after{
 }
 .main {
   display: flex;
-  height:90%;
+  height:94%;
   width: 100%;
   min-width: 1024px;
   min-height: 450px;
@@ -103,11 +103,11 @@ body::after{
   height: 500%;
 }
 
-.timeAxisBox .globalBtn {
+.timeAxisBox #globalBtn {
   width: 60%;
   height: 10%;
-  background-color: peachpuff;
   border-radius: 20px;
+  font-size: larger;
 }
 
 .timeSettingBox{
@@ -115,6 +115,7 @@ body::after{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   background-color: rgba(255,255,255,0.8);
   position: relative;
 }
@@ -182,13 +183,13 @@ body::after{
   justify-content: center;
   align-items: center;
   height:45%;
-  background-color: peachpuff;
+  background-color: rgba(255,255,255,0.8);
 }
 
 .poetsBox .poetsList {
   display: flex;
   height: 80%;
-  width: 80%;
+  width: 95%;
 }
 
 .poetsBox .list {
@@ -198,24 +199,28 @@ body::after{
   align-items: center;
   width: 85%;
   height: 100%;
-  background-color: rgb(214, 201, 176);
+  background-color: rgba(255,255,255,0.8);
 }
 
 .poetsBox .list .allPoetsBtn {
-  height: 10%;
+  height: 15%;
   width: 80%;
-  border-bottom: 2px solid #000;
+  font-size: larger;
+  border-bottom: 3px solid #b9ddd1;
   background-color: transparent;
 }
 
 .poetsBox .list .poets {
   /*overflow: auto;*/
+  /*font-size:18px;*/
+  /*background-color: #fff;*/
 }
 
-.poetsBox .scroll {
-  width: 15%;
-  background-color: #fff;
-  height: 100%;
+.poetsBox .list li button{
+  background-color: transparent;
+  font-size: 14px;
+  align-content: center;
+  width: 100%;
 }
 
 
@@ -227,6 +232,7 @@ body::after{
 .mapBox {
   position: relative;
   height:65%;
+  border:27px solid;
   background-color: burlywood;
   overflow: hidden;
   background-color: rgba(255,255,255,0.5);
@@ -246,7 +252,7 @@ body::after{
 .analysisBox {
   height:35%;
   overflow-y: scroll;
-  background-color: wheat;
+  background-color: #fbdfaf87;
 }
 .analysisBox .innerLeaf {
   width: 100%;
@@ -276,7 +282,7 @@ body::after{
 }
 .lineChartBox {
   height:35%;
-  background-color: darkgoldenrod;
+  background-color: rgba(255,255,255,0.5);
 padding: 3%;
 }
 

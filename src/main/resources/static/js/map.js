@@ -3,8 +3,8 @@
     var uploadedDataURL = "./js/china.json";
     var mapData=[[]];
     var n=15;
-    colorScatter='#f6d688'
-    colorLine='rgba(228,190,123,0.5)'
+    colorScatter='#fbcd4f'
+    colorLine='rgba(127,175,185,0.5)'
     //如果想要修改，请点击上方克隆，然后在自己的版本上修改，不要在lz的版本上改！！
 
     // echarts.extendsMap = function(id, opt) {
@@ -978,10 +978,9 @@
                     name: 'light',
                     type: 'scatter',
                     coordinateSystem: 'geo',
+                    zlevel: 2,
+                    symbolSize: 7,
                     data: convertData(mapData),
-                    symbolSize: function(val) {
-                        return val[2] / 10;
-                    },
                     label: {
                         normal: {
                             formatter: '{b}',
@@ -1038,7 +1037,7 @@
                     //原作用是取前20个点做扩散效果
 
                     //slice截取数组部分
-                    symbolSize: 20,
+                    symbolSize: 10,
                     showEffectOn: 'render',
                     rippleEffect: {
                         brushType: 'stroke'
@@ -1061,18 +1060,18 @@
                             shadowColor:colorScatter
                         }
                     },
-                    zlevel: 1
+                    zlevel: 2
                 },
                 //地图线的动画效果
                 {
                     type: 'lines',
-                    zlevel: 2,
+                    zlevel: 1,
                     effect: {
                         show: true,
                         period: 4, //箭头指向速度，值越小速度越快
                         trailLength: 0.02, //特效尾迹长度[0,1]值越大，尾迹越长重
                         symbol: 'arrow', //箭头图标
-                        symbolSize: 3, //图标大小
+                        symbolSize: 2, //图标大小
                     },
                     lineStyle: {
                         normal: {

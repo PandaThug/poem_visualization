@@ -2,74 +2,78 @@
 let bubbleMode=0;
 let bubbleChart = echarts.init(document.querySelector('.bubbleBox'));
 let bubbleOptions
+colorBubble=['#89b5cb','#fedfa6','#c1d0e5','#b6e1d0','#e9bbb2','#95d4dd','#f1c7a7','#bccbc3']
+colorBubble2=['#a1d0e7','#ffeac2','#d8e1ef','#d2f1e5','#f5d7d1','#b4dde3','#fbdbc2','#d0ddd6']
+colorTitle='#b78f83';
+colorBubbleClick='#fdb988';
 //气泡的颜色
 let color = [
     new echarts.graphic.RadialGradient(0.5, 0.5, 0.5, [{
         offset: 0, //YELLOW
-        color: 'rgba(254,220,91, 1)'
+        color: colorBubble2[0]
     }, {
         offset: 1,
-        color: 'rgba(250,192,61,1)'
+        color: colorBubble[0]
     }]),
     new echarts.graphic.RadialGradient(0.5, 0.5, 0.5, [{
         offset: 0,
-        color: 'rgba(216,222,138, 1)'
+        color: colorBubble2[1]
     }, {
         offset: 1,
-        color: 'rgba(205,209,113,1)'
+        color: colorBubble[1]
     }]),
     new echarts.graphic.RadialGradient(0.5, 0.5, 0.5, [{
         offset: 0, //PINK
-        color: 'rgba(236, 176, 193, 1)',
+        color: colorBubble2[2]
     },
         {
             offset: 1,
-            color: 'rgba(221,107,123, 1)',
+            color: colorBubble[2]
         },
     ]),
     new echarts.graphic.RadialGradient(0.5, 0.5, 0.5, [{
         offset: 0, //RED
-        color: 'rgba(243, 166, 148, 1)',
+        color: colorBubble2[3]
     },
         {
             offset: 1,
-            color: 'rgba(238, 121, 89, 1)',
+            color: colorBubble[3]
         },
     ]),
     new echarts.graphic.RadialGradient(0.5, 0.5, 0.5, [{
         offset: 0, //GREEN
-        color: 'rgba(192, 214, 149, 1)',
+        color: colorBubble2[4]
     },
         {
             offset: 1,
-            color: 'rgba(169, 190, 123, 1)',
+            color: colorBubble[4]
         },
     ]),
     new echarts.graphic.RadialGradient(0.5, 0.5, 0.5, [{
         offset: 0, //BLUE
-        color: 'rgba(174,208,238,1)',
+        color: colorBubble2[5]
     },
         {
             offset: 1,
-            color: 'rgba(110,155,197,1)',
+            color: colorBubble[5]
         },
     ]),
     new echarts.graphic.RadialGradient(0.5, 0.5, 0.5, [{
         offset: 0,
-        color: 'rgba(210,175,157,1)',
+        color: colorBubble2[6]
     },
         {
             offset: 1,
-            color: 'rgba(188,131,107,1)',
+            color: colorBubble[6]
         },
     ]),
     new echarts.graphic.RadialGradient(0.5, 0.5, 0.5, [{
         offset: 0, //purple
-        color: 'rgba(211,201,214, 1)',
+        color: colorBubble2[7]
     },
         {
             offset: 1,
-            color: 'rgba(166,126,183, 1)',
+            color: colorBubble[7]
         },
     ]),
 ];
@@ -209,7 +213,7 @@ function initImageChart(data = [], format = []) {
             left: '2%',
             textStyle: {
                 fontSize: 30,
-                color: '#000',
+                color: colorTitle,
                 fontFamily: 'cursive'
             }
         },
@@ -250,7 +254,7 @@ function initImageChart(data = [], format = []) {
                 shadowBlur: 10,
                 shadowColor: '#333',
                 itemStyle: {
-                    color: '#B36D61'
+                    color: colorBubbleClick
                 }
             },
         }]
@@ -304,7 +308,7 @@ function initEmotionChart(data = [], format = []) {
             left: '2%',
             textStyle: {
                 fontSize: 30,
-                color: '#000',
+                color: colorTitle,
                 fontFamily: 'cursive'
             }
         },
@@ -344,7 +348,7 @@ function initEmotionChart(data = [], format = []) {
                 shadowBlur: 10,
                 shadowColor: '#333',
                 itemStyle: {
-                    color: '#B36D61'
+                    color: colorBubbleClick
                 }
             },
         }]
