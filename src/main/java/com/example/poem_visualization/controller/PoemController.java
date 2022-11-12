@@ -63,7 +63,7 @@ public class PoemController {
     public Map<String, Integer> getImages(String name, String beginTime, String endTime) {
         List<Map<String, Integer>> images = poemService.findImagesByPoetAndTime(name, Integer.parseInt(beginTime),
                 Integer.parseInt(endTime));
-        Map<String, Integer> map = new HashMap<>();
+        Map<String, Integer> map = new LinkedHashMap<>();
         if (images != null) {
             for (Map<String, Integer> image : images) {
                 for (String key : image.keySet()) {
