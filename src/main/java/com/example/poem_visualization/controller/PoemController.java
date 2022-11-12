@@ -98,7 +98,7 @@ public class PoemController {
     public Map<String, Integer> getEmo(String beginTime, String endTime) {
         List<Map<String, Integer>> emos = poemService.findEmoByTime(Integer.parseInt(beginTime),
                 Integer.parseInt(endTime));
-        Map<String, Integer> map = new HashMap<>();
+        Map<String, Integer> map = new LinkedHashMap<>();
         if (emos != null) {
             for (Map<String, Integer> emo : emos) {
                 for (String key : emo.keySet()) {
@@ -133,7 +133,7 @@ public class PoemController {
     public Map<String, Integer> getEmo(String name, String beginTime, String endTime) {
         List<Map<String, Integer>> emos = poemService.findEmoByPoetAndTime(name, Integer.parseInt(beginTime),
                 Integer.parseInt(endTime));
-        Map<String, Integer> map = new HashMap<>();
+        Map<String, Integer> map = new LinkedHashMap<>();
         if (emos != null) {
             for (Map<String, Integer> emo : emos) {
                 for (String key : emo.keySet()) {
