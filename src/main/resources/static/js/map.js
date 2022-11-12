@@ -3,7 +3,8 @@
     var uploadedDataURL = "./js/china.json";
     var mapData=[[]];
     var n=15;
-
+    colorScatter='#f6d688'
+    colorLine='rgba(228,190,123,0.5)'
     //如果想要修改，请点击上方克隆，然后在自己的版本上修改，不要在lz的版本上改！！
 
     // echarts.extendsMap = function(id, opt) {
@@ -931,36 +932,23 @@
             },
             itemStyle: {
                 normal: {
-                    borderColor: 'rgba(147, 235, 248, 1)',
+                    borderColor: '#68ae9c',
                     borderWidth: 1,
-                    areaColor: {
-                        type: 'radial',
-                        x: 0.5,
-                        y: 0.5,
-                        r: 0.8,
-                        colorStops: [{
-                            offset: 0,
-                            color: 'rgba(147, 235, 248, 0)' // 0% 处的颜色
-                        }, {
-                            offset: 1,
-                            color: 'rgba(147, 235, 248, .2)' // 100% 处的颜色
-                        }],
-                        globalCoord: false // 缺省为 false
-                    },
+                    areaColor: '#f2f3e8',
                     //地图的阴影颜色
-                    shadowColor: 'rgba(128, 217, 248, 1)',
+                    shadowColor: '#9fcfce',
                     // shadowColor: 'rgba(255, 255, 255, 1)',
                     shadowOffsetX: -2,
                     shadowOffsetY: 2,
                     shadowBlur: 10
                 },
                 emphasis: {
-                    areaColor: '#389BB7',
-                    borderWidth: 0
+                    areaColor: '#b2d7d3',
+                    borderWidth: 1
                 }
             }
         },
-            backgroundColor: '#051b4a',//地图背景色
+
                 title: [{
             /* text: '地图',
              subtext: '内部数据请勿外传',
@@ -998,15 +986,17 @@
                         normal: {
                             formatter: '{b}',
                             position: 'right',
-                            show: true
+                            show: false
                         },
                         emphasis: {
-                            show: false
+
+                            show: true
+
                         }
                     },
                     itemStyle: {
                         normal: {
-                            color: colors[colorIndex][n]
+                            color: colorScatter
                         }
                     }
                 },
@@ -1048,9 +1038,7 @@
                     //原作用是取前20个点做扩散效果
 
                     //slice截取数组部分
-                    symbolSize: function(val) {
-                        return val[2] / 30;
-                    },
+                    symbolSize: 20,
                     showEffectOn: 'render',
                     rippleEffect: {
                         brushType: 'stroke'
@@ -1058,16 +1046,19 @@
                     hoverAnimation: true,
                     label: {
                         normal: {
+                            show: false
+                        },
+                        emphasis:{
+                            show:true,
                             formatter: '{b}',
                             position: 'right',
-                            show: true
-                        }
+                         }
                     },
                     itemStyle: {
                         normal: {
-                            color: colors[colorIndex][n],
+                            color:colorScatter,
                             shadowBlur: 10,
-                            shadowColor: colors[colorIndex][n]
+                            shadowColor:colorScatter
                         }
                     },
                     zlevel: 1
@@ -1085,7 +1076,7 @@
                     },
                     lineStyle: {
                         normal: {
-                            color: colors[colorIndex][n],
+                            color:colorLine,
                             width: 0.1, //尾迹线条宽度
                             opacity: 0.5, //尾迹线条透明度
                             curveness: .3 //尾迹线条曲直度

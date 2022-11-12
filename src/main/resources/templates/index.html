@@ -24,7 +24,7 @@
     <div class="header">
     </div>
     <!-- 可视化大盒子 -->
-    <div class="main">
+    <div class="main" th:style="'background:url('+@{/images/background.jpg}+');'">
         <div class="column">
             <!-- 时间轴 -->
             <div class="timeAxisBox">
@@ -35,7 +35,7 @@
                 </div>
                 <button id="globalBtn">全局</button>
             </div>
-            <div class="timeSettingBox" id="timeSetting">
+            <div class="timeSettingBox" id="timeSetting" @mouseenter="mouseenter">
                 <div>自定义时间</div>
                 <div class="inputBox">  <input type="text" class="timeSetting" id="timeBegin" value="618" oninput="value=value.replace(/[^\d]/g,'')" maxlength="3">- <input type="text" class="timeSetting" id="timeEnd" value="907" oninput="value=value.replace(/[^\d]/g,'')" maxlength="3"></div>
                 <button class="timeSubmitButton" type="button" @click="timeSubmit">应用</button>
@@ -46,6 +46,10 @@
                         <button  @click="timeSwitch(2)">中唐</button>
                         <button  @click="timeSwitch(3)">晚唐</button>
                     </div>
+                </div>
+                <div class="floatingBox">
+                    已自动填入该诗人生卒时间
+                    <div class="triangle"></div>
                 </div>
             </div>
             <!-- 诗人列表 -->
@@ -114,6 +118,10 @@
             methods:{
                 clickPoetName(e){
                     updatePoetName(e.target.value);
+                    document.querySelector(".floatingBox").setAttribute("style","opacity:1");
+                    setTimeout(function () {
+                        document.querySelector(".floatingBox").setAttribute("style","opacity:0");
+                    },1500)
                 },
                 clickAll(){
                     updatePoetName("");
@@ -134,6 +142,9 @@
             methods:{
                 timeSubmit(){
                     timeSetting();
+                },
+                mouseenter(){
+                    document.querySelector(".floatingBox").setAttribute("style","opacity:0")
                 },
                 timeSwitch(num)
                 {//四个唐代按钮

@@ -50,7 +50,7 @@ body::after{
   width: 100%;
   min-width: 1024px;
   min-height: 50px;
-  background-color: chocolate;
+  background-color: #add6d3;
 }
 .main {
   display: flex;
@@ -88,7 +88,7 @@ body::after{
   justify-content: space-evenly;
   align-items: center;
   height:40%;
-  background-color: beige;
+  background-color: rgba(255,255,255,0.8);
 }
 
 .timeAxisBox .timeAxis {
@@ -115,8 +115,7 @@ body::after{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
-  background-color: aquamarine;
+  background-color: rgba(255,255,255,0.8);
   position: relative;
 }
 
@@ -151,6 +150,32 @@ body::after{
   width:90%;
   height: 100%;
   margin-left:10%;
+}
+.floatingBox{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding: 8%;
+  width: 130%;
+  height: 60%;
+  background-color: pink;
+  position: absolute;
+  right:-140%;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  /*display: none;*/
+}
+.floatingBox .triangle{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top:0.6rem solid transparent ;
+  border-bottom: 0.6rem solid transparent ;
+  border-left: 0.6rem solid transparent;
+  border-right:  0.6rem solid pink;
+  left: -15%;
+  top: 10%;
 }
 .poetsBox {
   display: flex;
@@ -204,6 +229,9 @@ body::after{
   height:65%;
   background-color: burlywood;
   overflow: hidden;
+  background-color: rgba(255,255,255,0.5);
+  margin:20px;
+
 }
 /**/
 .mapBox .eventBox {
