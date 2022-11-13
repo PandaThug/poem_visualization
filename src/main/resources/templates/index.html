@@ -23,7 +23,7 @@
     <!-- 标题区域 -->
     <div class="header" style="font-size: 25px;font-weight: bolder;align-content: center;color:white;">
         唐代著名诗人路径与部分诗作特征可视化
-        <span th:style="'background:url('+@{/images/help.png}+');background-size:cover;'"></span>
+        <span th:style="'background:url('+@{/images/help.png}+');background-size:cover;'" id="help" @mouseenter="mouseenter" @mouseleave="mouseleave"></span>
     </div>
     <!-- 可视化大盒子 -->
     <div class="main" th:style="'background:url('+@{/images/background.jpg}+');'">
@@ -86,13 +86,6 @@
                 <!-- 历史事件栏 -->
                 <div class="eventBox"></div>
             </div>
-            <!--上层放置边框的盒子-->
-<!--            <div class="mapBoxContainer" th:style="'border-image-source:url('+@{/images/border1.png}+');border-image-slice: 67 67 67 67; border-image-width: 50px;border-image-outset: 5px;'">-->
-<!--                <div class="mapBox">-->
-<!--                    &lt;!&ndash; 历史事件栏 &ndash;&gt;-->
-<!--                    <div class="eventBox"></div>-->
-<!--                </div>-->
-<!--            </div>-->
             <!-- 意象与情感关键的关联分析 -->
             <div class="analysisBox">
                 <div class="innerLeaf"></div>
@@ -101,6 +94,18 @@
         <div class="column">
             <!-- 气泡图 -->
             <div class="bubbleContainer">
+                <div class="floatingHelp" >
+                    <b>帮助：</b><br>
+                    本平台所用数据均来自网络，诗词数据不完整，并不保证数据准确性，请注意甄别。本平台所有数据呈现仅供参考。<br>
+                    <b>各个模块的展示说明：</b><br>
+                    ①地图模块。可根据所选定的时间在现代中国地图上绘制个别或全部已录入诗人的行动轨迹。由于数据限制，诗人行动轨迹可能存在地理位置的误差。<br>
+                    ②情感词汇/意象词统计模块。可根据所选定的时间统计出所选诗人已录入的部分作品的情感词汇或意象词汇出现频率，点击切换按钮切换图表。其中情感词汇为粗略统计，即将某些可表露情感的词汇归类为每种情感，统计此类词汇的数量，结果仅供参考。<br>
+                    ③意象-情感关系统计模块。可根据所选定的时间统计出所选诗人已录入的部分作品中意象和情感的大概关系，并以饼图大小表示其关系强烈。统计方法为：若某诗中出现了意象x以及情感y，则x的统计数据中情感y的统计数加1。<br>
+                    ④折线图模块。显示所选时间段内，部分或全部已录入诗人在不同时间段诗作数量。需要注意的是，每位诗人仅录入了约100首诗词，并且仅有部分诗词有明确的时间记载，图表数据仅供参考。<br>
+                    <b>使用说明：</b><br>
+                    ①调整左上侧时间轴，可以规定时间为整个唐朝或某个年代，通过应用下方自定义时间可实现时间段自定义，鼠标悬浮在自定义窗口时可以选择唐朝四个不同的时期，快速定位时间。<br>
+                    ②可通过点击左下方的诗人列表中的姓名筛选诗人数据，选择全选可查看所有诗人的数据，选定诗人后会在自定义窗口自动填入诗人生卒年，可点击“应用”以应用时间。
+                </div>
 <!--                <button class="changeBtn" id="changeBtn" @click="changeBubble">切换</button>-->
 <!--                <button class="changeBtn1" id="changeBtn1" @click="changeBubble">&lt</button>-->
                 <button class="changeBtn2" id="changeBtn2" @click="changeBubble" th:style="'background:url('+@{/images/switch.png}+');background-size:cover;'"></button>
@@ -128,6 +133,17 @@
     <script th:src="@{/js/updateMap.js}"></script>
     <script th:src="@{/js/updatePoetName.js}"></script>
     <script>
+        new Vue({
+            el:"#help",
+            methods:{
+                mouseenter() {
+                    document.querySelector(".floatingHelp").setAttribute("style","opacity:0.9;visibility:initial;")
+                },
+                mouseleave(){
+                    document.querySelector(".floatingHelp").setAttribute("style","opacity:0;visibility:hidden")
+                }
+            }
+        })
         new Vue({
             el:"#poetsList",
             data(){

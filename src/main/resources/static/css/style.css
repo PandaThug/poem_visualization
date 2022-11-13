@@ -30,8 +30,7 @@ a:hover {
 }
 
 body {
-  height: 99%;
-  background: url(/static/images/bg.png) no-repeat 0 0 /cover;
+  height: 100%;
 }
 body::after{
   content: "";
@@ -103,7 +102,7 @@ body::after{
 
 .timeAxisBox .timeAxis {
   height: 80%;
-  width: 90%;
+  width: 92%;
   background-color: #fff;
   overflow: auto;
   transition: all 0.3s;
@@ -200,17 +199,22 @@ body::after{
   left: -15%;
   top: 10%;
 }
+.currentPoetBox{
+  height: 7%;
+  padding: 5%;
+  padding-top: 30%;
+}
 .poetsBox {
   display: flex;
   justify-content: center;
   align-items: center;
-  height:45%;
+  height:38%;
   background-color: rgba(255,255,255,0.8);
 }
 
 .poetsBox .poetsList {
   display: flex;
-  height: 80%;
+  height: 95%;
   width: 95%;
 }
 
@@ -333,18 +337,32 @@ body::after{
   height:65%;
   position: relative;
 }
+.floatingHelp{
+  position: absolute;
+  margin: 3% 0;
+  height: 92%;
+  width: 96%;
+  background-color: white;
+  visibility: hidden;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.2s linear,visibility 0.2s;
+  color:#97b9b6;
+  padding:20px
+}
 .bubbleBox {
   height: 100%;
+  padding: 5px;
 }
-.changeBtn {
-  position: absolute;
-  top: 85%;
-  left: 6%;
-  height: 8%;
-  width: 12%;
-  z-index: 999;
-  background: aquamarine;
-}
+/*.changeBtn {*/
+/*  position: absolute;*/
+/*  top: 85%;*/
+/*  left: 6%;*/
+/*  height: 8%;*/
+/*  width: 12%;*/
+/*  z-index: 999;*/
+/*  background: aquamarine;*/
+/*}*/
 /*.changeBtn1{*/
 /*  position: absolute;*/
 /*  top: 4.5%;*/
@@ -356,12 +374,12 @@ body::after{
 /*}*/
 .changeBtn2{
   position: absolute;
-  top: 3.6%;
+  top: 4.2%;
   left: 220px;
   height: 30px;
   width: 30px;
   background-color: transparent;
-  z-index: 999;
+  z-index: 998;
 }
 
 .lineChartBox {
