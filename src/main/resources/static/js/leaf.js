@@ -1,63 +1,49 @@
 var test = [
-    ["梧桐", "月", "蝉", "高楼", "花", "流水","梧桐", "月", "蝉", "高楼", "花", "流水","梧桐", "月", "蝉"],
+    ["", "", "", "", "", "","", "", "", "", "", "","", "", ""],
     [
-        { name: '喜', value: 40 },
-        { name: '悲', value: 33 },
+
     ],//1
     [
-        { name: '喜', value: 20 },
-        { name: '悲', value: 33 },
+
     ],
     [
-        { name: '喜', value: 40 },
+
     ],
     [
-        { name: '喜', value: 40 },
-        { name: '悲', value: 33 },
+
     ],
     [
-        { name: '喜', value: 20 },
-        { name: '悲', value: 33 },
+
     ],//5
     [
-        { name: '喜', value: 40 },
-        { name: '悲', value: 33 },
+
     ],
     [
-        { name: '喜', value: 40 },
-        { name: '悲', value: 33 },
+
     ],
     [
-        { name: '喜', value: 40 },
-        { name: '悲', value: 33 },
+
     ],
     [
-        { name: '喜', value: 40 },
-        { name: '悲', value: 33 },
+
     ],
     [
-        { name: '喜', value: 40 },
-        { name: '悲', value: 33 },
+
     ],//10
     [
-        { name: '喜', value: 40 },
-        { name: '悲', value: 33 },
+
     ],
     [
-        { name: '喜', value: 40 },
-        { name: '悲', value: 33 },
+
     ],
     [
-        { name: '喜', value: 40 },
-        { name: '悲', value: 33 },
+
     ],
     [
-        { name: '喜', value: 40 },
-        { name: '悲', value: 33 },
+
     ],
     [
-        { name: '喜', value: 40 },
-        { name: '悲', value: 33 },
+
     ],//15
 ]
 //为了初始化样式能够装满 必须要有15个测试用例，在初始化时会将数据覆盖，但图例样式受到保留
@@ -90,9 +76,9 @@ for (var key in test) {
                         position: 'center',
                         show: true,
                         textStyle: {
-                        fontSize: '18',
-                            fontWeight: 'bold',
-                            color: '#fff'
+                            fontSize: '22',
+                            color: '#000',
+                            fontFamily: '楷体'
                         }
                     }
                 },
@@ -108,14 +94,16 @@ for (var key in test) {
                     normal: {
                         show: true,
                         textStyle: {
-                            color: '#fff'
-                        }
+                            fontSize: '15',
+                            color: '#000',
+                            fontFamily: '楷体'
+                        },
                     }
                 },
                 labelLine:{
                     normal:{
-                        length:12,
-                        length2:8
+                        length:4,
+                        length2:5
                     }
                 },
                 data: test[key],
@@ -124,17 +112,13 @@ for (var key in test) {
     }
 }
 let option = {
-    title: {
-        text: '树叶图',
-        subtext: '意象-情感分析',
-        left: 'center'
-    },
     tooltip: {
         trigger: 'item',
         formatter: '{a} <br/>{b} : {c} ({d}%)'
     },
     label:{show:true},
     series: mySeries,
+    color:['#89b5cb','#c1d0e5','#b6e1d0','#e9bbb2','#95d4dd','#f1c7a7','#c9e3d5']
 };
 pieChart.setOption(option)
 window.addEventListener("resize", function() {

@@ -25,16 +25,36 @@ function changeTimeIndex(index){
     changeMode();
 }
 function timeSetting(){
+
     let setBeginTime=document.getElementById("timeBegin").value;
     let setEndTime=document.getElementById("timeEnd").value;
+    if(setEndTime==''||setBeginTime=='')
+    {
+        alert("时间不可为空！")
+        return
+    }
+    else if(Number(setBeginTime)>Number(setEndTime))
+    {
+        alert("起始时间不可晚于结束时间！")
+        return
+    }
+    else if(Number(setEndTime)<618 || Number(setEndTime)>907 || Number(setBeginTime)<618||Number(setBeginTime)>901)
+    {
+        alert("请填写位于唐朝期间的时间段，唐朝时间：618-907")
+        return
+    }
     beginTime=Number(setBeginTime);
     endTime=Number(setEndTime);
     timeIndex=31;//时间轴跳转到“自定义”
-    timeOption={
-        timeline:{
-            currentIndex:31
-        }
-    }
+    timeOption=timeLine.getOption();
+    //console.log(timeOptionBefore.timeline[0].data)
+    timeOption.timeline[0].data[31]=setBeginTime+'\n~  \n'+setEndTime
+    timeOption.timeline[0].currentIndex=31
+    // timeOption={
+    //     timeline:{
+    //         currentIndex:31
+    //     }
+    // }
     timeLine.setOption(timeOption)
     let scl=document.querySelector(".timeAxis")
     scl.scrollTop=scl.scrollHeight;//滑动至底部

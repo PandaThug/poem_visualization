@@ -22,7 +22,8 @@
 <body>
     <!-- 标题区域 -->
     <div class="header" style="font-size: 25px;font-weight: bolder;align-content: center;color:white;">
-        当代著名诗人路径与部分诗作特征可视化
+        唐代著名诗人路径与部分诗作特征可视化
+        <span th:style="'background:url('+@{/images/help.png}+');background-size:cover;'"></span>
     </div>
     <!-- 可视化大盒子 -->
     <div class="main" th:style="'background:url('+@{/images/background.jpg}+');'">
@@ -36,16 +37,18 @@
                 </div>
                 <button id="globalBtn" >全局</button>
             </div>
-            <div class="timeSettingBox" id="timeSetting" @mouseenter="mouseenter">
-                <div>自定义时间</div>
-                <div class="inputBox">  <input type="text" class="timeSetting" id="timeBegin" value="618" oninput="value=value.replace(/[^\d]/g,'')" maxlength="3">- <input type="text" class="timeSetting" id="timeEnd" value="907" oninput="value=value.replace(/[^\d]/g,'')" maxlength="3"></div>
-                <button class="timeSubmitButton" type="button" @click="timeSubmit">应用</button>
-                <div class="periodBox">
-                    <div class="periodList">
-                        <button @click="timeSwitch(0)">初唐</button>
-                        <button  @click="timeSwitch(1)">盛唐</button>
-                        <button  @click="timeSwitch(2)">中唐</button>
-                        <button  @click="timeSwitch(3)">晚唐</button>
+            <div class="timeSettingBox" id="timeSetting">
+                <div class="innerTimeSet" @mouseenter="mouseenter">
+                    <div>自定义时间</div>
+                    <div class="inputBox">  <input type="text" class="timeSetting" id="timeBegin" value="618" oninput="value=value.replace(/[^\d]/g,'')" maxlength="3">- <input type="text" class="timeSetting" id="timeEnd" value="907" oninput="value=value.replace(/[^\d]/g,'')" maxlength="3"></div>
+                    <button class="timeSubmitButton" type="button" @click="timeSubmit">应用</button>
+                    <div class="periodBox">
+                        <div class="periodList">
+                            <button @click="timeSwitch(0)">初唐</button>
+                            <button  @click="timeSwitch(1)">盛唐</button>
+                            <button  @click="timeSwitch(2)">中唐</button>
+                            <button  @click="timeSwitch(3)">晚唐</button>
+                        </div>
                     </div>
                 </div>
                 <div class="floatingBox">
@@ -54,7 +57,9 @@
                 </div>
             </div>
             <!-- 诗人列表 -->
+            <div class="currentPoetBox" style="align-content: center">当前：<span style="font-weight: bold;" class="currentPoet">全选</span></div>
             <div class="poetsBox">
+
                 <div class="poetsList" id="poetsList">
                     <!-- 左边，列表区域 -->
                     <div class="list">
@@ -70,20 +75,35 @@
             </div>
         </div>
         <div class="column">
-            <!-- 地图显示区域 -->
-            <div class="mapBox" th:style="'border-image-source:url('+@{/images/border1.png}+');border-image-slice: 67 67 67 67; border-image-width: 50px;border-image-outset: 5px;'">
+            <div class="mapContainer">
+                <div class="borderTop" th:style="'border-image-source:url('+@{/images/border1.png}+');border-image-slice: 67 67 0 67; border-image-width: 50px;border-image-outset: 5px;'"></div>
+                <div class="borderRight" th:style="'border-image-source:url('+@{/images/border1.png}+');border-image-slice: 67 67 67 0; border-image-width: 50px;border-image-outset: 5px;'"></div>
+                <div class="borderBottom" th:style="'border-image-source:url('+@{/images/border1.png}+');border-image-slice: 0 67 67 67; border-image-width: 50px;border-image-outset: 5px;'"></div>
+                <div class="borderLeft" th:style="'border-image-source:url('+@{/images/border1.png}+');border-image-slice: 67 0 67 67; border-image-width: 50px;border-image-outset: 5px;'"></div>
+                <!-- 地图显示区域 -->
+                <div class="mapBox">
+                </div>
                 <!-- 历史事件栏 -->
                 <div class="eventBox"></div>
             </div>
+            <!--上层放置边框的盒子-->
+<!--            <div class="mapBoxContainer" th:style="'border-image-source:url('+@{/images/border1.png}+');border-image-slice: 67 67 67 67; border-image-width: 50px;border-image-outset: 5px;'">-->
+<!--                <div class="mapBox">-->
+<!--                    &lt;!&ndash; 历史事件栏 &ndash;&gt;-->
+<!--                    <div class="eventBox"></div>-->
+<!--                </div>-->
+<!--            </div>-->
             <!-- 意象与情感关键的关联分析 -->
             <div class="analysisBox">
                 <div class="innerLeaf"></div>
             </div>
         </div>
         <div class="column">
-            <!-- 情感词云 -->
+            <!-- 气泡图 -->
             <div class="bubbleContainer">
-                <button class="changeBtn" id="changeBtn" @click="changeBubble">切换</button>
+<!--                <button class="changeBtn" id="changeBtn" @click="changeBubble">切换</button>-->
+<!--                <button class="changeBtn1" id="changeBtn1" @click="changeBubble">&lt</button>-->
+                <button class="changeBtn2" id="changeBtn2" @click="changeBubble" th:style="'background:url('+@{/images/switch.png}+');background-size:cover;'"></button>
                 <div class="bubbleBox">
                 </div>
             </div>
@@ -128,11 +148,24 @@
                 }
             }
         })
+        // new Vue({
+        //     el:"#changeBtn",
+        //     methods:{
+        //         changeBubble(){
+        //             bubbleMode=(bubbleMode+1)%2
+        //             updateBubbles()
+        //         }
+        //     }
+        // })
         new Vue({
-            el:"#changeBtn",
+            el:"#changeBtn2",
             methods:{
                 changeBubble(){
-                    bubbleMode=(bubbleMode+1)%2
+                    if(bubbleMode==0) {
+                        bubbleMode=1
+                    }
+                    else
+                        bubbleMode=0
                     updateBubbles()
                 }
             }
@@ -144,7 +177,7 @@
                     timeSetting();
                 },
                 mouseenter(){
-                    document.querySelector(".floatingBox").setAttribute("style","opacity:0")
+                    document.querySelector(".floatingBox").setAttribute("style", "opacity:0")
                 },
                 timeSwitch(num)
                 {//四个唐代按钮

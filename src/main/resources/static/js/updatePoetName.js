@@ -3,6 +3,7 @@ function updatePoetName(name){
     poetName=name;
     changeMode();
     if(name!="") {
+        document.querySelector(".currentPoet").innerHTML=name;
         axios('http://localhost:8080/visualization/poet/lifetime?name=' + name)
             .then(function (response) {
                 let birth = response.data['birth'];
@@ -13,5 +14,7 @@ function updatePoetName(name){
             console.log(err)
         });
     }
+    else
+            document.querySelector(".currentPoet").innerHTML="全选";
 
 }

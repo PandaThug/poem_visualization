@@ -166,29 +166,17 @@ function updateBubbles(){
 
 //初始化意象气泡
 function initImageChart(data = [], format = []) {
+    //console.log(456)
     let [maxValue, temp] = [0, []]
     data.forEach(item => {
         temp.push(item[format[1]])
     })
     maxValue = Math.max.apply(null, temp)
-    // 气泡颜色数组
-    let bakeColor = color
     let bubbleData = [] // 气泡数据
-    let repulsion = 150 // 气泡间距
-
-    // 根据气泡数量配置基础大小和斥力因子
-    if (data.length >= 5 && data.length < 10) {
-        repulsion = 120
-    }
-    if (data.length >= 10 && data.length < 20) {
-        repulsion = 80
-    } else if (data.length >= 20) {
-        repulsion = 50
-    }
+    let repulsion = 120 // 气泡间距
     for (let item of data) {
-        let curIndex = Math.round(Math.random() * bakeColor.length)
-        let size = (item[format[1]] + Math.round(maxValue * 0.5)) / maxValue * 70 // 气泡大小
-
+        let curIndex = Math.floor(Math.random() * color.length)
+        let size = item[format[1]] / maxValue * 80 +50// 气泡大小
         bubbleData.push({
             "name": item[format[0]],
             "value": item[format[1]],
@@ -196,7 +184,7 @@ function initImageChart(data = [], format = []) {
             "draggable": true,
             "itemStyle": {
                 "normal": {
-                    "color": bakeColor[curIndex],
+                    "color": color[curIndex],
                 }
             },
             "label": {
@@ -210,15 +198,16 @@ function initImageChart(data = [], format = []) {
         title: {
             text: '意象词云',
             top: '2%',
-            left: '2%',
+            left: '7%',
             textStyle: {
-                fontSize: 30,
+                fontSize: 40,
                 color: colorTitle,
                 fontFamily: 'cursive'
             }
         },
         animationEasingUpdate: 'bounceIn',
-        tooltip: {//提示框组件
+        //提示框
+        tooltip: {
             trigger: 'item',
             textStyle: {
                 fontFamily: 'cursive',
@@ -238,8 +227,7 @@ function initImageChart(data = [], format = []) {
                 repulsion: repulsion,
                 edgeLength: 10
             },
-            // 是否开启鼠标缩放和平移漫游
-            roam: false,
+            roam: true,
             label: {
                 normal: {
                     show: true,
@@ -267,22 +255,12 @@ function initEmotionChart(data = [], format = []) {
         temp.push(item[format[1]])
     })
     maxValue = Math.max.apply(null, temp)
-    // 气泡颜色数组
     let bubbleData = [] // 气泡数据
-    let repulsion = 150 // 气泡间距
-
-    // 根据气泡数量配置基础大小和斥力因子
-    if (data.length >= 5 && data.length < 10) {
-        repulsion = 120
-    }
-    if (data.length >= 10 && data.length < 20) {
-        repulsion = 80
-    } else if (data.length >= 20) {
-        repulsion = 50
-    }
+    let repulsion = 180 // 气泡间距
     let curIndex=0;
     for (let item of data) {
-        let size = (item[format[1]] + Math.round(maxValue * 0.5)) / maxValue * 70 // 气泡大小
+        let size = item[format[1]] / maxValue * 80 +50// 气泡大小
+        let curIndex = Math.floor(Math.random() * color.length)
         bubbleData.push({
             "name": item[format[0]],
             "value": item[format[1]],
@@ -295,19 +273,19 @@ function initEmotionChart(data = [], format = []) {
             },
             "label": {
                 "normal": {
-                    "fontSize": size * 0.5
+                    "fontSize": size * 0.4,
                 }
             }
         })
-        curIndex++;
+        // curIndex++;
     }
     bubbleOptions = {
         title: {
             text: '情感词云',
             top: '2%',
-            left: '2%',
+            left: '7%',
             textStyle: {
-                fontSize: 30,
+                fontSize: 40,
                 color: colorTitle,
                 fontFamily: 'cursive'
             }
@@ -355,6 +333,7 @@ function initEmotionChart(data = [], format = []) {
     }
 }
 function updateBubbles2(response){
+    //console.log(response.data)
     let dataTest=[];
     for(key in response.data){
         let obj={};
@@ -365,6 +344,7 @@ function updateBubbles2(response){
             dataTest.push(obj);
         }
     }
+    //console.log(dataTest)
     dataTest.sort((a,b)=>{ return b.value-a.value});
     dataTest=dataTest.slice(1,16);//截取1-(n-1)名
     if(bubbleMode == 0)

@@ -94,8 +94,8 @@ function updateLineChart2(response){
         dataY.push(response.data[key])
     }
     var optionLine = lineChart.getOption();
-    console.log(optionLine.xAxis);
-    console.log(optionLine.series);
+   // console.log(optionLine.xAxis);
+   // console.log(optionLine.series);
 
     optionLine.xAxis[0].data =dataX;
     optionLine.series[0].data=dataY;

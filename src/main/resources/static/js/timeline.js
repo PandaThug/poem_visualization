@@ -13,7 +13,6 @@ timelineOption={
         bottom: '2%',
         width: '70%',
         height:'96%',
-
         label: {
             normal: {
                 textStyle: {
@@ -33,7 +32,7 @@ timelineOption={
             color: '#555'
         },
         checkpointStyle: {
-            borderColor: '#777',
+            borderColor: '#eee',
             borderWidth: 2
         },
         controlStyle: {
