@@ -188,7 +188,6 @@ body::after{
   z-index: 998;
   opacity: 0;
   transition: opacity 0.2s linear;
-  /*display: none;*/
 }
 .floatingBox .triangle{
   position: absolute;
@@ -201,8 +200,10 @@ body::after{
 }
 .currentPoetBox{
   height: 7%;
-  padding: 5%;
-  padding-top: 30%;
+  display: flex;
+  align-items: center;
+  padding: 0 2%;
+  font-size: 14px;
 }
 .poetsBox {
   display: flex;
@@ -236,12 +237,6 @@ body::after{
   background-color: transparent;
 }
 
-.poetsBox .list .poets {
-  /*overflow: auto;*/
-  /*font-size:18px;*/
-  /*background-color: #fff;*/
-}
-
 .poetsBox .list li button{
   background-color: transparent;
   font-size: 14px;
@@ -259,7 +254,6 @@ body::after{
     height:60%;
     width: calc(100% - 36px);
     background-color: rgba(255,255,255,0.5);
-    /*border:27px solid transparent;*/
     margin:18px;
 }
 .borderTop{
@@ -300,12 +294,8 @@ body::after{
 }
 
 .mapBox {
-  /*position: relative;*/
   height:100%;
   overflow: hidden;
-  /*background-color: rgba(255,255,255,0.5);*/
-  /*border:27px solid transparent;*/
-  /*margin:18px;*/
 }
 .mapContainer .eventBox {
   position: absolute;
@@ -354,24 +344,6 @@ body::after{
   height: 100%;
   padding: 5px;
 }
-/*.changeBtn {*/
-/*  position: absolute;*/
-/*  top: 85%;*/
-/*  left: 6%;*/
-/*  height: 8%;*/
-/*  width: 12%;*/
-/*  z-index: 999;*/
-/*  background: aquamarine;*/
-/*}*/
-/*.changeBtn1{*/
-/*  position: absolute;*/
-/*  top: 4.5%;*/
-/*  left: 2%;*/
-/*  height: 5%;*/
-/*  width: 5%;*/
-/*  background-color: aquamarine;*/
-/*  z-index: 999;*/
-/*}*/
 .changeBtn2{
   position: absolute;
   top: 4.2%;

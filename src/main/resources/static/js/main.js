@@ -47,14 +47,8 @@ function timeSetting(){
     endTime=Number(setEndTime);
     timeIndex=31;//时间轴跳转到“自定义”
     timeOption=timeLine.getOption();
-    //console.log(timeOptionBefore.timeline[0].data)
     timeOption.timeline[0].data[31]=setBeginTime+'\n~  \n'+setEndTime
     timeOption.timeline[0].currentIndex=31
-    // timeOption={
-    //     timeline:{
-    //         currentIndex:31
-    //     }
-    // }
     timeLine.setOption(timeOption)
     let scl=document.querySelector(".timeAxis")
     scl.scrollTop=scl.scrollHeight;//滑动至底部
@@ -79,7 +73,6 @@ function changeMode(){
             showMode=3;
     }
     updateAll();
-    console.log("模式转变为"+showMode)
 }
 //将单人路径转化为一个全是字符串的数组
 function footobj(obj){
@@ -144,7 +137,6 @@ var convertToLineData = function(data, gps) {
         }
 
     }
-    //
     return res;
 };
 

@@ -51,8 +51,6 @@ var mySeries = []
 var x, y, gap
 var pieChart = echarts.init(document.querySelector('.innerLeaf'))
 for (var key in test) {
-
-    //console.log("初始化",test[key]);
     if (key != 0) {
         // 一排放三个
         if (key % 3 == 1)
@@ -62,7 +60,6 @@ for (var key in test) {
         else x = '83.3%';
         gap = 100 / (test.length - 1)*3
         y = (parseInt((key - 1) / 3)) * gap + gap * 0.5
-        // console.log(test[0][key - 1], x, "y:", y);
         mySeries.push(
             {
             type: 'pie',
@@ -124,5 +121,3 @@ pieChart.setOption(option)
 window.addEventListener("resize", function() {
     pieChart.resize();
 });
-
-//

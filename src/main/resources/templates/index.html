@@ -12,11 +12,7 @@
     <script th:src="@{/js/axios.min.js}"></script>
     <script th:src="@{/js/echarts.min.js}"></script>
     <script th:src="@{/js/vue.js}"></script>
-
-<!--    <link rel="stylesheet" href="../static/css/style.css">-->
-<!--    <script src="../static/js/axios.min.js"></script>-->
-<!--    <script src="../static/js/echarts.min.js"></script>-->
-<!--    <script src="../static/js/main.js"></script>-->
+    <script> Vue.config.productionTip=false;</script>
 </head>
 
 <body>
@@ -70,7 +66,6 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -106,8 +101,6 @@
                     ①调整左上侧时间轴，可以规定时间为整个唐朝或某个年代，通过应用下方自定义时间可实现时间段自定义，鼠标悬浮在自定义窗口时可以选择唐朝四个不同的时期，快速定位时间。<br>
                     ②可通过点击左下方的诗人列表中的姓名筛选诗人数据，选择全选可查看所有诗人的数据，选定诗人后会在自定义窗口自动填入诗人生卒年，可点击“应用”以应用时间。
                 </div>
-<!--                <button class="changeBtn" id="changeBtn" @click="changeBubble">切换</button>-->
-<!--                <button class="changeBtn1" id="changeBtn1" @click="changeBubble">&lt</button>-->
                 <button class="changeBtn2" id="changeBtn2" @click="changeBubble" th:style="'background:url('+@{/images/switch.png}+');background-size:cover;'"></button>
                 <div class="bubbleBox">
                 </div>
@@ -164,15 +157,6 @@
                 }
             }
         })
-        // new Vue({
-        //     el:"#changeBtn",
-        //     methods:{
-        //         changeBubble(){
-        //             bubbleMode=(bubbleMode+1)%2
-        //             updateBubbles()
-        //         }
-        //     }
-        // })
         new Vue({
             el:"#changeBtn2",
             methods:{

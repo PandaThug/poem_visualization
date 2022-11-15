@@ -4,7 +4,6 @@ function updateLineChart(){
 //           mode1：未指定诗人，指定时间。
 //           mode2：未指定时间，指定诗人。
 //           mode3：指定时间，指定诗人。
-console.log("updateLineChart");
     if(showMode==0)
     {   //取消高亮 归位
         lineChart.dispatchAction({
@@ -15,7 +14,6 @@ console.log("updateLineChart");
         document.querySelector(".lineChartBox>div").scrollLeft=0;
         axios('http://localhost:8080/visualization/count')
             .then(function (response) {
-                console.log(response.data);
                 updateLineChart2(response);
             }).catch(function (err) {
             console.log(err)
@@ -26,7 +24,6 @@ console.log("updateLineChart");
         if(timeIndex==0 || timeIndex==31) {
             axios('http://localhost:8080/visualization/count?beginTime=' + beginTime + '&endTime=' + endTime)
                 .then(function (response) {
-                    console.log(response.data);
                     updateLineChart2(response);
                 }).catch(function (err) {
                 console.log(err)
@@ -35,7 +32,6 @@ console.log("updateLineChart");
         else{
             axios('http://localhost:8080/visualization/count')
                 .then(function (response) {
-                    console.log(response.data);
                     updateLineChart2(response);
                     updateLineChart3();
                 }).catch(function (err) {
@@ -53,7 +49,6 @@ console.log("updateLineChart");
         document.querySelector(".lineChartBox>div").scrollLeft=0;
         axios('http://localhost:8080/visualization/count?name='+poetName)
             .then(function (response) {
-                console.log(response.data);
                 updateLineChart2(response);
             }).catch(function (err) {
             console.log(err)
@@ -61,11 +56,9 @@ console.log("updateLineChart");
     }
     else if(showMode==3)
     {
-        console.log(timeIndex)
         if(timeIndex==0 || timeIndex==31) {
             axios('http://localhost:8080/visualization/count?name='+poetName+'&beginTime=' + beginTime + '&endTime=' + endTime)
                 .then(function (response) {
-                    console.log(response.data);
                     updateLineChart2(response);
                 }).catch(function (err) {
                 console.log(err)
@@ -74,7 +67,6 @@ console.log("updateLineChart");
         else{
             axios('http://localhost:8080/visualization/count?name='+poetName)
                 .then(function (response) {
-                    console.log(response.data);
                     updateLineChart2(response);
                     updateLineChart3();
                 }).catch(function (err) {
@@ -94,8 +86,6 @@ function updateLineChart2(response){
         dataY.push(response.data[key])
     }
     var optionLine = lineChart.getOption();
-   // console.log(optionLine.xAxis);
-   // console.log(optionLine.series);
 
     optionLine.xAxis[0].data =dataX;
     optionLine.series[0].data=dataY;
@@ -104,7 +94,6 @@ function updateLineChart2(response){
 
 function updateLineChart3()//专门为Index在1-30的准备
 {
-    console.log(timeIndex-1)
 lineChart.dispatchAction({
     type: 'showTip',
     seriesIndex:0,  // 显示第几个series

@@ -22,7 +22,6 @@ function updateMap(){
     {
         axios('http://localhost:8080/visualization/footprint/mode1?'+'beginTime='+beginTime+'&endTime='+endTime)
             .then(function (response) {
-                console.log(response.data)
                 if(response.data!="")
                     mapData=footobj_plus(response.data);
                 else
