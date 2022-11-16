@@ -11,7 +11,7 @@ function updateLeaf()
                         // if(response.data!="")
                         updateLeaf2(response);
                     }).catch(function (err) {
-                    // console.log(err)
+                    console.log(err)
                 });
         }
             else if(showMode==1)//未指定诗人，指定时间。
@@ -48,6 +48,7 @@ function updateLeaf()
 }
 
 function updateLeaf2(response){
+    //console.log(response.data)
     let dataTest=[];
     for(key in response.data){
         let obj={};
@@ -143,6 +144,9 @@ function updateLeaf3(response,imageName){
     option.series[num+1].name=imageName;
     option.series[num].data=dataLeaf;
     option.series[num+1].data=dataLeaf;
+    // console.log("第"+(num+2)/2+"个意象");
+    // console.log(imageName);
+    // console.log(dataLeaf);
     if(receiveNum==getSum)//获取完毕，push设置
     {
         pieChart.setOption(option);

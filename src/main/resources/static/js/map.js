@@ -5,33 +5,7 @@
     var n=15;
     colorScatter='#fbcd4f'
     colorLine='rgba(127,175,185,0.5)'
-    //如果想要修改，请点击上方克隆，然后在自己的版本上修改，不要在lz的版本上改！！
 
-    // echarts.extendsMap = function(id, opt) {
-//     // 实例
-
-
-//     var cityMap = {
-//         "郑州市": zhengzhou,
-//         "开封市": kaifeng,
-//         "洛阳市": luoyang,
-//         "平顶山市": pingdingshan,
-//         "安阳市": anyang,
-//         "鹤壁市": hebi,
-//         "新乡市": xinxiang,
-//         "焦作市": jiaozuo,
-//         "濮阳市": puyang,
-//         "漯河市": luohe,
-//         "三门峡市": sanmenxia,
-//         "南阳市": nanyang,
-//         "商丘市": shangqiu,
-//         "信阳市": xinyang,
-//         "周口市": zhoukou,
-//         "许昌市": xuchang,
-//         "驻马店市": zhumadian
-//     };
-
-// }
     var geoGpsMap = {
     '1': [127.9688, 45.368],
     '2': [116.4551, 40.2539],
@@ -894,20 +868,9 @@
     $(function() {
 
 
-    //mapdata包括每个地方的年份、名称和数值
-    //[总十年数][诗人id]{points:[所有所到的地点，若未移动过也至少有两个一样的地点],value:该十年间诗作数}控制大小的value应该使用固定值。
-
-    /*柱子Y名称*/
-    var categoryData = [];
-
-    //bardata[i][j]，i为年份的数量，j为地区数，bardata中只有数据，名称应该是顺序上一一对应的
-
     $.getJSON(uploadedDataURL, function(geoJson) {
 
     echarts.registerMap('china', geoJson);
-    //converdata是数据的处理，用于点的效果处理
-    //res结果{name: "台湾"，value:[121.5135, 25.0308, 100]}
-
 
     optionXyMap01 = {
      tooltip: {
@@ -949,16 +912,7 @@
             }
         },
 
-                title: [{
-            /* text: '地图',
-             subtext: '内部数据请勿外传',
-             left: 'center',
-             textStyle: {
-                 color: '#fff'
-             }*/
-        },
 
-        ],
      xAxis: {
             axisLine: {
                 show: false,
@@ -1029,39 +983,6 @@
                     },
                     animation: false,
                 },
-                //地图点的动画效果
-                {
-                    //  name: 'Top 5',
-                    type: 'effectScatter',
-                    coordinateSystem: 'geo',
-                    //原作用是取前20个点做扩散效果
-
-                    //slice截取数组部分
-                    symbolSize: 10,
-                    showEffectOn: 'render',
-                    rippleEffect: {
-                        brushType: 'stroke'
-                    },
-                    hoverAnimation: true,
-                    label: {
-                        normal: {
-                            show: false
-                        },
-                        emphasis:{
-                            show:true,
-                            formatter: '{b}',
-                            position: 'right',
-                         }
-                    },
-                    itemStyle: {
-                        normal: {
-                            color:colorScatter,
-                            shadowBlur: 10,
-                            shadowColor:colorScatter
-                        }
-                    },
-                    zlevel: 2
-                },
                 //地图线的动画效果
                 {
                     type: 'lines',
@@ -1096,16 +1017,3 @@
 });
 
 
-    function randomNum(minNum, maxNum) {
-    switch (arguments.length) {
-    case 1:
-    return parseInt(Math.random() * minNum + 1, 10);
-    break;
-    case 2:
-    return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10);
-    break;
-    default:
-    return 0;
-    break;
-}
-}
