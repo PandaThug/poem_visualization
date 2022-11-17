@@ -330,7 +330,7 @@ function updateBubbles2(response){
         }
     }
     dataTest.sort((a,b)=>{ return b.value-a.value});
-    dataTest=dataTest.slice(1,16);//截取1-(n-1)名
+    dataTest=dataTest.slice(1,11);//截取1-(n-1)名
     if(bubbleMode == 0)
     {
         initEmotionChart(dataTest, ['name', 'value']);
