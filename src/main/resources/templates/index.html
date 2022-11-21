@@ -23,7 +23,7 @@
         <span th:style="'background:url('+@{/images/help.png}+');background-size:cover;'" id="help" @mouseenter="mouseenter" @mouseleave="mouseleave"></span>
     </div>
     <!-- 可视化大盒子 -->
-    <div class="main" th:style="'background:url('+@{/images/background.jpg}+');'">
+    <div class="main" th:style="'background:url('+@{/images/background.jpg}+');'" id="root">
         <div class="column">
             <!-- 时间轴 -->
             <div class="timeAxisBox">
@@ -128,18 +128,7 @@
     <script th:src="@{/js/updatePoetName.js}"></script>
     <script>
         new Vue({
-            el:"#help",
-            methods:{
-                mouseenter() {
-                    document.querySelector(".floatingHelp").setAttribute("style","opacity:0.9;visibility:initial;")
-                },
-                mouseleave(){
-                    document.querySelector(".floatingHelp").setAttribute("style","opacity:0;visibility:hidden")
-                }
-            }
-        })
-        new Vue({
-            el:"#poetsList",
+            el:"#root",
             data(){
                 return{
                     poets:["白居易","杜甫","杜牧","韩愈","李白","李贺","李商隐","刘禹锡","柳宗元","孟浩然","王勃","王昌龄","王维","元稹","温庭筠","韦应物","张九龄","陈子昂","岑参","骆宾王"]
@@ -155,12 +144,13 @@
                 },
                 clickAll(){
                     updatePoetName("");
-                }
-            }
-        })
-        new Vue({
-            el:"#changeBtn2",
-            methods:{
+                },
+                mouseenter() {
+                    document.querySelector(".floatingHelp").setAttribute("style","opacity:0.9;visibility:initial;")
+                },
+                mouseleave(){
+                    document.querySelector(".floatingHelp").setAttribute("style","opacity:0;visibility:hidden")
+                },
                 changeBubble(){
                     if(bubbleMode==0) {
                         bubbleMode=1
@@ -168,14 +158,6 @@
                     else
                         bubbleMode=0
                     updateBubbles()
-                }
-            }
-        })
-        new Vue({
-            el:"#timeSetting",
-            methods:{
-                timeSubmit(){
-                    timeSetting();
                 },
                 mouseenter(){
                     document.querySelector(".floatingBox").setAttribute("style", "opacity:0")
@@ -184,8 +166,8 @@
                 {//四个唐代按钮
                     if(num==0)//初唐
                     {
-                       document.getElementById("timeBegin").value=618;
-                       document.getElementById("timeEnd").value=712;
+                        document.getElementById("timeBegin").value=618;
+                        document.getElementById("timeEnd").value=712;
 
                     }
                     else if(num==1)//盛唐
