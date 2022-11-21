@@ -135,6 +135,9 @@
                 }
             },
             methods:{
+                timeSubmit(){
+                    timeSetting();
+                },
                 clickPoetName(e){
                     updatePoetName(e.target.value);
                     document.querySelector(".floatingBox").setAttribute("style","opacity:1");
