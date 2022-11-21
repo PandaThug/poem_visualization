@@ -163,7 +163,7 @@ function initImageChart(data = [], format = []) {
     })
     maxValue = Math.max.apply(null, temp)
     let bubbleData = [] // 气泡数据
-    let repulsion = 120 // 气泡间距
+    let repulsion = 180 // 气泡间距
     for (let item of data) {
         let curIndex = Math.floor(Math.random() * color.length)
         let size = item[format[1]] / maxValue * 80 +50// 气泡大小
