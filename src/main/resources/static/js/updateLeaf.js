@@ -6,7 +6,7 @@ function updateLeaf()
 {
     //由于技术限制，必须先发起请求获取前15位的意象，只取这些意象进行树叶图的查询
         if(showMode==0){
-                axios('http://localhost:8080/visualization/poem/images')
+                axios('http://1.15.187.186:8807/visualization/poem/images')
                     .then(function (response){
                         // if(response.data!="")
                         updateLeaf2(response);
@@ -17,7 +17,7 @@ function updateLeaf()
             else if(showMode==1)//未指定诗人，指定时间。
             {
 
-                axios('http://localhost:8080/visualization/poem/images/?beginTime='+beginTime+'&endTime='+endTime)
+                axios('http://1.15.187.186:8807/visualization/poem/images/?beginTime='+beginTime+'&endTime='+endTime)
                     .then(function (response) {
                         updateLeaf2(response);
                     }).catch(function (err) {
@@ -26,7 +26,7 @@ function updateLeaf()
         }
         else if(showMode==2)//未指定时间，指定诗人。
         {
-                axios('http://localhost:8080/visualization/poem/images/?name='+poetName)
+                axios('http://1.15.187.186:8807/visualization/poem/images/?name='+poetName)
                     .then(function (response){
                         // if(response.data!="")
                         updateLeaf2(response);
@@ -38,7 +38,7 @@ function updateLeaf()
         else if(showMode==3)//指定时间，指定诗人。
         {
 
-            axios('http://localhost:8080/visualization/poem/images/?name='+poetName+'&beginTime='+beginTime+'&endTime='+endTime)
+            axios('http://1.15.187.186:8807/visualization/poem/images/?name='+poetName+'&beginTime='+beginTime+'&endTime='+endTime)
                 .then(function (response) {
                     updateLeaf2(response);
                 }).catch(function (err) {
@@ -66,7 +66,7 @@ function updateLeaf2(response){
     {//
         for (let obj of dataTest) {
             let imageName = obj.name;
-            axios('http://localhost:8080/visualization/images/poem?images=' + imageName+"&num="+getNum)
+            axios('http://1.15.187.186:8807/visualization/images/poem?images=' + imageName+"&num="+getNum)
                 .then(function (response) {
                     updateLeaf3(response, imageName);
 
@@ -80,7 +80,7 @@ function updateLeaf2(response){
     {
         for (let obj of dataTest) {
             let imageName = obj.name;
-            axios('http://localhost:8080/visualization/images/poem?images=' + imageName+"&beginTime="+beginTime+"&endTime="+endTime+"&num="+getNum)
+            axios('http://1.15.187.186:8807/visualization/images/poem?images=' + imageName+"&beginTime="+beginTime+"&endTime="+endTime+"&num="+getNum)
                 .then(function (response) {
                     // if(response.data!="")
                     updateLeaf3(response, imageName);
@@ -95,7 +95,7 @@ function updateLeaf2(response){
     {
         for (let obj of dataTest) {
             let imageName = obj.name;
-            axios('http://localhost:8080/visualization/images/poem?images=' + imageName+"&name="+poetName+"&num="+getNum)
+            axios('http://1.15.187.186:8807/visualization/images/poem?images=' + imageName+"&name="+poetName+"&num="+getNum)
                 .then(function (response) {
                     // if(response.data!="")
                     updateLeaf3(response, imageName);
@@ -110,7 +110,7 @@ function updateLeaf2(response){
     {
         for (let obj of dataTest) {
             let imageName = obj.name;
-            axios('http://localhost:8080/visualization/images/poem?images=' + imageName+"&name="+poetName+"&beginTime="+beginTime+"&endTime="+endTime+"&num="+getNum)
+            axios('http://1.15.187.186:8807/visualization/images/poem?images=' + imageName+"&name="+poetName+"&beginTime="+beginTime+"&endTime="+endTime+"&num="+getNum)
                 .then(function (response) {
                     // if(response.data!="")
                     updateLeaf3(response, imageName);

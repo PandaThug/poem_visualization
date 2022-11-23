@@ -6,7 +6,7 @@ function updateMap(){
 //           mode3：指定时间，指定诗人。
     if(showMode==0)
     {
-        axios('http://localhost:8080/visualization/footprint/mode0')
+        axios('http://1.15.187.186:8807/visualization/footprint/mode0')
             .then(function (response) {
                 if(response.data!="")
                 mapData=footobj_plus(response.data);
@@ -20,7 +20,7 @@ function updateMap(){
     }
     else if(showMode==1)
     {
-        axios('http://localhost:8080/visualization/footprint/mode1?'+'beginTime='+beginTime+'&endTime='+endTime)
+        axios('http://1.15.187.186:8807/visualization/footprint/mode1?'+'beginTime='+beginTime+'&endTime='+endTime)
             .then(function (response) {
                 if(response.data!="")
                     mapData=footobj_plus(response.data);
@@ -34,7 +34,7 @@ function updateMap(){
     }
     else if(showMode==2)
     {
-        axios('http://localhost:8080/visualization/footprint/mode2?name='+poetName)
+        axios('http://1.15.187.186:8807/visualization/footprint/mode2?name='+poetName)
             .then(function (response) {
                 mapData=[];
                 if(response.data!="")
@@ -49,7 +49,7 @@ function updateMap(){
     else if(showMode==3)
     {
 
-        axios('http://localhost:8080/visualization/footprint/mode3?name='+poetName+'&beginTime='+beginTime+'&endTime='+endTime)
+        axios('http://1.15.187.186:8807/visualization/footprint/mode3?name='+poetName+'&beginTime='+beginTime+'&endTime='+endTime)
             .then(function (response) {
                 mapData=[];
                 if(response.data!="")

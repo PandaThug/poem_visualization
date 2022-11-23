@@ -12,7 +12,7 @@ function updateLineChart(){
             dataIndex: 0// 显示第几个数据
         })
         document.querySelector(".lineChartBox>div").scrollLeft=0;
-        axios('http://localhost:8080/visualization/count')
+        axios('http://1.15.187.186:8807/visualization/count')
             .then(function (response) {
                 updateLineChart2(response);
             }).catch(function (err) {
@@ -22,7 +22,7 @@ function updateLineChart(){
     else if(showMode==1)//only指定时间
     {
         if(timeIndex==0 || timeIndex==31) {
-            axios('http://localhost:8080/visualization/count?beginTime=' + beginTime + '&endTime=' + endTime)
+            axios('http://1.15.187.186:8807/visualization/count?beginTime=' + beginTime + '&endTime=' + endTime)
                 .then(function (response) {
                     updateLineChart2(response);
                 }).catch(function (err) {
@@ -30,7 +30,7 @@ function updateLineChart(){
             });
         }
         else{
-            axios('http://localhost:8080/visualization/count')
+            axios('http://1.15.187.186:8807/visualization/count')
                 .then(function (response) {
                     updateLineChart2(response);
                     updateLineChart3();
@@ -47,7 +47,7 @@ function updateLineChart(){
             dataIndex: 0// 显示第几个数据
         })
         document.querySelector(".lineChartBox>div").scrollLeft=0;
-        axios('http://localhost:8080/visualization/count?name='+poetName)
+        axios('http://1.15.187.186:8807/visualization/count?name='+poetName)
             .then(function (response) {
                 updateLineChart2(response);
             }).catch(function (err) {
@@ -57,7 +57,7 @@ function updateLineChart(){
     else if(showMode==3)
     {
         if(timeIndex==0 || timeIndex==31) {
-            axios('http://localhost:8080/visualization/count?name='+poetName+'&beginTime=' + beginTime + '&endTime=' + endTime)
+            axios('http://1.15.187.186:8807/visualization/count?name='+poetName+'&beginTime=' + beginTime + '&endTime=' + endTime)
                 .then(function (response) {
                     updateLineChart2(response);
                 }).catch(function (err) {
@@ -65,7 +65,7 @@ function updateLineChart(){
             });
         }
         else{
-            axios('http://localhost:8080/visualization/count?name='+poetName)
+            axios('http://1.15.187.186:8807/visualization/count?name='+poetName)
                 .then(function (response) {
                     updateLineChart2(response);
                     updateLineChart3();

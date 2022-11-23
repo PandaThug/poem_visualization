@@ -81,7 +81,7 @@ let color = [
 function updateBubbles(){
     if(showMode==0){//全局
         if(bubbleMode == 0){
-            axios('http://localhost:8080/visualization/poem/emo')
+            axios('http://1.15.187.186:8807/visualization/poem/emo')
                 .then(function (response){
                     updateBubbles2(response);
                 }).catch(function (err) {
@@ -89,7 +89,7 @@ function updateBubbles(){
             });
         }
         else if(bubbleMode == 1){
-            axios('http://localhost:8080/visualization/poem/images')
+            axios('http://1.15.187.186:8807/visualization/poem/images')
                 .then(function (response){
                     updateBubbles2(response);
                 }).catch(function (err) {
@@ -99,7 +99,7 @@ function updateBubbles(){
     else if(showMode==1)//未指定诗人，指定时间。
     {
         if(bubbleMode == 0){
-            axios('http://localhost:8080/visualization/poem/emo/?beginTime='+beginTime+"&endTime="+endTime)
+            axios('http://1.15.187.186:8807/visualization/poem/emo/?beginTime='+beginTime+"&endTime="+endTime)
                 .then(function (response){
                     updateBubbles2(response);
                 }).catch(function (err) {
@@ -107,7 +107,7 @@ function updateBubbles(){
             });
         }
         else if(bubbleMode == 1){
-            axios('http://localhost:8080/visualization/poem/images/?beginTime='+beginTime+"&endTime="+endTime)
+            axios('http://1.15.187.186:8807/visualization/poem/images/?beginTime='+beginTime+"&endTime="+endTime)
                 .then(function (response){
                     updateBubbles2(response);
                 }).catch(function (err) {
@@ -118,7 +118,7 @@ function updateBubbles(){
     else if(showMode==2)//未指定时间，指定诗人。
     {
         if(bubbleMode == 0){
-            axios('http://localhost:8080/visualization/poem/emo/?name='+poetName)
+            axios('http://1.15.187.186:8807/visualization/poem/emo/?name='+poetName)
                 .then(function (response){
                     updateBubbles2(response);
                 }).catch(function (err) {
@@ -126,7 +126,7 @@ function updateBubbles(){
             });
         }
         else if(bubbleMode == 1){
-            axios('http://localhost:8080/visualization/poem/images/?name='+poetName)
+            axios('http://1.15.187.186:8807/visualization/poem/images/?name='+poetName)
                 .then(function (response){
                     updateBubbles2(response);
                 }).catch(function (err) {
@@ -137,7 +137,7 @@ function updateBubbles(){
     else if(showMode==3)//指定时间，指定诗人。
     {
         if(bubbleMode == 0){
-            axios('http://localhost:8080/visualization/poem/emo/?name='+poetName+'&beginTime='+beginTime+"&endTime="+endTime)
+            axios('http://1.15.187.186:8807/visualization/poem/emo/?name='+poetName+'&beginTime='+beginTime+"&endTime="+endTime)
                 .then(function (response){
                     updateBubbles2(response);
                 }).catch(function (err) {
@@ -145,7 +145,7 @@ function updateBubbles(){
             });
         }
         else if(bubbleMode == 1){
-            axios('http://localhost:8080/visualization/poem/images/?name='+poetName+'&beginTime='+beginTime+"&endTime="+endTime)
+            axios('http://1.15.187.186:8807/visualization/poem/images/?name='+poetName+'&beginTime='+beginTime+"&endTime="+endTime)
                 .then(function (response){
                     updateBubbles2(response);
                 }).catch(function (err) {

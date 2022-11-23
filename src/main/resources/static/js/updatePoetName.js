@@ -4,7 +4,7 @@ function updatePoetName(name){
     changeMode();
     if(name!="") {
         document.querySelector(".currentPoet").innerHTML=name;
-        axios('http://localhost:8080/visualization/poet/lifetime?name=' + name)
+        axios('http://1.15.187.186:8807/visualization/poet/lifetime?name=' + name)
             .then(function (response) {
                 let birth = response.data['birth'];
                 let death = response.data['death'];
