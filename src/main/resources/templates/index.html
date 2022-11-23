@@ -126,17 +126,54 @@
     <script th:src="@{/js/updateMap.js}"></script>
     <script th:src="@{/js/updatePoetName.js}"></script>
     <script>
-        new Vue({
-            el:"#help",
-            methods:{
-                mouseenter() {
-                    document.querySelector(".floatingHelp").setAttribute("style","opacity:0.9;visibility:initial;")
-                },
-                mouseleave(){
-                    document.querySelector(".floatingHelp").setAttribute("style","opacity:0;visibility:hidden")
-                }
+        function mouseenterHelp() {
+            document.querySelector(".floatingHelp").setAttribute("style","opacity:0.9;visibility:initial;")
+        }
+        function mouseleaveHelp(){
+            document.querySelector(".floatingHelp").setAttribute("style","opacity:0;visibility:hidden")
+        }
+        function changeBubble(){
+            if(bubbleMode==0) {
+                bubbleMode=1
             }
-        })
+            else
+                bubbleMode=0
+            updateBubbles()
+        }
+        function timeSubmit(){
+            timeSetting();
+        }
+        function mouseenterTime(){
+            document.querySelector(".floatingBox").setAttribute("style", "opacity:0")
+        }
+        function timeSwitch(num)
+        {//四个唐代按钮
+            if(num==0)//初唐
+            {
+                document.getElementById("timeBegin").value=618;
+                document.getElementById("timeEnd").value=712;
+
+            }
+            else if(num==1)//盛唐
+            {
+                document.getElementById("timeBegin").value=713;
+                document.getElementById("timeEnd").value=755;
+
+            }
+            else if(num==2)//中唐
+            {
+                document.getElementById("timeBegin").value=756;
+                document.getElementById("timeEnd").value=824;
+
+            }
+            else if(num==3)//晚唐
+            {
+                document.getElementById("timeBegin").value=825;
+                document.getElementById("timeEnd").value=907;
+
+            }
+            timeSetting();
+        }
         new Vue({
             el:"#poetsList",
             data(){
@@ -157,58 +194,7 @@
                 }
             }
         })
-        new Vue({
-            el:"#changeBtn2",
-            methods:{
-                changeBubble(){
-                    if(bubbleMode==0) {
-                        bubbleMode=1
-                    }
-                    else
-                        bubbleMode=0
-                    updateBubbles()
-                }
-            }
-        })
-        new Vue({
-            el:"#timeSetting",
-            methods:{
-                timeSubmit(){
-                    timeSetting();
-                },
-                mouseenter(){
-                    document.querySelector(".floatingBox").setAttribute("style", "opacity:0")
-                },
-                timeSwitch(num)
-                {//四个唐代按钮
-                    if(num==0)//初唐
-                    {
-                       document.getElementById("timeBegin").value=618;
-                       document.getElementById("timeEnd").value=712;
 
-                    }
-                    else if(num==1)//盛唐
-                    {
-                        document.getElementById("timeBegin").value=713;
-                        document.getElementById("timeEnd").value=755;
-
-                    }
-                    else if(num==2)//中唐
-                    {
-                        document.getElementById("timeBegin").value=756;
-                        document.getElementById("timeEnd").value=824;
-
-                    }
-                    else if(num==3)//晚唐
-                    {
-                        document.getElementById("timeBegin").value=825;
-                        document.getElementById("timeEnd").value=907;
-
-                    }
-                    timeSetting();
-                }
-            }
-        })
         window.onload=function(){
             updateAll();
         }
